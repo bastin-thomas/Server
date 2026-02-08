@@ -492,7 +492,7 @@ SandboxVars = {
     -- 4 = High
     -- 5 = Very High
     -- 6 = Full
-    InitialGas = 3,
+    InitialGas = 2,
     -- If enabled, gas pumps will never run out of fuel
     FuelStationGasInfinite = false,
     -- The minimum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0.00 Max: 1.00 Default: 0.00
@@ -563,7 +563,7 @@ SandboxVars = {
     -- 1 = Low
     -- 2 = Medium
     -- 3 = High
-    RearVulnerability = 2,
+    RearVulnerability = 3,
     -- If zombies will head towards the sound of vehicle sirens.
     SirenEffectsZombies = true,
     -- Speed at which animals stats (hunger, thirst etc.) reduce. Default = Normal
@@ -622,7 +622,7 @@ SandboxVars = {
     -- 5 = Often
     -- 6 = Very Often
     -- 7 = Always
-    AnimalRanchChance = 5,
+    AnimalRanchChance = 6,
     -- The number of hours grass will regrow after being  eaten by an animal or cut by the player. Min: 1 Max: 9999 Default: 240
     AnimalGrassRegrowTime = 240,
     -- If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night.
@@ -734,7 +734,7 @@ SandboxVars = {
     -- Disables the failure chances when climbing sheet ropes or over walls.
     EasyClimbing = false,
     -- The maximum hours of fuel that can be placed in a campfire, wood stove etc. Min: 1 Max: 168 Default: 8
-    MaximumFireFuelHours = 168,
+    MaximumFireFuelHours = 24,
     -- Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming.
     FirearmUseDamageChance = true,
     -- A multiplier for the distance at which zombies can hear gunshots. Min: 0.20 Max: 2.00 Default: 1.00
@@ -877,11 +877,11 @@ SandboxVars = {
         -- If zombies have a chance to lunge at you after climbing over a fence or through a window if you're too close.
         ZombiesFenceLunge = true,
         -- Serves as a multiplier when determining the effectiveness of armor worn by zombies. Min: 0.00 Max: 100.00 Default: 2.00
-        ZombiesArmorFactor = 1.0,
+        ZombiesArmorFactor = 2.0,
         -- The maximum defense percentage that any worn protective garments can provide to a zombie. Min: 0 Max: 100 Default: 85
         ZombiesMaxDefense = 85,
         -- Percentage chance of having a random attached weapon. Min: 0 Max: 100 Default: 6
-        ChanceOfAttachedWeapon = 12,
+        ChanceOfAttachedWeapon = 6,
         -- How much damage zombies take when falling from height. Min: 0.00 Max: 100.00 Default: 1.00
         ZombiesFallDamage = 1.0,
         -- Whether some dead-looking zombies will reanimate and attack the player. Default = World Zombies
@@ -908,7 +908,7 @@ SandboxVars = {
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0.00 Max: 4.00 Default: 1.50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
-        PopulationPeakDay = 28,
+        PopulationPeakDay = 180,
         -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0.00 Max: 8760.00 Default: 72.00
         RespawnHours = 144.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0.00 Max: 8760.00 Default: 16.00
@@ -1018,6 +1018,27 @@ SandboxVars = {
         -- Min: 0.00 Max: 1000.00 Default: 1.00
         Music = 1.0,
     },
+    BLTRandomZombies = {
+        -- Min: 0.00 Max: 100.00 Default: 2.00
+        Crawler = 0.0,
+        -- Min: 0.00 Max: 100.00 Default: 15.00
+        Shambler = 18.0,
+        -- Min: 0.00 Max: 100.00 Default: 78.00
+        FastShambler = 80.0,
+        -- Min: 0.00 Max: 100.00 Default: 5.00
+        Sprinter = 2.0,
+        -- Min: 0.00 Max: 100.00 Default: 0.00
+        Fragile = 0.0,
+        -- Min: 0.00 Max: 100.00 Default: 100.00
+        NormalTough = 100.0,
+        -- Min: 0.00 Max: 100.00 Default: 0.00
+        Tough = 0.0,
+        -- Min: 0.00 Max: 100.00 Default: 0.00
+        Smart = 0.0,
+        CheckConfig = true,
+        -- Min: 1000 Max: 60000 Default: 7500
+        Frequency = 7500,
+    },
     DAMN = {
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
@@ -1026,7 +1047,7 @@ SandboxVars = {
         -- Min: 0 Max: 50 Default: 5
         RocksMin = 5,
         -- Min: 0 Max: 50 Default: 5
-        RocksMax = 5,
+        RocksMax = 15,
         -- Min: 0 Max: 100 Default: 2
         IronOreChance = 2,
         -- Min: 0 Max: 100 Default: 2
@@ -1044,17 +1065,17 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 2
         StoneBlockChance = 2,
         -- Min: 0 Max: 100 Default: 2
-        SteelBlockChance = 2,
+        SteelBlockChance = 0,
         -- Min: 0 Max: 100 Default: 2
-        SteelPieceChance = 2,
+        SteelPieceChance = 0,
         -- Min: 0 Max: 100 Default: 2
-        SteelSlugChance = 2,
+        SteelSlugChance = 0,
         -- Min: 0 Max: 100 Default: 10
         SharpenStoneChance = 10,
     },
     coldwinters = {
         EnableBlizzards = true,
-        GeneratorFailures = true,
+        GeneratorFailures = false,
     },
     Excavation = {
         DisableDepthLimit = false,
@@ -1062,7 +1083,7 @@ SandboxVars = {
     StreetlightGen = {
         Enabled = true,
         -- Min: 10 Max: 180 Default: 20
-        StreetlightRadius = 20,
+        StreetlightRadius = 40,
         IncludeDecorative = true,
         DecorativeLightBoost = 3,
         UseCustomStreetlightColor = false,
@@ -1085,7 +1106,7 @@ SandboxVars = {
         ViewCullPadding = 12,
         InstantWarmup = true,
         -- Min: 4 Max: 64 Default: 16
-        GenDiscoverRadius = 16,
+        GenDiscoverRadius = 60,
         -- Min: 30 Max: 360 Default: 180
         TogglePollRadius = 180,
     },
@@ -1118,7 +1139,7 @@ SandboxVars = {
         WaterRemovalMode = 3,
         ToiletsKeepWater = true,
         BathsKeepWater = false,
-        FillableBaths = false,
+        FillableBaths = true,
         -- Min: 0 Max: 100 Default: 10
         BathPercent = 10,
         -- Min: 0 Max: 100 Default: 90
@@ -1158,18 +1179,18 @@ SandboxVars = {
         StrengthMultiplier = 2,
     },
     Meditation = {
-        StrengthMultiplier = 2,
-        MindfulnessDuration = 2,
+        StrengthMultiplier = 1,
+        MindfulnessDuration = 1,
         -- Min: 0.00 Max: 10.00 Default: 2.00
-        HealFactor = 2.0,
-        EffectMultiplier = 2,
+        HealFactor = 1.0,
+        EffectMultiplier = 1,
         KeepBags = false,
     },
     LSMeditation = {
-        RemoveLevitation = false,
+        RemoveLevitation = true,
     },
     Yoga = {
-        StrengthMultiplier = 2,
+        StrengthMultiplier = 1,
         Exhaustion = 3,
         Embarrassment = 2,
         AidObjects = true,
@@ -1181,7 +1202,7 @@ SandboxVars = {
         -- Min: 0.10 Max: 5.00 Default: 1.00
         FitnessXPMultiplier = 1.0,
         -- Min: 0.10 Max: 5.00 Default: 1.00
-        NimbleXPMultiplier = 1.0,
+        NimbleXPMultiplier = 0.25,
     },
     LSHygiene = {
         -- Min: 0.00 Max: 3.00 Default: 1.00
@@ -1200,10 +1221,10 @@ SandboxVars = {
     LSArt = {
         BeautyOutdoors = false,
         BeautyShowNegative = false,
-        BeautyNeedDecayRate = 3,
-        BeautyNeedStrength = 3,
+        BeautyNeedDecayRate = 1,
+        BeautyNeedStrength = 1,
         -- Min: 0.10 Max: 4.00 Default: 1.00
-        ArtworkBeautyMultiplier = 1.0,
+        ArtworkBeautyMultiplier = 4.0,
     },
     LS = {
         DynamicTraits = false,
@@ -1224,11 +1245,11 @@ SandboxVars = {
         LSVerbose = false,
     },
     VacMod13 = {
-        FastTransfer = true,
+        FastTransfer = false,
     },
     ProjectSummerCar = {
         TakeOverSpawning = false,
-        RemoveWreckedCars = true,
+        RemoveWreckedCars = false,
         -- Min: 0.00 Max: 1.00 Default: 0.10
         BurntCarChance = 0.1,
         -- Min: 0.00 Max: 1.00 Default: 0.50
@@ -1263,7 +1284,7 @@ SandboxVars = {
         RandomPartChance = 0.0,
         -- Min: 0.00 Max: 2.00 Default: 0.30
         ConditionRandom = 0.3,
-        RepairParts = true,
+        RepairParts = false,
         -- Min: 0.00 Max: 10.00 Default: 0.00
         MinHP = 0.0,
         -- Min: 0.00 Max: 1.00 Default: 0.00
@@ -1305,7 +1326,7 @@ SandboxVars = {
     },
     RealisticCold = {
         -- Min: 0.10 Max: 3.00 Default: 1.00
-        HeatDistanceExponent = 1.0,
+        HeatDistanceExponent = 2.0,
         UseOneMinuteUpdates = false,
         -- Min: 5.00 Max: 60.00 Default: 26.00
         HeatTargetMaximum = 26.0,
@@ -1371,19 +1392,19 @@ SandboxVars = {
         -- Min: 1 Max: 100 Default: 100
         RecoveryPercentage = 100,
         -- Min: 0.00 Max: 1000.00 Default: 1.00
-        TranscribeSpeed = 1.0,
+        TranscribeSpeed = 4.0,
         -- Min: 0.00 Max: 1000.00 Default: 1.00
-        ReadTimeSpeed = 1.0,
+        ReadTimeSpeed = 4.0,
         RecoverProfessionAndTraitsBonuses = false,
         TranscribeTVXP = false,
         -- Min: -1 Max: 100 Default: 0
-        RecoverPassiveSkills = 0,
+        RecoverPassiveSkills = 75,
         -- Min: -1 Max: 100 Default: -1
-        RecoverPhysicalCategorySkills = -1,
+        RecoverPhysicalCategorySkills = 75,
         -- Min: -1 Max: 100 Default: -1
-        RecoverCombatSkills = -1,
+        RecoverCombatSkills = 75,
         -- Min: -1 Max: 100 Default: -1
-        RecoverFirearmSkills = -1,
+        RecoverFirearmSkills = 75,
         -- Min: -1 Max: 100 Default: -1
         RecoverCraftingSkills = -1,
         -- Min: -1 Max: 100 Default: -1
@@ -1464,10 +1485,10 @@ SandboxVars = {
         FlashlightRadius = 4,
     },
     ForcedSync = {
-        ForceSyncOnKey = false,
+        ForceSyncOnKey = true,
         ForceSyncOnWeaponHitCharacter = true,
         ForceSyncOnWeaponSwing = true,
-        ForceSyncOnHitZombie = false,
+        ForceSyncOnHitZombie = true,
     },
     HorseMod = {
         -- Min: 0.10 Max: 10.00 Default: 1.00
