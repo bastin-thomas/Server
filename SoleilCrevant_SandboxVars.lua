@@ -1321,9 +1321,6 @@ SandboxVars = {
         AOSevereTraumas = false,
         AOIgnoreRunningEngine = false,
     },
-    ProxInv = {
-        ZombieOnly = false,
-    },
     RealisticCold = {
         -- Min: 0.10 Max: 3.00 Default: 1.00
         HeatDistanceExponent = 2.0,
