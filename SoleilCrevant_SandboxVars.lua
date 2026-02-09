@@ -1018,6 +1018,23 @@ SandboxVars = {
         -- Min: 0.00 Max: 1000.00 Default: 1.00
         Music = 1.0,
     },
+    WorkshopModServerUpdate = {
+        EnableMod = true,
+        PlayBeepSound = false,
+        -- Min: 0 Max: 60 Default: 1
+        RestartDelayMinutes = 5,
+        -- Min: 1 Max: 1440 Default: 5
+        WorkshopPollingIntervalMinutes = 5,
+        -- Min: 10 Max: 120 Default: 25
+        QuitDelaySeconds = 25,
+    },
+    MinidoracatSafeSpawn = {
+        EnableGhostOnSpawn = false,
+        -- Min: 1 Max: 500 Default: 3
+        NormalGhostTime = 1,
+        -- Min: 1 Max: 500 Default: 10
+        NewStartTime = 1,
+    },
     BLTRandomZombies = {
         -- Min: 0.00 Max: 100.00 Default: 2.00
         Crawler = 0.0,
