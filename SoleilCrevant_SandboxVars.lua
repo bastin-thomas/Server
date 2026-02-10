@@ -1261,9 +1261,6 @@ SandboxVars = {
         DanceAnim = false,
         LSVerbose = false,
     },
-    VacMod13 = {
-        FastTransfer = false,
-    },
     ProjectSummerCar = {
         TakeOverSpawning = false,
         RemoveWreckedCars = false,
