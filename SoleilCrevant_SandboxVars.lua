@@ -825,7 +825,7 @@ SandboxVars = {
         -- 2 = Navigate
         -- 3 = Basic Navigation
         -- 4 = Random
-        Cognition = 4,
+        Cognition = 3,
         -- How often zombies can crawl under parked vehicles. Default = Often
         -- 1 = Crawlers Only
         -- 2 = Extremely Rare
@@ -834,7 +834,7 @@ SandboxVars = {
         -- 5 = Often
         -- 6 = Very Often
         -- 7 = Always
-        CrawlUnderVehicle = 5,
+        CrawlUnderVehicle = 6,
         -- How long zombies remember a player after seeing or hearing them. Default = Normal
         -- 1 = Long
         -- 2 = Normal
@@ -902,9 +902,9 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
-        PopulationMultiplier = 1.0,
+        PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
-        PopulationStartMultiplier = 0.65,
+        PopulationStartMultiplier = 0.2,
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
