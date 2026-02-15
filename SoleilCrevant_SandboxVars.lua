@@ -1056,6 +1056,24 @@ SandboxVars = {
         -- Min: 1000 Max: 60000 Default: 7500
         Frequency = 7500,
     },
+    InteractiveTailoring = {
+        -- Min: 0 Max: 9999 Default: 12
+        BonusXP = 6,
+    },
+    AACS = {
+        AllowFaction = true,
+        AllowSafehouse = true,
+        AdminBypass = true,
+        DefaultPickupMode = 1,
+        DefaultLeashMode = 1,
+        VerboseLogs = false,
+        RequireDocumentToAdopt = false,
+        ReturnDocumentOnUnadopt = true,
+        -- Min: 0 Max: 999 Default: 0
+        MaxAdoptedAnimalsPerPlayer = 0,
+        -- Min: 0 Max: 999 Default: 0
+        AdoptionExpiryDays = 128,
+    },
     DAMN = {
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
