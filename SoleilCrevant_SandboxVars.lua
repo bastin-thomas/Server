@@ -281,7 +281,7 @@ SandboxVars = {
     -- 4 = High
     -- 5 = Very High
     -- 6 = No decay
-    FridgeFactor = 4,
+    FridgeFactor = 3,
     -- When greater than 0, loot will not respawn in zones that have been visited within this number of in-game hours. Min: 0 Max: 2147483647 Default: 0
     SeenHoursPreventLootRespawn = 0,
     -- When greater than 0, after X hours, all containers in towns and trailer parks in the world will respawn loot. To spawn loot a container must have been looted at least once. Loot respawn is not impacted by visibility or subsequent looting. Min: 0 Max: 2147483647 Default: 0
