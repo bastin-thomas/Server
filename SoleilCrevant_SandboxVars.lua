@@ -907,7 +907,7 @@ SandboxVars = {
         FenceDamageMultiplier = 1.0,
     },
     ZombieConfig = {
-        -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.55, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
+        -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
         PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
         PopulationStartMultiplier = 0.2,
@@ -1532,5 +1532,29 @@ SandboxVars = {
         GallopSpeed = 1.0,
         -- Min: 0,10 Max: 2,00 Default: 1,00
         StaminaMultiplier = 1.0,
+    },
+    BuildablePump = {
+        -- Min: 0 Max: 10 Default: 5
+        MetalWeldingSkillRequired = 10,
+        -- Min: 0 Max: 10 Default: 2
+        FarmingSkillRequired = 2,
+        -- Min: 1 Max: 20 Default: 4
+        BlowTorchUseCost = 10,
+        -- Min: 1 Max: 20 Default: 4
+        WeldingRodsUseCost = 10,
+        -- Min: 0 Max: 10 Default: 2
+        TirePumpAmount = 5,
+        -- Min: 0 Max: 40 Default: 8
+        MetalPipeAmount = 20,
+        -- Min: 0 Max: 20 Default: 2
+        SheetMetalAmount = 2,
+        -- Min: 0 Max: 80 Default: 16
+        ScrewsAmount = 80,
+        -- Min: 0 Max: 50 Default: 0
+        ScrapMetalAmount = 25,
+        -- Min: 0 Max: 20 Default: 0
+        MetalBarAmount = 20,
+        -- Min: 0 Max: 30 Default: 0
+        SmallSheetMetalAmount = 30,
     },
 }
