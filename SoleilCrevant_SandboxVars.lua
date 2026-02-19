@@ -135,8 +135,12 @@ SandboxVars = {
     AlarmDecayModifier = 14,
     -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,60
     FoodLootNew = 0.6,
-    -- All items that can be read, includes fliers Min: 0,00 Max: 4,00 Default: 0,60
+    -- All other items that can be read, including books, fliers, and newspapers. Min: 0,00 Max: 4,00 Default: 0,60
     LiteratureLootNew = 0.4,
+    -- Books that provide skill XP multipliers. Min: 0,00 Max: 4,00 Default: 0,60
+    SkillBookLoot = 0.6,
+    -- Items that teach recipes. Min: 0,00 Max: 4,00 Default: 0,60
+    RecipeResourceLoot = 0.6,
     -- Medicine, bandages and first aid tools. Min: 0,00 Max: 4,00 Default: 0,60
     MedicalLootNew = 0.4,
     -- Fishing Rods, Tents, camping gear etc. Min: 0,00 Max: 4,00 Default: 0,60
@@ -826,6 +830,8 @@ SandboxVars = {
         -- 3 = Basic Navigation
         -- 4 = Random
         Cognition = 3,
+        -- Min: 0 Max: 100 Default: 33
+        DoorOpeningPercentage = 33,
         -- How often zombies can crawl under parked vehicles. Default = Often
         -- 1 = Crawlers Only
         -- 2 = Extremely Rare
