@@ -134,47 +134,47 @@ SandboxVars = {
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
     AlarmDecayModifier = 14,
     -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,60
-    FoodLootNew = 0.6,
+    FoodLootNew = 0.5,
     -- All other items that can be read, including books, fliers, and newspapers. Min: 0,00 Max: 4,00 Default: 0,60
-    LiteratureLootNew = 0.4,
+    LiteratureLootNew = 0.5,
     -- Books that provide skill XP multipliers. Min: 0,00 Max: 4,00 Default: 0,60
-    SkillBookLoot = 0.6,
+    SkillBookLoot = 0.3,
     -- Items that teach recipes. Min: 0,00 Max: 4,00 Default: 0,60
-    RecipeResourceLoot = 0.6,
+    RecipeResourceLoot = 0.3,
     -- Medicine, bandages and first aid tools. Min: 0,00 Max: 4,00 Default: 0,60
-    MedicalLootNew = 0.4,
+    MedicalLootNew = 0.3,
     -- Fishing Rods, Tents, camping gear etc. Min: 0,00 Max: 4,00 Default: 0,60
-    SurvivalGearsLootNew = 0.6,
+    SurvivalGearsLootNew = 0.5,
     -- Canned and dried food, beverages. Min: 0,00 Max: 4,00 Default: 0,60
-    CannedFoodLootNew = 0.4,
+    CannedFoodLootNew = 0.3,
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
-    WeaponLootNew = 0.4,
+    WeaponLootNew = 0.3,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 0,60
-    RangedWeaponLootNew = 0.4,
+    RangedWeaponLootNew = 0.3,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.3,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
-    MechanicsLootNew = 0.6,
+    MechanicsLootNew = 0.5,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,60
-    OtherLootNew = 0.6,
+    OtherLootNew = 0.5,
     -- All wearable items that are not containers. Min: 0,00 Max: 4,00 Default: 0,60
-    ClothingLootNew = 0.6,
+    ClothingLootNew = 0.5,
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0,00 Max: 4,00 Default: 0,60
-    ContainerLootNew = 0.6,
+    ContainerLootNew = 0.5,
     -- Keys for buildings/cars, key rings, and locks. Min: 0,00 Max: 4,00 Default: 0,60
-    KeyLootNew = 0.4,
+    KeyLootNew = 0.3,
     -- VHS tapes and CDs. Min: 0,00 Max: 4,00 Default: 0,60
-    MediaLootNew = 0.4,
+    MediaLootNew = 0.3,
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0,00 Max: 4,00 Default: 0,60
-    MementoLootNew = 0.4,
+    MementoLootNew = 0.3,
     -- Items that are used in cooking, including those (eg. knives) which can be weapons. Does not include food. Includes both usable and unusable items. Min: 0,00 Max: 4,00 Default: 0,60
-    CookwareLootNew = 0.6,
+    CookwareLootNew = 0.5,
     -- Items and weapons that are used as ingredients for crafting or building. This is a general category that does not include items belonging to other categories such as Cookware or Medical. Does not include Tools. Min: 0,00 Max: 4,00 Default: 0,60
-    MaterialLootNew = 0.6,
+    MaterialLootNew = 0.5,
     -- Items and weapons which are used in both animal and plant agriculture, such as Seeds, Trowels, or Shovels. Min: 0,00 Max: 4,00 Default: 0,60
-    FarmingLootNew = 0.6,
+    FarmingLootNew = 0.5,
     -- Items and weapons which are Tools but don't fit in other categories such as Mechanics or Farming. Min: 0,00 Max: 4,00 Default: 0,60
-    ToolLootNew = 0.6,
+    ToolLootNew = 0.5,
     -- <BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0,10 Max: 100,00 Default: 1,00
     RollsMultiplier = 1.0,
     -- A comma-separated list of item types that won't spawn as ordinary loot.
@@ -190,7 +190,7 @@ SandboxVars = {
     -- Min: 0,05 Max: 0,60 Default: 0,20
     ExtremeLootFactor = 0.2,
     -- Min: 0,20 Max: 1,00 Default: 0,60
-    RareLootFactor = 0.6,
+    RareLootFactor = 0.5,
     -- Min: 0,60 Max: 2,00 Default: 1,00
     NormalLootFactor = 1.0,
     -- Min: 1,00 Max: 3,00 Default: 2,00
@@ -907,7 +907,7 @@ SandboxVars = {
         FenceDamageMultiplier = 1.0,
     },
     ZombieConfig = {
-        -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
+        -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.55, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
         PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
         PopulationStartMultiplier = 0.2,
