@@ -926,7 +926,7 @@ SandboxVars = {
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
-        RallyGroupSize = 10,
+        RallyGroupSize = 8,
         -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
         RallyGroupSizeVariance = 50,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
@@ -1083,6 +1083,14 @@ SandboxVars = {
     DAMN = {
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
+    },
+    EnergyRoutingSystem = {
+        -- Min: 1 Max: 5 Default: 1
+        LootSpawnMultiplier = 1,
+        -- Min: 1 Max: 24 Default: 6
+        ConsumerScanIntervalHours = 6,
+        -- Min: 0 Max: 4 Default: 2
+        ControllerVerticalRange = 2,
     },
     DestroyBoulder = {
         -- Min: 0 Max: 50 Default: 5
