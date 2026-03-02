@@ -1091,6 +1091,7 @@ SandboxVars = {
         ConsumerScanIntervalHours = 6,
         -- Min: 0 Max: 4 Default: 2
         ControllerVerticalRange = 2,
+        DebugLogs = false,
     },
     DestroyBoulder = {
         -- Min: 0 Max: 50 Default: 5
@@ -1366,49 +1367,6 @@ SandboxVars = {
         BatteryCapacityLowConditionMultiplier = 0.2,
         AOSevereTraumas = false,
         AOIgnoreRunningEngine = false,
-    },
-    RealisticCold = {
-        -- Min: 0,10 Max: 3,00 Default: 1,00
-        HeatDistanceExponent = 2.0,
-        UseOneMinuteUpdates = false,
-        -- Min: 5,00 Max: 60,00 Default: 26,00
-        HeatTargetMaximum = 26.0,
-        -- Min: 0,00 Max: 60,00 Default: 25,00
-        VehicleHeaterMaxDelta = 25.0,
-        -- Min: 0 Max: 100 Default: 20
-        IndustrialHeaterSpawnRate = 20,
-        -- Min: 0,10 Max: 5,00 Default: 0,80
-        BreachWeightWindow = 0.8,
-        -- Min: 0,10 Max: 5,00 Default: 1,20
-        BreachWeightDoor = 1.2,
-        -- Min: 0,10 Max: 5,00 Default: 1,40
-        BreachWeightGap = 1.4,
-        -- Min: 1,00 Max: 10,00 Default: 6,00
-        ExposureCap = 6.0,
-        -- Min: 1 Max: 200 Default: 45
-        ColdWorsenPerHour = 45,
-        -- Min: 1 Max: 200 Default: 24
-        ColdRecoverPerHour = 24,
-        -- Min: 1 Max: 200 Default: 36
-        ColdMedicineDecayPerHour = 36,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        ColdSicknessMultiplier = 1.0,
-        -- Min: 1 Max: 4 Default: 2
-        CatchColdThreshold = 2,
-        -- Min: 0,10 Max: 5,00 Default: 1,75
-        CatchColdRateMultiplier = 1.75,
-        -- Min: -30,00 Max: 25,00 Default: 16,00
-        ChillyAirThreshold = 16.0,
-        -- Min: 0,00 Max: 2,00 Default: 0,90
-        ChillyCoolingMultiplierThreshold = 0.9,
-        -- Min: 0,00 Max: 2,00 Default: 1,50
-        ChillyInsulationThreshold = 1.5,
-        -- Min: 0,10 Max: 10,00 Default: 4,00
-        ClothingInsulationScale = 4.0,
-        -- Min: 0,10 Max: 10,00 Default: 0,20
-        HypothermiaDamageIntervalMin = 0.2,
-        -- Min: 0,10 Max: 5,00 Default: 0,20
-        HypothermiaDamagePerTick = 0.2,
     },
     SaucedCarts = {
         EnableMod = true,
