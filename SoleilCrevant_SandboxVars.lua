@@ -1085,8 +1085,6 @@ SandboxVars = {
         AllowWreckyMcChevySpawns = true,
     },
     EnergyRoutingSystem = {
-        -- Min: 1 Max: 5 Default: 1
-        LootSpawnMultiplier = 1,
         -- Min: 1 Max: 24 Default: 6
         ConsumerScanIntervalHours = 6,
         -- Min: 0 Max: 4 Default: 2
