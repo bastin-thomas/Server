@@ -295,7 +295,7 @@ SandboxVars = {
     -- Items will not respawn in buildings that players have barricaded or built in.
     ConstructionPreventsLootRespawn = true,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.Log,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay",
+    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.Log,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay,Skateboard.Skateboard",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.   Zero means items are not removed. Min: 0,00 Max: 2147483647,00 Default: 24,00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
@@ -714,7 +714,7 @@ SandboxVars = {
     -- <BHC> [!] It is recommended that you DO NOT change this. Changing this can result in performance issues. [!] <RGB:1,1,1>   When enabled, dirt can be placed, and farming performed on other than the ground level.
     PlaceDirtAboveground = false,
     -- The speed of plant growth. Min: 0,10 Max: 100,00 Default: 1,00
-    FarmingSpeedNew = 2.0,
+    FarmingSpeedNew = 1.5,
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
     FarmingAmountNew = 1.0,
     -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 50
