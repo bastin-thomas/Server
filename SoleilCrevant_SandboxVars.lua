@@ -295,7 +295,7 @@ SandboxVars = {
     -- Items will not respawn in buildings that players have barricaded or built in.
     ConstructionPreventsLootRespawn = true,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.Log,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay,Skateboard.Skateboard",
+    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.Log,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay,Skateboard.Skateboard,Base.LargStone",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.   Zero means items are not removed. Min: 0,00 Max: 2147483647,00 Default: 24,00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
