@@ -353,7 +353,7 @@ SandboxVars = {
     -- 3 = Often
     SleepingEvent = 1,
     -- How much fuel is consumed by generators per in-game hour. Min: 0,00 Max: 100,00 Default: 0,10
-    GeneratorFuelConsumption = 0.05,
+    GeneratorFuelConsumption = 0.10,
     -- The chance of electrical generators spawning on the map. Default = Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
