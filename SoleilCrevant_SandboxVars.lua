@@ -601,7 +601,7 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Slow
     -- 6 = Very Slow
-    AnimalAgeModifier = 3,
+    AnimalAgeModifier = 4,
     -- Default = Fast
     -- 1 = Ultra Fast
     -- 2 = Very Fast
@@ -714,7 +714,7 @@ SandboxVars = {
     -- <BHC> [!] It is recommended that you DO NOT change this. Changing this can result in performance issues. [!] <RGB:1,1,1>   When enabled, dirt can be placed, and farming performed on other than the ground level.
     PlaceDirtAboveground = false,
     -- The speed of plant growth. Min: 0,10 Max: 100,00 Default: 1,00
-    FarmingSpeedNew = 1.5,
+    FarmingSpeedNew = 1.0,
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
     FarmingAmountNew = 1.0,
     -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 50
