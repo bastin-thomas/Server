@@ -353,7 +353,7 @@ SandboxVars = {
     -- 3 = Often
     SleepingEvent = 1,
     -- How much fuel is consumed by generators per in-game hour. Min: 0,00 Max: 100,00 Default: 0,10
-    GeneratorFuelConsumption = 0.10,
+    GeneratorFuelConsumption = 0.1,
     -- The chance of electrical generators spawning on the map. Default = Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -502,7 +502,7 @@ SandboxVars = {
     -- The minimum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0,00 Max: 1,00 Default: 0,00
     FuelStationGasMin = 0.01,
     -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0,00 Max: 1,00 Default: 0,70
-    FuelStationGasMax = 0.10,
+    FuelStationGasMax = 0.1,
     -- The chance, as a percentage, that individual gas pumps will initially have no fuel. Min: 0 Max: 100 Default: 20
     FuelStationGasEmptyChance = 20,
     -- How likely cars will be locked Default = Rare
