@@ -150,7 +150,7 @@ SandboxVars = {
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 0,60
-    RangedWeaponLootNew = 0.3,
+    RangedWeaponLootNew = 0.2,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.3,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
@@ -162,7 +162,7 @@ SandboxVars = {
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0,00 Max: 4,00 Default: 0,60
     ContainerLootNew = 0.5,
     -- Keys for buildings/cars, key rings, and locks. Min: 0,00 Max: 4,00 Default: 0,60
-    KeyLootNew = 0.3,
+    KeyLootNew = 0.4,
     -- VHS tapes and CDs. Min: 0,00 Max: 4,00 Default: 0,60
     MediaLootNew = 0.3,
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0,00 Max: 4,00 Default: 0,60
@@ -190,7 +190,7 @@ SandboxVars = {
     -- Min: 0,05 Max: 0,60 Default: 0,20
     ExtremeLootFactor = 0.2,
     -- Min: 0,20 Max: 1,00 Default: 0,60
-    RareLootFactor = 0.5,
+    RareLootFactor = 0.6,
     -- Min: 0,60 Max: 2,00 Default: 1,00
     NormalLootFactor = 1.0,
     -- Min: 1,00 Max: 3,00 Default: 2,00
@@ -910,7 +910,7 @@ SandboxVars = {
         -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
         PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
-        PopulationStartMultiplier = 0.1,
+        PopulationStartMultiplier = 0.15,
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
@@ -1045,11 +1045,11 @@ SandboxVars = {
         -- Min: 0,00 Max: 100,00 Default: 2,00
         Crawler = 0.0,
         -- Min: 0,00 Max: 100,00 Default: 15,00
-        Shambler = 18.0,
+        Shambler = 17.0,
         -- Min: 0,00 Max: 100,00 Default: 78,00
         FastShambler = 80.0,
         -- Min: 0,00 Max: 100,00 Default: 5,00
-        Sprinter = 2.0,
+        Sprinter = 3.0,
         -- Min: 0,00 Max: 100,00 Default: 0,00
         Fragile = 0.0,
         -- Min: 0,00 Max: 100,00 Default: 100,00
