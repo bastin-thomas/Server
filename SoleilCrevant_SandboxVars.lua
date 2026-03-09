@@ -50,7 +50,7 @@ SandboxVars = {
     -- 25 = 22 Hours
     -- 26 = 23 Hours
     -- 27 = Real-time
-    DayLength = 3,
+    DayLength = 4,
     StartYear = 1,
     -- Month in which the game starts. Default = July
     -- 1 = January
@@ -150,9 +150,9 @@ SandboxVars = {
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 0,60
-    RangedWeaponLootNew = 0.2,
+    RangedWeaponLootNew = 2.0,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
-    AmmoLootNew = 0.3,
+    AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
     MechanicsLootNew = 0.5,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,60
@@ -184,7 +184,7 @@ SandboxVars = {
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies.
     RemoveZombieLoot = false,
     -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 10
-    ZombiePopLootEffect = 10,
+    ZombiePopLootEffect = 0,
     -- Min: 0,00 Max: 0,20 Default: 0,05
     InsaneLootFactor = 0.05,
     -- Min: 0,05 Max: 0,60 Default: 0,20
@@ -353,7 +353,7 @@ SandboxVars = {
     -- 3 = Often
     SleepingEvent = 1,
     -- How much fuel is consumed by generators per in-game hour. Min: 0,00 Max: 100,00 Default: 0,10
-    GeneratorFuelConsumption = 0.1,
+    GeneratorFuelConsumption = 0.05,
     -- The chance of electrical generators spawning on the map. Default = Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -401,7 +401,7 @@ SandboxVars = {
     -- 3 = High
     InjurySeverity = 2,
     -- How long, in hours, before dead zombie bodies disappear from the world.  If 0, maggots will not spawn on corpses. Min: -1,00 Max: 2147483647,00 Default: 216,00
-    HoursForCorpseRemoval = 116.0,
+    HoursForCorpseRemoval = 216.0,
     -- The impact that nearby decaying bodies has on the player's health and emotions. Default = Normal
     -- 1 = None
     -- 2 = Low
@@ -486,7 +486,7 @@ SandboxVars = {
     -- 5 = High
     CarSpawnRate = 3,
     -- General engine loudness to zombies. Min: 0,00 Max: 100,00 Default: 1,00
-    ZombieAttractionMultiplier = 0.5,
+    ZombieAttractionMultiplier = 1.0,
     -- Whether found vehicles are locked, need keys to start etc.
     VehicleEasyUse = false,
     -- How full the gas tank of discovered vehicles will be. Default = Low
@@ -512,7 +512,7 @@ SandboxVars = {
     -- 4 = Sometimes
     -- 5 = Often
     -- 6 = Very Often
-    LockedCar = 3,
+    LockedCar = 4,
     -- How gas-hungry vehicles are. Min: 0,00 Max: 100,00 Default: 1,00
     CarGasConsumption = 1.0,
     -- General condition discovered vehicles will be in. Default = Low
@@ -521,14 +521,14 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    CarGeneralCondition = 2,
+    CarGeneralCondition = 3,
     -- The amount of damage dealt to vehicles that crash. Default = Normal
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    CarDamageOnImpact = 2,
+    CarDamageOnImpact = 3,
     -- Damage received by the player from being crashed into. Default = None
     -- 1 = None
     -- 2 = Low
@@ -593,7 +593,7 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Slow
     -- 6 = Very Slow
-    AnimalPregnancyTime = 3,
+    AnimalPregnancyTime = 4,
     -- Speed at which animals age. Default = Fast
     -- 1 = Ultra Fast
     -- 2 = Very Fast
@@ -609,7 +609,7 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Slow
     -- 6 = Very Slow
-    AnimalMilkIncModifier = 3,
+    AnimalMilkIncModifier = 4,
     -- Default = Fast
     -- 1 = Ultra Fast
     -- 2 = Very Fast
@@ -617,7 +617,7 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Slow
     -- 6 = Very Slow
-    AnimalWoolIncModifier = 3,
+    AnimalWoolIncModifier = 4,
     -- The chance of finding animals in farm. Default = Always
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -626,7 +626,7 @@ SandboxVars = {
     -- 5 = Often
     -- 6 = Very Often
     -- 7 = Always
-    AnimalRanchChance = 6,
+    AnimalRanchChance = 5,
     -- The number of hours grass will regrow after being  eaten by an animal or cut by the player. Min: 1 Max: 9999 Default: 240
     AnimalGrassRegrowTime = 240,
     -- If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night.
@@ -640,9 +640,9 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Slow
     -- 6 = Very Slow
-    AnimalEggHatch = 3,
+    AnimalEggHatch = 4,
     -- If true, animal calls will attract nearby zombies.
-    AnimalSoundAttractZombies = false,
+    AnimalSoundAttractZombies = true,
     -- The chance of animals leaving tracks. Default = Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -690,7 +690,7 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = Abundant
     -- 5 = Very Abundant
-    FishAbundance = 3,
+    FishAbundance = 2,
     -- When a skill is at this level or above, television/VHS/other media  will not provide XP for it. Min: 0 Max: 10 Default: 3
     LevelForMediaXPCutoff = 3,
     -- When a skill is at this level or above, scrapping furniture does not provide XP for the relevant skill. Does not apply to Electrical. Min: 0 Max: 10 Default: 0
@@ -724,15 +724,15 @@ SandboxVars = {
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0,00 Max: 2,00 Default: 0,50
     RuralLooted = 0.0,
     -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Min: 0 Max: 100 Default: 0
-    MaximumDiminishedLoot = 0,
+    MaximumDiminishedLoot = 20,
     -- How long it takes for Maximum Diminished Loot Percentage to be reached. Min: 0 Max: 3650 Default: 3650
     DaysUntilMaximumDiminishedLoot = 3650,
     -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0,00 Max: 10,00 Default: 1,00
-    MuscleStrainFactor = 1.0,
+    MuscleStrainFactor = 0.7,
     -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 1,00
-    DiscomfortFactor = 1.0,
+    DiscomfortFactor = 0.8,
     -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 0,00
-    WoundInfectionFactor = 0.1,
+    WoundInfectionFactor = 0.2,
     -- If true clothing with randomized tints will not be so dark to be virtually black.
     NoBlackClothes = true,
     -- Disables the failure chances when climbing sheet ropes or over walls.
@@ -744,7 +744,7 @@ SandboxVars = {
     -- A multiplier for the distance at which zombies can hear gunshots. Min: 0,20 Max: 2,00 Default: 1,00
     FirearmNoiseMultiplier = 1.0,
     -- Multiplier for firearm jamming chance. 0 disables jamming. Min: 0,00 Max: 10,00 Default: 0,00
-    FirearmJamMultiplier = 0.0,
+    FirearmJamMultiplier = 1.0,
     -- Multiplier for Moodle effects on hit chance. 0 disables Moodle penalty. Min: 0,00 Max: 10,00 Default: 1,00
     FirearmMoodleMultiplier = 1.0,
     -- Multiplier for the effects of weather (wind, rain and fog) on hit chance. 0 disables weather effect. Min: 0,00 Max: 10,00 Default: 1,00
@@ -823,7 +823,7 @@ SandboxVars = {
         -- 4 = 0-12 Hours
         -- 5 = 2-3 Days
         -- 6 = 1-2 Weeks
-        Reanimate = 5,
+        Reanimate = 3,
         -- Zombie intelligence. Default = Basic Navigation
         -- 1 = Navigate and Use Doors
         -- 2 = Navigate
@@ -840,7 +840,7 @@ SandboxVars = {
         -- 5 = Often
         -- 6 = Very Often
         -- 7 = Always
-        CrawlUnderVehicle = 6,
+        CrawlUnderVehicle = 5,
         -- How long zombies remember a player after seeing or hearing them. Default = Normal
         -- 1 = Long
         -- 2 = Normal
@@ -855,14 +855,14 @@ SandboxVars = {
         -- 3 = Poor
         -- 4 = Random
         -- 5 = Random between Normal and Poor
-        Sight = 2,
+        Sight = 5,
         -- Zombie hearing radius. Default = Random between Normal and Poor
         -- 1 = Pinpoint
         -- 2 = Normal
         -- 3 = Poor
         -- 4 = Random
         -- 5 = Random between Normal and Poor
-        Hearing = 2,
+        Hearing = 5,
         -- Activates the new advanced stealth mechanics, which allows you to hide from zombies behind cars, takes traits and weather into account, and much more.
         SpottedLogic = true,
         -- If zombies that have not seen/heard player can attack doors and constructions while roaming.
@@ -902,7 +902,7 @@ SandboxVars = {
         -- 4 = Zombies can spawn anywhere
         PlayerSpawnZombieRemoval = 1,
         -- How many zombies it takes to damage a tall fence. Min: -1 Max: 100 Default: 50
-        FenceThumpersRequired = 50,
+        FenceThumpersRequired = 25,
         -- How quickly zombies damage tall fences. Min: 0,01 Max: 100,00 Default: 1,00
         FenceDamageMultiplier = 1.0,
     },
@@ -910,7 +910,7 @@ SandboxVars = {
         -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
         PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
-        PopulationStartMultiplier = 0.15,
+        PopulationStartMultiplier = 0.20,
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
@@ -926,13 +926,13 @@ SandboxVars = {
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
-        RallyGroupSize = 8,
+        RallyGroupSize = 20,
         -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
         RallyGroupSizeVariance = 50,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Min: 5 Max: 25 Default: 15
-        RallyGroupSeparation = 10,
+        RallyGroupSeparation = 15,
         -- How close members of a zombie group stay to the group's "leader". Min: 1 Max: 10 Default: 3
         RallyGroupRadius = 3,
         -- Min: 10 Max: 500 Default: 300
