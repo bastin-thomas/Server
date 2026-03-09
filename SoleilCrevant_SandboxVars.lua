@@ -920,7 +920,7 @@ SandboxVars = {
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0,00 Max: 8760,00 Default: 16,00
         RespawnUnseenHours = 96.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,10
-        RespawnMultiplier = 0.5,
+        RespawnMultiplier = 0.75,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0,00 Max: 8760,00 Default: 12,00
         RedistributeHours = 48.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
