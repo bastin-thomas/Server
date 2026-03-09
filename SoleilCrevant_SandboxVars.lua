@@ -14,7 +14,7 @@ SandboxVars = {
     Distribution = 1,
     -- Controls whether some randomization is applied to zombie distribution.
     ZombieVoronoiNoise = true,
-    -- How frequently new zombies are added to the world. Default = Normal
+    -- How frequently new zombies are added to the world. Default = None
     -- 1 = High
     -- 2 = Normal
     -- 3 = Low
@@ -97,35 +97,35 @@ SandboxVars = {
     -- 2 = No Fog
     -- 3 = Endless Fog
     FogCycle = 1,
-    -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Default = 0-30 Days
+    -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Default = 0 - 30 Days
     -- 1 = Instant
-    -- 2 = 0-30 Days
-    -- 3 = 0-2 Months
-    -- 4 = 0-6 Months
-    -- 5 = 0-1 Year
-    -- 6 = 0-5 Years
-    -- 7 = 2-6 Months
-    -- 8 = 6-12 Months
+    -- 2 = 0 - 30 Days
+    -- 3 = 0 - 2 Months
+    -- 4 = 0 - 6 Months
+    -- 5 = 0 - 1 Year
+    -- 6 = 0 - 5 Years
+    -- 7 = 2 - 6 Months
+    -- 8 = 6 - 12 Months
     -- 9 = Disabled
     WaterShut = 3,
-    -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Default = 0-30 Days
+    -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Default = 14 - 30 Days
     -- 1 = Instant
-    -- 2 = 0-30 Days
-    -- 3 = 0-2 Months
-    -- 4 = 0-6 Months
-    -- 5 = 0-1 Year
-    -- 6 = 0-5 Years
-    -- 7 = 2-6 Months
-    -- 8 = 6-12 Months
+    -- 2 = 14 - 30 Days
+    -- 3 = 14 Days - 2 Months
+    -- 4 = 14 Days - 6 Months
+    -- 5 = 14 Days - 1 Year
+    -- 6 = 14 Days - 5 Years
+    -- 7 = 2 - 6 Months
+    -- 8 = 6 - 12 Months
     -- 9 = Disabled
     ElecShut = 3,
-    -- How long alarm batteries can last for after the power shuts off. Default = 0-30 Days
+    -- How long alarm batteries can last for after the power shuts off. Default = 0 - 30 Days
     -- 1 = Instant
-    -- 2 = 0-30 Days
-    -- 3 = 0-2 Months
-    -- 4 = 0-6 Months
-    -- 5 = 0-1 Year
-    -- 6 = 0-5 Years
+    -- 2 = 0 - 30 Days
+    -- 3 = 0 - 2 Months
+    -- 4 = 0 - 6 Months
+    -- 5 = 0 - 1 Year
+    -- 6 = 0 - 5 Years
     AlarmDecay = 2,
     -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Min: -1 Max: 2147483647 Default: 14
     WaterShutModifier = 30,
@@ -149,7 +149,7 @@ SandboxVars = {
     CannedFoodLootNew = 0.3,
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
-    -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 0,60
+    -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 2,00
     RangedWeaponLootNew = 2.0,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.4,
@@ -161,7 +161,7 @@ SandboxVars = {
     ClothingLootNew = 0.5,
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0,00 Max: 4,00 Default: 0,60
     ContainerLootNew = 0.5,
-    -- Keys for buildings/cars, key rings, and locks. Min: 0,00 Max: 4,00 Default: 0,60
+    -- Keys for buildings/cars, key rings, and locks. Min: 0,00 Max: 4,00 Default: 0,40
     KeyLootNew = 0.4,
     -- VHS tapes and CDs. Min: 0,00 Max: 4,00 Default: 0,60
     MediaLootNew = 0.3,
@@ -183,7 +183,7 @@ SandboxVars = {
     RemoveStoryLoot = false,
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies.
     RemoveZombieLoot = false,
-    -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 10
+    -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 0
     ZombiePopLootEffect = 0,
     -- Min: 0,00 Max: 0,20 Default: 0,05
     InsaneLootFactor = 0.05,
@@ -211,7 +211,7 @@ SandboxVars = {
     -- 4 = Rainy
     -- 5 = Very Rainy
     Rain = 3,
-    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100% growth. Default = Normal (100 Days)
+    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100%% growth. Default = Normal (100 Days)
     -- 1 = Very Fast (20 Days)
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
@@ -501,11 +501,11 @@ SandboxVars = {
     FuelStationGasInfinite = false,
     -- The minimum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0,00 Max: 1,00 Default: 0,00
     FuelStationGasMin = 0.01,
-    -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0,00 Max: 1,00 Default: 0,70
+    -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Min: 0,00 Max: 1,00 Default: 0,80
     FuelStationGasMax = 0.1,
     -- The chance, as a percentage, that individual gas pumps will initially have no fuel. Min: 0 Max: 100 Default: 20
     FuelStationGasEmptyChance = 20,
-    -- How likely cars will be locked Default = Rare
+    -- How likely cars will be locked Default = Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
@@ -515,7 +515,7 @@ SandboxVars = {
     LockedCar = 4,
     -- How gas-hungry vehicles are. Min: 0,00 Max: 100,00 Default: 1,00
     CarGasConsumption = 1.0,
-    -- General condition discovered vehicles will be in. Default = Low
+    -- General condition discovered vehicles will be in. Default = Normal
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
@@ -538,7 +538,7 @@ SandboxVars = {
     DamageToPlayerFromHitByACar = 1,
     -- If traffic jams consisting of wrecked cars  will appear on main roads.
     TrafficJam = true,
-    -- How frequently discovered vehicles have active alarms. Default = Extremely Rare
+    -- How frequently discovered vehicles have active alarms. Default = Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
@@ -586,7 +586,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalMetaStatsModifier = 4,
-    -- How long animals will be pregnant for before giving birth. Default = Very Fast
+    -- How long animals will be pregnant for before giving birth. Default = Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -594,7 +594,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalPregnancyTime = 4,
-    -- Speed at which animals age. Default = Fast
+    -- Speed at which animals age. Default = Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -602,7 +602,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalAgeModifier = 4,
-    -- Default = Fast
+    -- Default = Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -610,7 +610,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalMilkIncModifier = 4,
-    -- Default = Fast
+    -- Default = Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -618,7 +618,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalWoolIncModifier = 4,
-    -- The chance of finding animals in farm. Default = Always
+    -- The chance of finding animals in farm. Default = Often
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
@@ -631,9 +631,9 @@ SandboxVars = {
     AnimalGrassRegrowTime = 240,
     -- If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night.
     AnimalMetaPredator = false,
-    -- If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round. 
+    -- If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round.
     AnimalMatingSeason = true,
-    -- How long before baby animals will hatch from eggs. Default = Fast
+    -- How long before baby animals will hatch from eggs. Default = Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -682,9 +682,9 @@ SandboxVars = {
     -- 2 = In Bodies Only
     -- 3 = Never
     MaggotSpawn = 1,
-    -- The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Min: 0,00 Max: 1000,00 Default: 1,00
+    -- The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Min: 0,00 Max: 1000,00 Default: 2,00
     LightBulbLifespan = 5.0,
-    -- The abundance of fish in rivers and lakes. Default = Normal
+    -- The abundance of fish in rivers and lakes. Default = Poor
     -- 1 = Very Poor
     -- 2 = Poor
     -- 3 = Normal
@@ -697,7 +697,7 @@ SandboxVars = {
     LevelForDismantleXPCutoff = 0,
     -- Number of days before old blood splats are removed. Removal happens when map chunks are loaded. 0 means they will never disappear. Min: 0 Max: 365 Default: 0
     BloodSplatLifespanDays = 90,
-    -- Number of days before one can benefit from reading previously read literature items. Min: 1 Max: 365 Default: 90
+    -- Number of days before one can benefit from reading previously read literature items. Min: 1 Max: 365 Default: 45
     LiteratureCooldown = 90,
     -- If there are diminishing returns on bonus trait points provided from selecting multiple negative traits. Default = None
     -- 1 = None
@@ -717,19 +717,19 @@ SandboxVars = {
     FarmingSpeedNew = 1.0,
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
     FarmingAmountNew = 1.0,
-    -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 50
+    -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 25
     MaximumLooted = 0,
     -- How long it takes for Maximum Looted Building Chance to be reached. Min: 0 Max: 3650 Default: 90
     DaysUntilMaximumLooted = 90,
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0,00 Max: 2,00 Default: 0,50
     RuralLooted = 0.0,
-    -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Min: 0 Max: 100 Default: 0
+    -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Min: 0 Max: 100 Default: 20
     MaximumDiminishedLoot = 20,
     -- How long it takes for Maximum Diminished Loot Percentage to be reached. Min: 0 Max: 3650 Default: 3650
     DaysUntilMaximumDiminishedLoot = 3650,
-    -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0,00 Max: 10,00 Default: 1,00
+    -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0,00 Max: 10,00 Default: 0,70
     MuscleStrainFactor = 0.7,
-    -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 1,00
+    -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 0,80
     DiscomfortFactor = 0.8,
     -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 0,00
     WoundInfectionFactor = 0.2,
@@ -743,7 +743,7 @@ SandboxVars = {
     FirearmUseDamageChance = true,
     -- A multiplier for the distance at which zombies can hear gunshots. Min: 0,20 Max: 2,00 Default: 1,00
     FirearmNoiseMultiplier = 1.0,
-    -- Multiplier for firearm jamming chance. 0 disables jamming. Min: 0,00 Max: 10,00 Default: 0,00
+    -- Multiplier for firearm jamming chance. 0 disables jamming. Min: 0,00 Max: 10,00 Default: 1,00
     FirearmJamMultiplier = 1.0,
     -- Multiplier for Moodle effects on hit chance. 0 disables Moodle penalty. Min: 0,00 Max: 10,00 Default: 1,00
     FirearmMoodleMultiplier = 1.0,
@@ -901,7 +901,7 @@ SandboxVars = {
         -- 3 = Inside the room
         -- 4 = Zombies can spawn anywhere
         PlayerSpawnZombieRemoval = 1,
-        -- How many zombies it takes to damage a tall fence. Min: -1 Max: 100 Default: 50
+        -- How many zombies it takes to damage a tall fence. Min: -1 Max: 100 Default: 25
         FenceThumpersRequired = 25,
         -- How quickly zombies damage tall fences. Min: 0,01 Max: 100,00 Default: 1,00
         FenceDamageMultiplier = 1.0,
@@ -910,16 +910,16 @@ SandboxVars = {
         -- Set by the "Zombie Count" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0,00 Max: 4,00 Default: 0,65
         PopulationMultiplier = 2.0,
         -- A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,00
-        PopulationStartMultiplier = 0.20,
+        PopulationStartMultiplier = 0.2,
         -- A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0,00 Max: 4,00 Default: 1,50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
         PopulationPeakDay = 365,
-        -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0,00 Max: 8760,00 Default: 72,00
+        -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0,00 Max: 8760,00 Default: 0,00
         RespawnHours = 168.0,
-        -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0,00 Max: 8760,00 Default: 16,00
+        -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0,00 Max: 8760,00 Default: 0,00
         RespawnUnseenHours = 96.0,
-        -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,10
+        -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,00
         RespawnMultiplier = 0.75,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0,00 Max: 8760,00 Default: 12,00
         RedistributeHours = 48.0,
@@ -927,7 +927,7 @@ SandboxVars = {
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
         RallyGroupSize = 20,
-        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
+        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50%% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
         RallyGroupSizeVariance = 50,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
         RallyTravelDistance = 20,
@@ -1081,6 +1081,7 @@ SandboxVars = {
         AdoptionExpiryDays = 128,
     },
     DAMN = {
+        AllowGreatScottSpawns = false,
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
     },
