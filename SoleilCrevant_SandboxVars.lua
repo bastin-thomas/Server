@@ -978,9 +978,9 @@ SandboxVars = {
         -- Rate at which First Aid skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Doctor = 1.0,
         -- Rate at which Electrical skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
-        Electricity = 1.0,
+        Electricity = 2.0,
         -- Rate at which Welding skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
-        MetalWelding = 1.0,
+        MetalWelding = 1.5,
         -- Rate at which Mechanics skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Mechanics = 1.0,
         -- Rate at which Tailoring skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
@@ -1016,13 +1016,13 @@ SandboxVars = {
         -- Min: 0,00 Max: 1000,00 Default: 1,00
         Art = 1.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Cleaning = 1.0,
+        Cleaning = 1.5,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
         Dancing = 1.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
         Meditation = 1.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Music = 1.0,
+        Music = 1.5,
     },
     WorkshopModServerUpdate = {
         EnableMod = true,
@@ -1248,7 +1248,7 @@ SandboxVars = {
         -- Min: 0,10 Max: 5,00 Default: 1,00
         YogaXPMultiplier = 1.0,
         -- Min: 0,10 Max: 5,00 Default: 1,00
-        FitnessXPMultiplier = 1.0,
+        FitnessXPMultiplier = 0.5,
         -- Min: 0,10 Max: 5,00 Default: 1,00
         NimbleXPMultiplier = 0.25,
     },
