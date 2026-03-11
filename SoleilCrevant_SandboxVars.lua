@@ -486,7 +486,7 @@ SandboxVars = {
     -- 5 = High
     CarSpawnRate = 3,
     -- General engine loudness to zombies. Min: 0,00 Max: 100,00 Default: 1,00
-    ZombieAttractionMultiplier = 1.0,
+    ZombieAttractionMultiplier = 1.5,
     -- Whether found vehicles are locked, need keys to start etc.
     VehicleEasyUse = false,
     -- How full the gas tank of discovered vehicles will be. Default = Low
