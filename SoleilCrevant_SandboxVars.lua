@@ -1547,41 +1547,41 @@ SandboxVars = {
         EnablePassiveSkillsLoot = false,
         EnableWornJournalSpawns = false,
         -- Min: 0,10 Max: 100,00 Default: 1,00
-        WornJournalSpawnChance = 0,
+        WornJournalSpawnChance = 1.0,
         -- Min: 1 Max: 5 Default: 1
-        WornJournalMinSkills = 0,
+        WornJournalMinSkills = 1,
         -- Min: 1 Max: 5 Default: 2
-        WornJournalMaxSkills = 0,
+        WornJournalMaxSkills = 2,
         -- Min: 10 Max: 200 Default: 25
-        WornJournalMinXP = 0,
+        WornJournalMinXP = 25,
         -- Min: 25 Max: 500 Default: 75
-        WornJournalMaxXP = 0,
+        WornJournalMaxXP = 75,
         EnableWornJournalRecipes = false,
         -- Min: 0 Max: 100 Default: 15
         WornJournalRecipeChance = 0,
         -- Min: 1 Max: 5 Default: 1
-        WornJournalMaxRecipes = 0,
+        WornJournalMaxRecipes = 1,
         EnableWornJournalTraits = false,
         -- Min: 0 Max: 100 Default: 0
         WornJournalTraitChance = 0,
         -- Min: 1 Max: 5 Default: 1
-        WornJournalMinTraits = 0,
+        WornJournalMinTraits = 1,
         -- Min: 1 Max: 5 Default: 1
-        WornJournalMaxTraits = 0,
+        WornJournalMaxTraits = 1,
         EnableWornJournalForgetSlot = false,
         -- Min: 0 Max: 100 Default: 1
         WornJournalForgetChance = 0,
         EnableBloodyJournalSpawns = false,
         -- Min: 0,10 Max: 100,00 Default: 0,30
-        BloodyJournalSpawnChance = 0,
+        BloodyJournalSpawnChance = 0.3,
         -- Min: 1 Max: 5 Default: 2
-        BloodyJournalMinSkills = 0,
+        BloodyJournalMinSkills = 2,
         -- Min: 2 Max: 10 Default: 4
-        BloodyJournalMaxSkills = 0,
+        BloodyJournalMaxSkills = 4,
         -- Min: 25 Max: 500 Default: 50
-        BloodyJournalMinXP = 0,
+        BloodyJournalMinXP = 50,
         -- Min: 50 Max: 1000 Default: 150
-        BloodyJournalMaxXP = 0,
+        BloodyJournalMaxXP = 150,
         EnableBloodyJournalTraits = false,
         -- Min: 0 Max: 100 Default: 15
         BloodyJournalTraitChance = 0,
@@ -1594,30 +1594,30 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 35
         BloodyJournalRecipeChance = 0,
         -- Min: 1 Max: 5 Default: 2
-        BloodyJournalMaxRecipes = 0,
+        BloodyJournalMaxRecipes = 2,
         EnableCursedJournalSpawns = false,
         -- Min: 0,00 Max: 100,00 Default: 0,08
-        CursedJournalSpawnChance = 0,
+        CursedJournalSpawnChance = 0.0,
         -- Min: 1 Max: 10 Default: 2
-        CursedJournalMinSkills = 0,
+        CursedJournalMinSkills = 2,
         -- Min: 1 Max: 10 Default: 5
-        CursedJournalMaxSkills = 0,
+        CursedJournalMaxSkills = 5,
         -- Min: 1 Max: 5000 Default: 75
-        CursedJournalMinXP = 0,
+        CursedJournalMinXP = 75,
         -- Min: 1 Max: 5000 Default: 300
-        CursedJournalMaxXP = 0,
+        CursedJournalMaxXP = 300,
         EnableCursedJournalTraits = false,
         -- Min: 0 Max: 100 Default: 40
         CursedJournalTraitChance = 0,
         -- Min: 1 Max: 5 Default: 1
-        CursedJournalMinTraits = 0,
+        CursedJournalMinTraits = 1,
         -- Min: 1 Max: 5 Default: 3
-        CursedJournalMaxTraits = 0,
+        CursedJournalMaxTraits = 3,
         EnableCursedJournalRecipes = false,
         -- Min: 0 Max: 100 Default: 60
         CursedJournalRecipeChance = 0,
         -- Min: 1 Max: 5 Default: 3
-        CursedJournalMaxRecipes = 0,
+        CursedJournalMaxRecipes = 3,
         EnableCursedJournalForgetSlot = false,
         -- Min: 0 Max: 100 Default: 25
         CursedJournalForgetChance = 0,
