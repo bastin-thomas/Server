@@ -978,7 +978,7 @@ SandboxVars = {
         -- Rate at which First Aid skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Doctor = 1.0,
         -- Rate at which Electrical skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
-        Electricity = 2.0,
+        Electricity = 1.5,
         -- Rate at which Welding skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         MetalWelding = 1.5,
         -- Rate at which Mechanics skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
@@ -1367,27 +1367,6 @@ SandboxVars = {
         AOSevereTraumas = false,
         AOIgnoreRunningEngine = false,
     },
-    SaucedCarts = {
-        EnableMod = true,
-        -- Min: 0 Max: 500 Default: 100
-        SpawnRate = 100,
-        -- Min: 25 Max: 400 Default: 100
-        CapacityMultiplier = 100,
-        -- Min: 25 Max: 400 Default: 100
-        DurabilityMultiplier = 100,
-        -- Min: 1 Max: 5 Default: 1
-        MaxCartsPerBuilding = 1,
-        -- Min: 0 Max: 100 Default: 100
-        WeightReductionMultiplier = 100,
-        -- Min: 0 Max: 200 Default: 100
-        SpeedPenaltyMultiplier = 100,
-        -- Min: 25 Max: 400 Default: 100
-        RepairAmountMultiplier = 100,
-        -- Min: 25 Max: 400 Default: 100
-        RepairTimeMultiplier = 100,
-        MaintenanceSkillBonus = true,
-        EnableDebugLogs = true,
-    },
     SkillRecoveryJournal = {
         -- Min: 1 Max: 100 Default: 100
         RecoveryPercentage = 100,
@@ -1521,5 +1500,287 @@ SandboxVars = {
         MetalBarAmount = 20,
         -- Min: 0 Max: 30 Default: 0
         SmallSheetMetalAmount = 30,
+    },
+    RepairableWindows = {
+        BreakChance = 1,
+    },
+    BurdJournals = {
+        EnableJournals = true,
+        EnablePlayerJournals = true,
+        EnablePlayerJournalCrafting = true,
+        XPRecoveryMode = 1,
+        DiminishingTrackingMode = 3,
+        -- Min: 50 Max: 100 Default: 100
+        DiminishingFirstRead = 100,
+        -- Min: 0 Max: 50 Default: 10
+        DiminishingDecayRate = 10,
+        -- Min: 0 Max: 50 Default: 10
+        DiminishingMinimum = 10,
+        RequirePenToWrite = true,
+        -- Min: 1 Max: 10 Default: 1
+        PenUsesPerLog = 1,
+        RequireEraserToErase = true,
+        PersistDROnErase = false,
+        EnableBaselineRestriction = true,
+        -- Min: 0,50 Max: 30,00 Default: 3,00
+        LearningTimePerSkill = 3.0,
+        EnablePassiveSkillsPlayer = true,
+        EnableTraitRecordingPlayer = false,
+        -- Min: 1,00 Max: 60,00 Default: 5,00
+        LearningTimePerTrait = 5.0,
+        EnableRecipeRecordingPlayer = true,
+        -- Min: 0,50 Max: 30,00 Default: 5,00
+        LearningTimePerRecipe = 5.0,
+        EnableStatRecording = true,
+        RecordZombieKills = true,
+        RecordHoursSurvived = true,
+        -- Min: 0,10 Max: 5,00 Default: 1,00
+        LearningTimeMultiplier = 1.0,
+        -- Min: 0 Max: 500 Default: 0
+        MaxSkillsPerJournal = 0,
+        -- Min: 0 Max: 500 Default: 0
+        MaxTraitsPerJournal = 0,
+        -- Min: 0 Max: 10000 Default: 0
+        MaxRecipesPerJournal = 0,
+        -- Min: 0,10 Max: 10,00 Default: 1,00
+        JournalXPMultiplier = 1.0,
+        EnablePassiveSkillsLoot = false,
+        EnableWornJournalSpawns = false,
+        -- Min: 0,10 Max: 100,00 Default: 1,00
+        WornJournalSpawnChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMinSkills = 0,
+        -- Min: 1 Max: 5 Default: 2
+        WornJournalMaxSkills = 0,
+        -- Min: 10 Max: 200 Default: 25
+        WornJournalMinXP = 0,
+        -- Min: 25 Max: 500 Default: 75
+        WornJournalMaxXP = 0,
+        EnableWornJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 15
+        WornJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMaxRecipes = 0,
+        EnableWornJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 0
+        WornJournalTraitChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMinTraits = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMaxTraits = 0,
+        EnableWornJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 1
+        WornJournalForgetChance = 0,
+        EnableBloodyJournalSpawns = false,
+        -- Min: 0,10 Max: 100,00 Default: 0,30
+        BloodyJournalSpawnChance = 0,
+        -- Min: 1 Max: 5 Default: 2
+        BloodyJournalMinSkills = 0,
+        -- Min: 2 Max: 10 Default: 4
+        BloodyJournalMaxSkills = 0,
+        -- Min: 25 Max: 500 Default: 50
+        BloodyJournalMinXP = 0,
+        -- Min: 50 Max: 1000 Default: 150
+        BloodyJournalMaxXP = 0,
+        EnableBloodyJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 15
+        BloodyJournalTraitChance = 0,
+        -- Min: 0 Max: 5 Default: 2
+        BloodyJournalMaxTraits = 0,
+        EnableBloodyJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 3
+        BloodyJournalForgetChance = 0,
+        EnableBloodyJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 35
+        BloodyJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 2
+        BloodyJournalMaxRecipes = 0,
+        EnableCursedJournalSpawns = false,
+        -- Min: 0,00 Max: 100,00 Default: 0,08
+        CursedJournalSpawnChance = 0,
+        -- Min: 1 Max: 10 Default: 2
+        CursedJournalMinSkills = 0,
+        -- Min: 1 Max: 10 Default: 5
+        CursedJournalMaxSkills = 0,
+        -- Min: 1 Max: 5000 Default: 75
+        CursedJournalMinXP = 0,
+        -- Min: 1 Max: 5000 Default: 300
+        CursedJournalMaxXP = 0,
+        EnableCursedJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 40
+        CursedJournalTraitChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        CursedJournalMinTraits = 0,
+        -- Min: 1 Max: 5 Default: 3
+        CursedJournalMaxTraits = 0,
+        EnableCursedJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 60
+        CursedJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 3
+        CursedJournalMaxRecipes = 0,
+        EnableCursedJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 25
+        CursedJournalForgetChance = 0,
+        SkillBookMultiplierForJournals = false,
+        -- Min: 1,00 Max: 16,00 Default: 2,00
+        SkillBookMultiplierCap = 2.0,
+        RequireLightForJournalUse = true,
+        ReadingSkillAffectsSpeed = true,
+        -- Min: 0,00 Max: 0,50 Default: 0,10
+        ReadingSpeedBonus = 0.1,
+        -- Min: 1,00 Max: 60,00 Default: 10,00
+        EraseTime = 10.0,
+        -- Min: 5,00 Max: 120,00 Default: 15,00
+        ConvertTime = 15.0,
+        AllowOthersToOpenJournals = false,
+        AllowOthersToClaimFromJournals = false,
+        AllowNegativeTraits = false,
+        AllowPlayerJournalDissolution = false,
+        AllowMutualExclusionCancellation = true,
+        EnableBaselineSnapshots = true,
+        -- Min: 1 Max: 500 Default: 50
+        BaselineSnapshotsPerSteamLimit = 50,
+        BaselineSnapshotsAutoCapture = true,
+        BaselineSnapshotsCaptureOnDeath = true,
+        BaselineSnapshotsProtectOnRestore = false,
+        -- Min: 1 Max: 50 Default: 15
+        RecordBatchSize = 15,
+        -- Min: 1 Max: 50 Default: 15
+        AbsorbBatchSize = 15,
+        -- Min: 0,10 Max: 1,00 Default: 0,25
+        BatchTimeMultiplier = 0.25,
+        AllowTraitPurchaseSkillRecording = false,
+        AllowAdaptiveTraitsManagedTraitRecording = false,
+        AllowDebugCommands = false,
+    },
+    B42Horticulture = {
+        LearnedRecipe = true,
+    },
+    B42Survival = {
+        LearnedRecipe = true,
+        TorchSmoking = true,
+    },
+    SaucedCarts = {
+        EnableMod = true,
+        -- Min: 0 Max: 500 Default: 100
+        SpawnRate = 50,
+        -- Min: 25 Max: 400 Default: 100
+        CapacityMultiplier = 150,
+        -- Min: 25 Max: 400 Default: 100
+        DurabilityMultiplier = 100,
+        -- Min: 1 Max: 5 Default: 1
+        MaxCartsPerBuilding = 1,
+        -- Min: 0 Max: 100 Default: 100
+        WeightReductionMultiplier = 100,
+        -- Min: 0 Max: 200 Default: 100
+        SpeedPenaltyMultiplier = 100,
+        -- Min: 25 Max: 400 Default: 100
+        RepairAmountMultiplier = 100,
+        -- Min: 25 Max: 400 Default: 100
+        RepairTimeMultiplier = 100,
+        MaintenanceSkillBonus = true,
+        EnableDebugLogs = false,
+    },
+    DecayVehicle = {
+        -- Min: 0,00 Max: 1000,00 Default: 435,00
+        DecayIntervalHours = 435.0,
+        -- Min: 0,00 Max: 8760,00 Default: 168,00
+        ProtectionHours = 168.0,
+        -- Min: 0,00 Max: 20,00 Default: 1,25
+        DecaySpringMulti = 1.25,
+        -- Min: 0,00 Max: 20,00 Default: 1,40
+        DecaySummerMulti = 1.4,
+        -- Min: 0,00 Max: 20,00 Default: 1,15
+        DecayAutumnMulti = 1.15,
+        -- Min: 0,00 Max: 20,00 Default: 1,60
+        DecayWinterMulti = 1.6,
+        DecayExposedMulti = true,
+        -- Min: 0,00 Max: 50,00 Default: 3,00
+        DecayInteriorExposedMulti = 3.0,
+        -- Min: 0,00 Max: 50,00 Default: 1,20
+        DecayInteriorExposedMultiIndoor = 1.2,
+        -- Min: 0,00 Max: 50,00 Default: 1,80
+        DecayEngineExposedMulti = 1.8,
+        -- Min: 0,00 Max: 50,00 Default: 1,10
+        DecayEngineExposedMultiIndoor = 1.1,
+        -- Min: 0,00 Max: 1,00 Default: 0,75
+        DecayEngineProtectedMulti = 0.75,
+        DecayRetroactive = true,
+        -- Min: 0,00 Max: 1,00 Default: 0,18
+        CanopyDecayMulti = 0.18,
+        -- Min: 0,00 Max: 1,00 Default: 0,05
+        IndoorDecayMulti = 0.05,
+        -- Min: 0,00 Max: 10,00 Default: 0,75
+        TirePressureDecay = 0.75,
+        -- Min: 0,00 Max: 100,00 Default: 10,00
+        TirePressureDamageThreshold = 10.0,
+        -- Min: 0,00 Max: 100,00 Default: 3,00
+        TireLowPressureDamageMulti = 3.0,
+        -- Min: 0,00 Max: 10,00 Default: 1,00
+        RustAccumulationRate = 1.0,
+        -- Min: 0,00 Max: 10,00 Default: 1,50
+        RustDamageMultiplier = 1.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,15
+        RustCosmeticDamage = 0.15,
+        -- Min: 0,00 Max: 0,90 Default: 0,70
+        RustDamageThreshold = 0.7,
+        -- Min: 0,00 Max: 1,00 Default: 0,10
+        RustShelteredMultiplier = 0.1,
+        TallGrassRustEnabled = true,
+        -- Min: 1,00 Max: 10,00 Default: 2,00
+        TallGrassRustMulti = 2.0,
+        -- Min: 0,00 Max: 20,00 Default: 0,12
+        DecayMultiplierDoors = 0.12,
+        -- Min: 0,00 Max: 20,00 Default: 0,03
+        DecayMultiplierWindows = 0.03,
+        -- Min: 0,00 Max: 20,00 Default: 0,02
+        DecayMultiplierWindshields = 0.02,
+        -- Min: 0,00 Max: 20,00 Default: 0,45
+        DecayMultiplierTires = 0.45,
+        -- Min: 0,00 Max: 20,00 Default: 0,15
+        DecayMultiplierWheels = 0.15,
+        -- Min: 0,00 Max: 20,00 Default: 0,85
+        DecayMultiplierBrakes = 0.85,
+        -- Min: 0,00 Max: 20,00 Default: 0,25
+        DecayMultiplierSuspension = 0.25,
+        -- Min: 0,00 Max: 20,00 Default: 1,10
+        DecayMultiplierBattery = 1.1,
+        -- Min: 0,00 Max: 20,00 Default: 0,15
+        DecayMultiplierEngine = 0.15,
+        -- Min: 0,00 Max: 20,00 Default: 0,40
+        DecayMultiplierMuffler = 0.4,
+        -- Min: 0,00 Max: 20,00 Default: 0,18
+        DecayMultiplierGasTank = 0.18,
+        -- Min: 0,00 Max: 20,00 Default: 0,15
+        DecayMultiplierRadio = 0.15,
+        -- Min: 0,00 Max: 20,00 Default: 0,35
+        DecayMultiplierSeats = 0.35,
+        -- Min: 0,00 Max: 20,00 Default: 0,10
+        DecayMultiplierHeadlight = 0.1,
+        -- Min: 0,00 Max: 20,00 Default: 0,22
+        DecayMultiplierHeater = 0.22,
+        -- Min: 0,00 Max: 20,00 Default: 0,05
+        DecayMultiplierGloveBox = 0.05,
+        -- Min: 0,00 Max: 20,00 Default: 0,06
+        DecayMultiplierTruckBed = 0.06,
+        -- Min: 0,00 Max: 20,00 Default: 0,12
+        DecayMultiplierEngineDoor = 0.12,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        DecayQualityMultiplierAverage = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 0,80
+        DecayQualityMultiplierPerformance = 0.8,
+        -- Min: 0,00 Max: 5,00 Default: 1,40
+        DecayQualityMultiplierOld = 1.4,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        DecayVehicleTypeStandard = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 0,90
+        DecayVehicleTypeHeavyDuty = 0.9,
+        -- Min: 0,00 Max: 5,00 Default: 1,10
+        DecayVehicleTypeSport = 1.1,
+        SunFadeEnabled = true,
+        -- Min: 0,00 Max: 10,00 Default: 1,00
+        SunFadeRate = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        SunFadeMinSaturation = 0.5,
     },
 }
