@@ -1203,7 +1203,7 @@ SandboxVars = {
         DividerDancingNew = true,
         DividerMeditationNew = true,
         DividerHygiene = true,
-        DividerArt = true,
+        DividerArt = false,
         LSDividerOther = false,
         DividerDebug = false,
     },
