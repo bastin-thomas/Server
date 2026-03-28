@@ -136,11 +136,11 @@ SandboxVars = {
     -- Any food that can rot or spoil. Min: 0.00 Max: 4.00 Default: 0.60
     FoodLootNew = 0.0,
     -- All other items that can be read, including books, fliers, and newspapers. Min: 0.00 Max: 4.00 Default: 0.60
-    LiteratureLootNew = 0.2,
+    LiteratureLootNew = 0.5,
     -- Books that provide skill XP multipliers. Min: 0.00 Max: 4.00 Default: 0.60
-    SkillBookLoot = 0.5,
+    SkillBookLoot = 0.2,
     -- Items that teach recipes. Min: 0.00 Max: 4.00 Default: 0.60
-    RecipeResourceLoot = 0.3,
+    RecipeResourceLoot = 0.2,
     -- Medicine, bandages and first aid tools. Min: 0.00 Max: 4.00 Default: 0.60
     MedicalLootNew = 0.3,
     -- Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Default: 0.60
@@ -178,11 +178,11 @@ SandboxVars = {
     -- <BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0.10 Max: 100.00 Default: 1.00
     RollsMultiplier = 1.0,
     -- A comma-separated list of item types that won't spawn as ordinary loot.
-    LootItemRemovalList = "",
+    LootItemRemovalList = "LabBooks.BkVirologyCourses2,LabBooks.BkVirologyCourses1",
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn in randomised world stories.
-    RemoveStoryLoot = false,
+    RemoveStoryLoot = true,
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies.
-    RemoveZombieLoot = false,
+    RemoveZombieLoot = true,
     -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 0
     ZombiePopLootEffect = 10,
     -- Min: 0.00 Max: 0.20 Default: 0.05
@@ -341,7 +341,7 @@ SandboxVars = {
     -- 2 = Once
     -- 3 = Sometimes
     -- 4 = Often
-    Helicopter = 3,
+    Helicopter = 1,
     -- How often zombie-attracting metagame events like distant gunshots will occur. Default = Sometimes
     -- 1 = Never
     -- 2 = Sometimes
@@ -362,7 +362,7 @@ SandboxVars = {
     -- 5 = Normal
     -- 6 = Common
     -- 7 = Abundant
-    GeneratorSpawning = 1,
+    GeneratorSpawning = 2,
     -- How often a looted map will have notes on it, written by a deceased survivor. Default = Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -385,7 +385,7 @@ SandboxVars = {
     -- 2 = Dark
     -- 3 = Normal
     -- 4 = Bright
-    NightDarkness = 1,
+    NightDarkness = 2,
     -- The time from dusk to dawn. Default = Normal
     -- 1 = Always Night
     -- 2 = Long
@@ -813,9 +813,9 @@ SandboxVars = {
         -- 2 = Fast Shamblers
         -- 3 = Shamblers
         -- 4 = Random
-        Speed = 3,
+        Speed = 4,
         -- If Random Speed is enabled, this controls what percentage of zombies are Sprinters. Check the "Advanced" box below to use a custom percentage. Min: 0 Max: 100 Default: 0
-        SprinterPercentage = 5,
+        SprinterPercentage = 0,
         -- The damage zombies inflict per attack. Default = Normal
         -- 1 = Superhuman
         -- 2 = Normal
@@ -850,7 +850,7 @@ SandboxVars = {
         -- 4 = 0-12 Hours
         -- 5 = 2-3 Days
         -- 6 = 1-2 Weeks
-        Reanimate = 5,
+        Reanimate = 3,
         -- Zombie intelligence. Default = Basic Navigation
         -- 1 = Navigate and Use Doors
         -- 2 = Navigate
@@ -875,21 +875,21 @@ SandboxVars = {
         -- 4 = None
         -- 5 = Random
         -- 6 = Random between Normal and None
-        Memory = 6,
+        Memory = 2,
         -- Zombie vision radius. Default = Random between Normal and Poor
         -- 1 = Eagle
         -- 2 = Normal
         -- 3 = Poor
         -- 4 = Random
         -- 5 = Random between Normal and Poor
-        Sight = 5,
+        Sight = 2,
         -- Zombie hearing radius. Default = Random between Normal and Poor
         -- 1 = Pinpoint
         -- 2 = Normal
         -- 3 = Poor
         -- 4 = Random
         -- 5 = Random between Normal and Poor
-        Hearing = 5,
+        Hearing = 4,
         -- Activates the new advanced stealth mechanics, which allows you to hide from zombies behind cars, takes traits and weather into account, and much more.
         SpottedLogic = true,
         -- If zombies that have not seen/heard player can attack doors and constructions while roaming.
@@ -900,7 +900,7 @@ SandboxVars = {
         -- 1 = Both
         -- 2 = Night
         -- 3 = Day
-        ActiveOnly = 2,
+        ActiveOnly = 1,
         -- If zombies trigger house alarms when breaking through windows or doors.
         TriggerHouseAlarm = true,
         -- If multiple attacking zombies can drag you down and kill you.  Dependent on zombie strength.
@@ -1045,7 +1045,7 @@ SandboxVars = {
         EnableMod = true,
         PlayBeepSound = true,
         -- Min: 0 Max: 60 Default: 1
-        RestartDelayMinutes = 1,
+        RestartDelayMinutes = 5,
         -- Min: 1 Max: 1440 Default: 5
         WorkshopPollingIntervalMinutes = 5,
         -- Min: 10 Max: 120 Default: 25
@@ -1054,7 +1054,7 @@ SandboxVars = {
     DAMN = {
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
-        AllowGreatScottSpawns = false,
+        AllowGreatScottSpawns = true,
     },
     EnergyRoutingSystem = {
         LootSpawnMultiplier = 4,
@@ -1063,6 +1063,73 @@ SandboxVars = {
         -- Min: 0 Max: 4 Default: 2
         ControllerVerticalRange = 2,
         DebugLogs = false,
+    },
+    Bandits = {
+        General_KillCounter = true,
+        -- Min: 1.00 Max: 5.00 Default: 2.40
+        General_StunlockHitSpeed = 2.4,
+        -- Min: 0.25 Max: 4.00 Default: 1.00
+        General_SpawnMultiplier = 0.5,
+        -- Min: 0.25 Max: 4.00 Default: 1.00
+        General_SizeMultiplier = 1.0,
+        General_DensityScore = true,
+        General_OriginalBandits = true,
+        General_Surrender = true,
+        General_BleedOut = true,
+        General_Infection = true,
+        General_LimitedEndurance = true,
+        General_RunAway = true,
+        General_DestroyDoor = true,
+        General_SmashWindow = true,
+        General_RemoveBarricade = true,
+        General_DestroyThumpable = false,
+        General_SabotageVehicles = false,
+        General_Theft = true,
+        General_SabotageCrops = true,
+        General_EnterVehicles = false,
+        General_GeneratorCutoff = true,
+        General_BuildBridge = false,
+        General_BuildRoadblock = true,
+        General_Speak = true,
+        General_Captions = true,
+        General_SneakAtNight = true,
+        General_CarryTorches = true,
+        General_ArrivalIcon = true,
+        General_OverallAccuracy = 3,
+        -- Default = Normal
+        -- 1 = None (not recommended)
+        -- 2 = Insanely Rare
+        -- 3 = Extremely Rare
+        -- 4 = Rare
+        -- 5 = Normal
+        -- 6 = Common
+        -- 7 = Abundant
+        General_DefenderLootAmount = 5,
+        General_CorpseSwapper = true,
+    },
+    BuildablePump = {
+        -- Min: 0 Max: 10 Default: 5
+        MetalWeldingSkillRequired = 5,
+        -- Min: 0 Max: 10 Default: 2
+        FarmingSkillRequired = 2,
+        -- Min: 1 Max: 20 Default: 4
+        BlowTorchUseCost = 4,
+        -- Min: 1 Max: 20 Default: 4
+        WeldingRodsUseCost = 4,
+        -- Min: 0 Max: 10 Default: 2
+        TirePumpAmount = 2,
+        -- Min: 0 Max: 40 Default: 8
+        MetalPipeAmount = 8,
+        -- Min: 0 Max: 20 Default: 2
+        SheetMetalAmount = 2,
+        -- Min: 0 Max: 80 Default: 16
+        ScrewsAmount = 16,
+        -- Min: 0 Max: 50 Default: 0
+        ScrapMetalAmount = 0,
+        -- Min: 0 Max: 20 Default: 0
+        MetalBarAmount = 0,
+        -- Min: 0 Max: 30 Default: 0
+        SmallSheetMetalAmount = 0,
     },
     ProjectSummerCar = {
         TakeOverSpawning = false,
@@ -1135,6 +1202,8 @@ SandboxVars = {
         BatteryCapacity = 1.0,
         -- Min: 0.00 Max: 1.00 Default: 0.20
         BatteryCapacityLowConditionMultiplier = 0.2,
+        AOSevereTraumas = false,
+        AOIgnoreRunningEngine = false,
     },
     DestroyBoulder = {
         -- Min: 0 Max: 50 Default: 5
@@ -1166,14 +1235,13 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 10
         SharpenStoneChance = 10,
     },
+    InteractiveTailoring = {
+        -- Min: 0 Max: 9999 Default: 12
+        BonusXP = 12,
+    },
     B42Survival = {
         LearnedRecipe = true,
         TorchSmoking = true,
-    },
-    ArmorMakesSense = {
-        EnableThermalModel = true,
-        EnableMuscleStrainModel = true,
-        EnableSleepPenaltyModel = true,
     },
     AutoMechanics = {
         -- Min: 0 Max: 100 Default: 0
@@ -1375,21 +1443,21 @@ SandboxVars = {
         Frequency = 1,
     },
     CustomizableExercise = {
-        Exercise = false,
+        Exercise = true,
     },
     CustomizablePickUp = {
-        Limit = false,
+        Limit = true,
     },
     CustomizableRespawn = {
         Respawnable = false,
     },
     FunctionalAppliances = {
-        BeerKegsChance = 3,
-        BeerKegsFilledAmount = 3,
-        SyrupsChance = 3,
-        SyrupsFilledAmount = 3,
-        FATheatreChance = 3,
-        FAFreshTheatreChance = 3,
+        BeerKegsChance = 2,
+        BeerKegsFilledAmount = 2,
+        SyrupsChance = 2,
+        SyrupsFilledAmount = 2,
+        FATheatreChance = 2,
+        FAFreshTheatreChance = 2,
         FAZombieItemsSpawn = true,
     },
     KillCount = {
@@ -1400,6 +1468,179 @@ SandboxVars = {
         shareOnServer = true,
         keepTrackOfDead = true,
     },
+    SleepWithFriends = {
+        RTorIG = 1,
+        -- Min: 0.00 Max: 100.00 Default: 2.00
+        SleepLength = 2.0,
+        -- Min: 0.00 Max: 100.00 Default: 2.00
+        EndurMulti = 2.0,
+        AutoWake = false,
+        -- Min: 0.01 Max: 10.00 Default: 1.00
+        AverageBedMulti = 1.0,
+        -- Min: 0.01 Max: 10.00 Default: 1.05
+        AverageBedPillowMulti = 1.05,
+        -- Min: 0.01 Max: 10.00 Default: 1.10
+        GoodBedMulti = 1.1,
+        -- Min: 0.01 Max: 10.00 Default: 1.15
+        GoodBedPillowMulti = 1.15,
+        -- Min: 0.01 Max: 10.00 Default: 0.90
+        BadBedMulti = 0.9,
+        -- Min: 0.01 Max: 10.00 Default: 0.95
+        BadBedPillowMulti = 0.95,
+        -- Min: 0.01 Max: 10.00 Default: 0.60
+        FloorMulti = 0.6,
+        -- Min: 0.01 Max: 10.00 Default: 0.75
+        FloorPillowMulti = 0.75,
+    },
+    BurdJournals = {
+        EnableJournals = true,
+        EnablePlayerJournals = true,
+        EnablePlayerJournalCrafting = true,
+        XPRecoveryMode = 1,
+        DiminishingTrackingMode = 3,
+        -- Min: 50 Max: 100 Default: 100
+        DiminishingFirstRead = 100,
+        -- Min: 0 Max: 50 Default: 10
+        DiminishingDecayRate = 10,
+        -- Min: 0 Max: 50 Default: 10
+        DiminishingMinimum = 10,
+        RequirePenToWrite = true,
+        -- Min: 1 Max: 10 Default: 1
+        PenUsesPerLog = 1,
+        RequireEraserToErase = true,
+        PersistDROnErase = false,
+        EnableBaselineRestriction = true,
+        -- Min: 0.50 Max: 30.00 Default: 3.00
+        LearningTimePerSkill = 3.0,
+        EnablePassiveSkillsPlayer = true,
+        EnableTraitRecordingPlayer = false,
+        -- Min: 1.00 Max: 60.00 Default: 5.00
+        LearningTimePerTrait = 5.0,
+        EnableRecipeRecordingPlayer = true,
+        -- Min: 0.50 Max: 30.00 Default: 5.00
+        LearningTimePerRecipe = 5.0,
+        EnableStatRecording = true,
+        RecordZombieKills = true,
+        RecordHoursSurvived = true,
+        -- Min: 0.10 Max: 5.00 Default: 1.00
+        LearningTimeMultiplier = 1.0,
+        -- Min: 0 Max: 500 Default: 0
+        MaxSkillsPerJournal = 0,
+        -- Min: 0 Max: 500 Default: 0
+        MaxTraitsPerJournal = 0,
+        -- Min: 0 Max: 10000 Default: 0
+        MaxRecipesPerJournal = 0,
+        -- Min: 0.10 Max: 10.00 Default: 1.00
+        JournalXPMultiplier = 1.0,
+        EnablePassiveSkillsLoot = false,
+        EnableWornJournalSpawns = false,
+        -- Min: 0.10 Max: 100.00 Default: 1.00
+        WornJournalSpawnChance = 1.0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMinSkills = 1,
+        -- Min: 1 Max: 5 Default: 2
+        WornJournalMaxSkills = 2,
+        -- Min: 10 Max: 200 Default: 25
+        WornJournalMinXP = 25,
+        -- Min: 25 Max: 500 Default: 75
+        WornJournalMaxXP = 75,
+        EnableWornJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 15
+        WornJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMaxRecipes = 1,
+        EnableWornJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 0
+        WornJournalTraitChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMinTraits = 1,
+        -- Min: 1 Max: 5 Default: 1
+        WornJournalMaxTraits = 1,
+        EnableWornJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 1
+        WornJournalForgetChance = 0,
+        EnableBloodyJournalSpawns = false,
+        -- Min: 0.10 Max: 100.00 Default: 0.30
+        BloodyJournalSpawnChance = 0.3,
+        -- Min: 1 Max: 5 Default: 2
+        BloodyJournalMinSkills = 2,
+        -- Min: 2 Max: 10 Default: 4
+        BloodyJournalMaxSkills = 4,
+        -- Min: 25 Max: 500 Default: 50
+        BloodyJournalMinXP = 50,
+        -- Min: 50 Max: 1000 Default: 150
+        BloodyJournalMaxXP = 150,
+        EnableBloodyJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 15
+        BloodyJournalTraitChance = 0,
+        -- Min: 0 Max: 5 Default: 2
+        BloodyJournalMaxTraits = 0,
+        EnableBloodyJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 3
+        BloodyJournalForgetChance = 0,
+        EnableBloodyJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 35
+        BloodyJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 2
+        BloodyJournalMaxRecipes = 2,
+        EnableCursedJournalSpawns = false,
+        -- Min: 0.00 Max: 100.00 Default: 0.08
+        CursedJournalSpawnChance = 0.0,
+        -- Min: 1 Max: 10 Default: 2
+        CursedJournalMinSkills = 2,
+        -- Min: 1 Max: 10 Default: 5
+        CursedJournalMaxSkills = 5,
+        -- Min: 1 Max: 5000 Default: 75
+        CursedJournalMinXP = 75,
+        -- Min: 1 Max: 5000 Default: 300
+        CursedJournalMaxXP = 300,
+        EnableCursedJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 40
+        CursedJournalTraitChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        CursedJournalMinTraits = 1,
+        -- Min: 1 Max: 5 Default: 3
+        CursedJournalMaxTraits = 3,
+        EnableCursedJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 60
+        CursedJournalRecipeChance = 0,
+        -- Min: 1 Max: 5 Default: 3
+        CursedJournalMaxRecipes = 3,
+        EnableCursedJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 25
+        CursedJournalForgetChance = 0,
+        SkillBookMultiplierForJournals = false,
+        -- Min: 1.00 Max: 16.00 Default: 2.00
+        SkillBookMultiplierCap = 2.0,
+        RequireLightForJournalUse = true,
+        ReadingSkillAffectsSpeed = true,
+        -- Min: 0.00 Max: 0.50 Default: 0.10
+        ReadingSpeedBonus = 0.1,
+        -- Min: 1.00 Max: 60.00 Default: 10.00
+        EraseTime = 10.0,
+        -- Min: 5.00 Max: 120.00 Default: 15.00
+        ConvertTime = 15.0,
+        AllowOthersToOpenJournals = false,
+        AllowOthersToClaimFromJournals = false,
+        AllowNegativeTraits = false,
+        AllowPlayerJournalDissolution = false,
+        AllowMutualExclusionCancellation = true,
+        EnableBaselineSnapshots = true,
+        -- Min: 1 Max: 500 Default: 50
+        BaselineSnapshotsPerSteamLimit = 50,
+        BaselineSnapshotsAutoCapture = true,
+        BaselineSnapshotsCaptureOnDeath = true,
+        BaselineSnapshotsProtectOnRestore = false,
+        -- Min: 1 Max: 50 Default: 15
+        RecordBatchSize = 15,
+        -- Min: 1 Max: 50 Default: 15
+        AbsorbBatchSize = 15,
+        -- Min: 0.10 Max: 1.00 Default: 0.25
+        BatchTimeMultiplier = 0.25,
+        AllowTraitPurchaseSkillRecording = false,
+        AllowAdaptiveTraitsManagedTraitRecording = false,
+        AllowDebugCommands = false,
+    },
     LKO = {
         -- Min: 15.00 Max: 100.00 Default: 100.00
         ChanceOneInLegendaryKatana = 100.0,
@@ -1409,6 +1650,22 @@ SandboxVars = {
         ChanceOneInLegendaryWakizashi = 80.0,
         -- Min: 10.00 Max: 90.00 Default: 85.00
         ConditionMaxLegendaryWakizashi = 85.0,
+        -- Min: 6.00 Max: 10.00 Default: 8.00
+        MinDamageLegendaryKatana = 8.0,
+        -- Min: 8.00 Max: 16.00 Default: 14.00
+        MaxDamageLegendaryKatana = 14.0,
+        -- Min: 3.00 Max: 12.00 Default: 10.00
+        MaxHitCountLegendaryKatana = 10.0,
+        -- Min: 74.00 Max: 220.00 Default: 215.00
+        ArcAngleLegendaryKatana = 215.0,
+        -- Min: 5.00 Max: 8.00 Default: 6.00
+        MinDamageLegendaryWakizashi = 6.0,
+        -- Min: 6.00 Max: 13.00 Default: 11.00
+        MaxDamageLegendaryWakizashi = 11.0,
+        -- Min: 3.00 Max: 12.00 Default: 10.00
+        MaxHitCountLegendaryWakizashi = 10.0,
+        -- Min: 74.00 Max: 220.00 Default: 215.00
+        ArcAngleLegendaryWakizashi = 215.0,
         -- Min: 0.00 Max: 4.00 Default: 0.15
         DropLKC = 0.15,
         -- Min: 0.00 Max: 4.00 Default: 0.35
@@ -1512,11 +1769,11 @@ SandboxVars = {
         -- Min: 0 Max: 10 Default: 1
         VagabondGuaranteedExtraLoot = 1,
         -- Min: 1 Max: 100 Default: 10
-        WeightPackMule = 10,
+        WeightPackMule = 18,
         -- Min: 1 Max: 100 Default: 6
-        WeightPackMouse = 6,
+        WeightPackMouse = 8,
         -- Min: 1 Max: 100 Default: 8
-        WeightDefault = 8,
+        WeightDefault = 12,
         -- Min: -100 Max: 100 Default: 0
         WeightGlobalMod = 0,
         -- Min: 0 Max: 100 Default: 50
@@ -1574,18 +1831,18 @@ SandboxVars = {
     },
     Roll = {
         -- Min: 0 Max: 100 Default: 25
-        ExtinguishFireChances = 25,
+        ExtinguishFireChances = 50,
     },
     SapphCooking = {
-        NonPerishableChance = 3,
-        PerishableChance = 3,
-        SpicesSpawnChance = 3,
-        CannedSpawnChance = 3,
-        MagazineChance = 3,
-        MREChance = 3,
-        KitchenUtensilsChance = 3,
-        AlcoholChance = 3,
-        ZombieLootSpawn = 3,
+        NonPerishableChance = 2,
+        PerishableChance = 1,
+        SpicesSpawnChance = 2,
+        CannedSpawnChance = 2,
+        MagazineChance = 2,
+        MREChance = 2,
+        KitchenUtensilsChance = 2,
+        AlcoholChance = 2,
+        ZombieLootSpawn = 2,
     },
     SimpleSkillBooks = {
         RemoveXPMultiplier = true,
@@ -1605,9 +1862,9 @@ SandboxVars = {
         ExpandChemicalsLoot = false,
         EnableVehicleLoot = true,
         EnableBagsLoot = true,
-        LootSyringes = 3,
-        LootEquipmentBooks = 3,
-        LootVirologyBooks = 3,
+        LootSyringes = 2,
+        LootEquipmentBooks = 2,
+        LootVirologyBooks = 2,
         VirologyBooksSpawnMode = 2,
         BloodAgingMode = true,
         -- Min: 5 Max: 21 Default: 14
@@ -1618,7 +1875,7 @@ SandboxVars = {
         AutopsySpeed = 1200,
         -- Min: 0 Max: 30 Default: 30
         TicksDecreasedByPerkLv = 30,
-        TableSpeedBonus = 6,
+        TableSpeedBonus = 7,
         -- Min: 0 Max: 15 Default: 15
         AutopsyGroundXP = 15,
         -- Min: 0 Max: 30 Default: 30
@@ -1664,5 +1921,21 @@ SandboxVars = {
         EnableGodRays = true,
         EnableStormMood = true,
         StormMoodPreset = 2,
+    },
+    CustomSync = {
+        -- Min: 15 Max: 600 Default: 120
+        UpdateInterval = 120,
+        -- Min: 10 Max: 500 Default: 50
+        SyncDistance = 75,
+        -- Min: 1 Max: 500 Default: 200
+        MaxZombies = 250,
+        -- Min: 0.01 Max: 2.00 Default: 1.00
+        InterpolationSpeed = 1.0,
+        -- Min: 0 Max: 60 Default: 5
+        ImmediateZombieCooldown = 5,
+        -- Min: 0.05 Max: 2.00 Default: 0.75
+        TrailerInterpolationSpeed = 0.75,
+        -- Min: 0 Max: 1 Default: 0
+        DebugLogs = 0,
     },
 }
