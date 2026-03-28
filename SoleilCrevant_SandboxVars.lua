@@ -671,7 +671,7 @@ SandboxVars = {
     -- If true, you will be able to see any recipes that can be done with a station, even if you haven't learnt them yet.
     SeeNotLearntRecipe = false,
     -- If a building has more than this amount of rooms it will not be looted. Min: 0 Max: 200 Default: 50
-    MaximumLootedBuildingRooms = 50,
+    MaximumLootedBuildingRooms = 100,
     -- If poison can be added to food. Default = True
     -- 1 = True
     -- 2 = False
@@ -698,7 +698,7 @@ SandboxVars = {
     -- Number of days before old blood splats are removed. Removal happens when map chunks are loaded. 0 means they will never disappear. Min: 0 Max: 365 Default: 0
     BloodSplatLifespanDays = 90,
     -- Number of days before one can benefit from reading previously read literature items. Min: 1 Max: 365 Default: 45
-    LiteratureCooldown = 90,
+    LiteratureCooldown = 180,
     -- If there are diminishing returns on bonus trait points provided from selecting multiple negative traits. Default = None
     -- 1 = None
     -- 2 = 1 point penalty for every 3 negative traits selected
@@ -718,7 +718,7 @@ SandboxVars = {
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
     FarmingAmountNew = 1.0,
     -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 25
-    MaximumLooted = 50,
+    MaximumLooted = 100,
     -- How long it takes for Maximum Looted Building Chance to be reached. Min: 0 Max: 3650 Default: 90
     DaysUntilMaximumLooted = 1095,
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0,00 Max: 2,00 Default: 0,50
