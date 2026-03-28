@@ -718,11 +718,11 @@ SandboxVars = {
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
     FarmingAmountNew = 1.0,
     -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0 Max: 200 Default: 25
-    MaximumLooted = 0,
+    MaximumLooted = 50,
     -- How long it takes for Maximum Looted Building Chance to be reached. Min: 0 Max: 3650 Default: 90
-    DaysUntilMaximumLooted = 90,
+    DaysUntilMaximumLooted = 1095,
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0,00 Max: 2,00 Default: 0,50
-    RuralLooted = 0.0,
+    RuralLooted = 0.25,
     -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Min: 0 Max: 100 Default: 20
     MaximumDiminishedLoot = 20,
     -- How long it takes for Maximum Diminished Loot Percentage to be reached. Min: 0 Max: 3650 Default: 3650
