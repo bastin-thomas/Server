@@ -1387,12 +1387,6 @@ SandboxVars = {
         -- Min: 0,01 Max: 20,00 Default: 2,00
         SandbagWeight = 2.0,
     },
-    ForcedSync = {
-        ForceSyncOnKey = true,
-        ForceSyncOnWeaponHitCharacter = true,
-        ForceSyncOnWeaponSwing = true,
-        ForceSyncOnHitZombie = true,
-    },
     BuildablePump = {
         -- Min: 0 Max: 10 Default: 5
         MetalWeldingSkillRequired = 10,
@@ -1660,7 +1654,7 @@ SandboxVars = {
         RepairTimeMultiplier = 100,
         MaintenanceSkillBonus = true,
         EnableDebugLogs = false,
-        StrictShopOnly = false,
+        StrictShopOnly = true,
     },
     DecayVehicle = {
         -- Min: 0,00 Max: 1000,00 Default: 435,00
