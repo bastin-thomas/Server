@@ -150,7 +150,7 @@ SandboxVars = {
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 2,00
-    RangedWeaponLootNew = 2.0,
+    RangedWeaponLootNew = 1.2,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
@@ -740,7 +740,7 @@ SandboxVars = {
     -- The maximum hours of fuel that can be placed in a campfire, wood stove etc. Min: 1 Max: 168 Default: 8
     MaximumFireFuelHours = 24,
     -- Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming.
-    FirearmUseDamageChance = true,
+    FirearmUseDamageChance = 3,
     -- A multiplier for the distance at which zombies can hear gunshots. Min: 0,20 Max: 2,00 Default: 1,00
     FirearmNoiseMultiplier = 1.0,
     -- Multiplier for firearm jamming chance. 0 disables jamming. Min: 0,00 Max: 10,00 Default: 1,00
@@ -831,7 +831,7 @@ SandboxVars = {
         -- 4 = Random
         Cognition = 2,
         -- Min: 0 Max: 100 Default: 33
-        DoorOpeningPercentage = 33,
+        DoorOpeningPercentage = 0,
         -- How often zombies can crawl under parked vehicles. Default = Often
         -- 1 = Crawlers Only
         -- 2 = Extremely Rare
@@ -1085,11 +1085,21 @@ SandboxVars = {
         AllowPro440Spawns = true,
         AllowWreckyMcChevySpawns = true,
     },
+    AutoMechanics = {
+        -- Min: 0 Max: 100 Default: 0
+        ConditionLossPercentageThreshold = 0,
+    },
     EnergyRoutingSystem = {
+        LootSpawnMultiplier = 4,
         -- Min: 1 Max: 24 Default: 6
         ConsumerScanIntervalHours = 6,
         -- Min: 0 Max: 4 Default: 2
         ControllerVerticalRange = 2,
+        EconomicMode = false,
+        -- Min: 0 Max: 10000 Default: 300
+        EconomicModeMinimumWatts = 300,
+        -- Min: 1 Max: 50 Default: 20
+        EconomicModeRadius = 20,
         DebugLogs = false,
     },
     DestroyBoulder = {
@@ -1121,6 +1131,8 @@ SandboxVars = {
         SteelSlugChance = 0,
         -- Min: 0 Max: 100 Default: 10
         SharpenStoneChance = 10,
+        -- Min: 1 Max: 10 Default: 2
+        ToolUsesPerConditionLoss = 2,
     },
     coldwinters = {
         EnableBlizzards = true,
@@ -1286,6 +1298,7 @@ SandboxVars = {
         -- Min: 0,00 Max: 3,00 Default: 1,00
         ComfortNeedMultiplier = 1.0,
         ComfortPositive = false,
+        ComfortNoImpact = false,
     },
     Debug = {
         MoodlePriority = false,
@@ -1508,6 +1521,9 @@ SandboxVars = {
         EnableJournals = true,
         EnablePlayerJournals = true,
         EnablePlayerJournalCrafting = true,
+        EnableVanillaJournalCrafting = true,
+        RespawnWithExistingPlayerJournal = false,
+        SpawnWithBlankPlayerJournal = false,
         XPRecoveryMode = 1,
         DiminishingTrackingMode = 3,
         -- Min: 50 Max: 100 Default: 100
@@ -1522,7 +1538,8 @@ SandboxVars = {
         RequireEraserToErase = true,
         PersistDROnErase = false,
         EnableBaselineRestriction = true,
-        -- Min: 0,50 Max: 30,00 Default: 3,00
+        BaselineRecordingMode = 1,
+        -- Min: 0,50 Max: 30,00 Default: 4,00
         LearningTimePerSkill = 3.0,
         EnablePassiveSkillsPlayer = true,
         EnableTraitRecordingPlayer = false,
@@ -1591,11 +1608,13 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 3
         BloodyJournalForgetChance = 0,
         EnableBloodyJournalRecipes = false,
-        -- Min: 0 Max: 100 Default: 35
+        -- Min: 0 Max: 100 Default: 60
         BloodyJournalRecipeChance = 0,
-        -- Min: 1 Max: 5 Default: 2
+        -- Min: 1 Max: 5 Default: 3
         BloodyJournalMaxRecipes = 2,
+        EnableLootJournalsFun = false,
         EnableCursedJournalSpawns = false,
+        DisguiseCursedJournalsAsBloody = false,
         -- Min: 0,00 Max: 100,00 Default: 0,08
         CursedJournalSpawnChance = 0.0,
         -- Min: 1 Max: 10 Default: 2
@@ -1621,6 +1640,59 @@ SandboxVars = {
         EnableCursedJournalForgetSlot = false,
         -- Min: 0 Max: 100 Default: 25
         CursedJournalForgetChance = 0,
+        -- Min: 0 Max: 200 Default: 90
+        CursedJournalNegativeTraitCurseWeight = 0,
+        -- Min: 0 Max: 200 Default: 12
+        CursedJournalLosePositiveTraitCurseWeight = 0,
+        -- Min: 0 Max: 200 Default: 10
+        CursedJournalLoseSkillCurseWeight = 0,
+        -- Min: 0 Max: 100 Default: 4
+        CursedJournalSevereRepeatChancePercent = 0,
+        -- Min: 0 Max: 336 Default: 72
+        CursedJournalSevereCooldownHours = 0,
+        EnableYuletideJournalSpawns = false,
+        YuletideSeasonMode = 1,
+        EnableYuletideKrampusCursedAuthors = 1,
+        -- Min: 0,00 Max: 100,00 Default: 8,00
+        YuletideWornReplacementChance = 8.0,
+        -- Min: 0,00 Max: 100,00 Default: 4,00
+        YuletideBloodyReplacementChance = 4.0,
+        -- Min: 1 Max: 10 Default: 2
+        YuletideJournalMinSkills = 2,
+        -- Min: 1 Max: 10 Default: 5
+        YuletideJournalMaxSkills = 5,
+        -- Min: 1 Max: 5000 Default: 75
+        YuletideJournalMinXP = 75,
+        -- Min: 1 Max: 5000 Default: 300
+        YuletideJournalMaxXP = 300,
+        EnableYuletideJournalTraits = false,
+        -- Min: 0 Max: 100 Default: 40
+        YuletideJournalTraitChance = 0,
+        -- Min: 1 Max: 5 Default: 1
+        YuletideJournalMinTraits = 1,
+        -- Min: 1 Max: 5 Default: 3
+        YuletideJournalMaxTraits = 3,
+        EnableYuletideJournalRecipes = false,
+        -- Min: 0 Max: 100 Default: 60
+        YuletideJournalRecipeChance = 60,
+        -- Min: 1 Max: 5 Default: 3
+        YuletideJournalMaxRecipes = 3,
+        EnableYuletideJournalForgetSlot = false,
+        -- Min: 0 Max: 100 Default: 25
+        YuletideJournalForgetChance = 0,
+        -- Min: 0 Max: 100 Default: 70
+        YuletideGiftPracticalWeight = 0,
+        -- Min: 0 Max: 100 Default: 25
+        YuletideGiftRareWeight = 0,
+        -- Min: 0 Max: 100 Default: 5
+        YuletideGiftJackpotWeight = 5,
+        -- Min: 1 Max: 10 Default: 1
+        YuletideGiftMinItems = 1,
+        -- Min: 1 Max: 10 Default: 2
+        YuletideGiftMaxItems = 1,
+        EnableLimitedClaimLootJournals = false,
+        -- Min: 1 Max: 25 Default: 1
+        LootJournalMaxClaimsBeforeDissolve = 1,
         SkillBookMultiplierForJournals = false,
         -- Min: 1,00 Max: 16,00 Default: 2,00
         SkillBookMultiplierCap = 2.0,
@@ -1632,6 +1704,9 @@ SandboxVars = {
         EraseTime = 10.0,
         -- Min: 5,00 Max: 120,00 Default: 15,00
         ConvertTime = 15.0,
+        EnableAnimatedJournalVisuals = true,
+        -- Min: 10 Max: 200 Default: 50
+        JournalUIPaginationThreshold = 50,
         AllowOthersToOpenJournals = false,
         AllowOthersToClaimFromJournals = false,
         AllowNegativeTraits = false,
@@ -1651,6 +1726,8 @@ SandboxVars = {
         BatchTimeMultiplier = 0.25,
         AllowTraitPurchaseSkillRecording = false,
         AllowAdaptiveTraitsManagedTraitRecording = false,
+        AllowEvolvingTraitsWorldManagedTraitRecording = false,
+        AllowEvolvingTraitsWorldManagedTraitLootGeneration = false,
         AllowDebugCommands = false,
     },
     B42Horticulture = {
