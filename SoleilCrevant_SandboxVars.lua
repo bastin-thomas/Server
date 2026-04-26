@@ -1019,7 +1019,7 @@ SandboxVars = {
         -- Min: 0,00 Max: 1000,00 Default: 1,00
         Art = 1.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Cleaning = 1.5,
+        Cleaning = 2.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
         Dancing = 1.0,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
@@ -1325,7 +1325,7 @@ SandboxVars = {
         RandomPartChance = 0.0,
         -- Min: 0,00 Max: 2,00 Default: 0,30
         ConditionRandom = 0.3,
-        RepairParts = false,
+        RepairParts = true,
         -- Min: 0,00 Max: 10,00 Default: 0,00
         MinHP = 0.0,
         -- Min: 0,00 Max: 1,00 Default: 0,00
