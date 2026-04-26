@@ -1071,19 +1071,6 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 0
         ConditionLossPercentageThreshold = 0,
     },
-    EnergyRoutingSystem = {
-        LootSpawnMultiplier = 4,
-        -- Min: 1 Max: 24 Default: 6
-        ConsumerScanIntervalHours = 6,
-        -- Min: 0 Max: 4 Default: 2
-        ControllerVerticalRange = 2,
-        EconomicMode = false,
-        -- Min: 0 Max: 10000 Default: 300
-        EconomicModeMinimumWatts = 300,
-        -- Min: 1 Max: 50 Default: 20
-        EconomicModeRadius = 20,
-        DebugLogs = false,
-    },
     DestroyBoulder = {
         -- Min: 0 Max: 50 Default: 5
         RocksMin = 5,
@@ -1414,218 +1401,37 @@ SandboxVars = {
     RepairableWindows = {
         BreakChance = 1,
     },
-    BurdJournals = {
-        EnableJournals = true,
-        EnablePlayerJournals = true,
-        EnablePlayerJournalCrafting = true,
-        EnableVanillaJournalCrafting = true,
-        RespawnWithExistingPlayerJournal = false,
-        SpawnWithBlankPlayerJournal = false,
-        XPRecoveryMode = 1,
-        DiminishingTrackingMode = 3,
-        -- Min: 50 Max: 100 Default: 100
-        DiminishingFirstRead = 100,
-        -- Min: 0 Max: 50 Default: 10
-        DiminishingDecayRate = 10,
-        -- Min: 0 Max: 50 Default: 10
-        DiminishingMinimum = 10,
-        RequirePenToWrite = true,
-        -- Min: 1 Max: 10 Default: 1
-        PenUsesPerLog = 1,
-        RequireEraserToErase = true,
-        PersistDROnErase = false,
-        EnableBaselineRestriction = true,
-        BaselineRecordingMode = 1,
-        -- Min: 0,50 Max: 30,00 Default: 4,00
-        LearningTimePerSkill = 3.0,
-        EnablePassiveSkillsPlayer = true,
-        EnableTraitRecordingPlayer = false,
-        -- Min: 1,00 Max: 60,00 Default: 5,00
-        LearningTimePerTrait = 5.0,
-        EnableRecipeRecordingPlayer = true,
-        -- Min: 0,50 Max: 30,00 Default: 5,00
-        LearningTimePerRecipe = 5.0,
-        EnableStatRecording = true,
-        RecordZombieKills = true,
-        RecordHoursSurvived = true,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        LearningTimeMultiplier = 1.0,
-        -- Min: 0 Max: 500 Default: 0
-        MaxSkillsPerJournal = 0,
-        -- Min: 0 Max: 500 Default: 0
-        MaxTraitsPerJournal = 0,
-        -- Min: 0 Max: 10000 Default: 0
-        MaxRecipesPerJournal = 0,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        JournalXPMultiplier = 1.0,
-        EnablePassiveSkillsLoot = false,
-        EnableWornJournalSpawns = false,
-        -- Min: 0,10 Max: 100,00 Default: 1,00
-        WornJournalSpawnChance = 1.0,
-        -- Min: 1 Max: 5 Default: 1
-        WornJournalMinSkills = 1,
-        -- Min: 1 Max: 5 Default: 2
-        WornJournalMaxSkills = 2,
-        -- Min: 10 Max: 200 Default: 25
-        WornJournalMinXP = 25,
-        -- Min: 25 Max: 500 Default: 75
-        WornJournalMaxXP = 75,
-        EnableWornJournalRecipes = false,
-        -- Min: 0 Max: 100 Default: 15
-        WornJournalRecipeChance = 0,
-        -- Min: 1 Max: 5 Default: 1
-        WornJournalMaxRecipes = 1,
-        EnableWornJournalTraits = false,
-        -- Min: 0 Max: 100 Default: 0
-        WornJournalTraitChance = 0,
-        -- Min: 1 Max: 5 Default: 1
-        WornJournalMinTraits = 1,
-        -- Min: 1 Max: 5 Default: 1
-        WornJournalMaxTraits = 1,
-        EnableWornJournalForgetSlot = false,
-        -- Min: 0 Max: 100 Default: 1
-        WornJournalForgetChance = 0,
-        EnableBloodyJournalSpawns = false,
-        -- Min: 0,10 Max: 100,00 Default: 0,30
-        BloodyJournalSpawnChance = 0.3,
-        -- Min: 1 Max: 5 Default: 2
-        BloodyJournalMinSkills = 2,
-        -- Min: 2 Max: 10 Default: 4
-        BloodyJournalMaxSkills = 4,
-        -- Min: 25 Max: 500 Default: 50
-        BloodyJournalMinXP = 50,
-        -- Min: 50 Max: 1000 Default: 150
-        BloodyJournalMaxXP = 150,
-        EnableBloodyJournalTraits = false,
-        -- Min: 0 Max: 100 Default: 15
-        BloodyJournalTraitChance = 0,
-        -- Min: 0 Max: 5 Default: 2
-        BloodyJournalMaxTraits = 0,
-        EnableBloodyJournalForgetSlot = false,
-        -- Min: 0 Max: 100 Default: 3
-        BloodyJournalForgetChance = 0,
-        EnableBloodyJournalRecipes = false,
-        -- Min: 0 Max: 100 Default: 60
-        BloodyJournalRecipeChance = 0,
-        -- Min: 1 Max: 5 Default: 3
-        BloodyJournalMaxRecipes = 2,
-        EnableLootJournalsFun = false,
-        EnableCursedJournalSpawns = false,
-        DisguiseCursedJournalsAsBloody = false,
-        -- Min: 0,00 Max: 100,00 Default: 0,08
-        CursedJournalSpawnChance = 0.0,
-        -- Min: 1 Max: 10 Default: 2
-        CursedJournalMinSkills = 2,
-        -- Min: 1 Max: 10 Default: 5
-        CursedJournalMaxSkills = 5,
-        -- Min: 1 Max: 5000 Default: 75
-        CursedJournalMinXP = 75,
-        -- Min: 1 Max: 5000 Default: 300
-        CursedJournalMaxXP = 300,
-        EnableCursedJournalTraits = false,
-        -- Min: 0 Max: 100 Default: 40
-        CursedJournalTraitChance = 0,
-        -- Min: 1 Max: 5 Default: 1
-        CursedJournalMinTraits = 1,
-        -- Min: 1 Max: 5 Default: 3
-        CursedJournalMaxTraits = 3,
-        EnableCursedJournalRecipes = false,
-        -- Min: 0 Max: 100 Default: 60
-        CursedJournalRecipeChance = 0,
-        -- Min: 1 Max: 5 Default: 3
-        CursedJournalMaxRecipes = 3,
-        EnableCursedJournalForgetSlot = false,
-        -- Min: 0 Max: 100 Default: 25
-        CursedJournalForgetChance = 0,
-        -- Min: 0 Max: 200 Default: 90
-        CursedJournalNegativeTraitCurseWeight = 0,
-        -- Min: 0 Max: 200 Default: 12
-        CursedJournalLosePositiveTraitCurseWeight = 0,
-        -- Min: 0 Max: 200 Default: 10
-        CursedJournalLoseSkillCurseWeight = 0,
-        -- Min: 0 Max: 100 Default: 4
-        CursedJournalSevereRepeatChancePercent = 0,
-        -- Min: 0 Max: 336 Default: 72
-        CursedJournalSevereCooldownHours = 0,
-        EnableYuletideJournalSpawns = false,
-        YuletideSeasonMode = 1,
-        EnableYuletideKrampusCursedAuthors = 1,
-        -- Min: 0,00 Max: 100,00 Default: 8,00
-        YuletideWornReplacementChance = 8.0,
-        -- Min: 0,00 Max: 100,00 Default: 4,00
-        YuletideBloodyReplacementChance = 4.0,
-        -- Min: 1 Max: 10 Default: 2
-        YuletideJournalMinSkills = 2,
-        -- Min: 1 Max: 10 Default: 5
-        YuletideJournalMaxSkills = 5,
-        -- Min: 1 Max: 5000 Default: 75
-        YuletideJournalMinXP = 75,
-        -- Min: 1 Max: 5000 Default: 300
-        YuletideJournalMaxXP = 300,
-        EnableYuletideJournalTraits = false,
-        -- Min: 0 Max: 100 Default: 40
-        YuletideJournalTraitChance = 0,
-        -- Min: 1 Max: 5 Default: 1
-        YuletideJournalMinTraits = 1,
-        -- Min: 1 Max: 5 Default: 3
-        YuletideJournalMaxTraits = 3,
-        EnableYuletideJournalRecipes = false,
-        -- Min: 0 Max: 100 Default: 60
-        YuletideJournalRecipeChance = 60,
-        -- Min: 1 Max: 5 Default: 3
-        YuletideJournalMaxRecipes = 3,
-        EnableYuletideJournalForgetSlot = false,
-        -- Min: 0 Max: 100 Default: 25
-        YuletideJournalForgetChance = 0,
-        -- Min: 0 Max: 100 Default: 70
-        YuletideGiftPracticalWeight = 0,
-        -- Min: 0 Max: 100 Default: 25
-        YuletideGiftRareWeight = 0,
-        -- Min: 0 Max: 100 Default: 5
-        YuletideGiftJackpotWeight = 5,
-        -- Min: 1 Max: 10 Default: 1
-        YuletideGiftMinItems = 1,
-        -- Min: 1 Max: 10 Default: 2
-        YuletideGiftMaxItems = 1,
-        EnableLimitedClaimLootJournals = false,
-        -- Min: 1 Max: 25 Default: 1
-        LootJournalMaxClaimsBeforeDissolve = 1,
-        SkillBookMultiplierForJournals = false,
-        -- Min: 1,00 Max: 16,00 Default: 2,00
-        SkillBookMultiplierCap = 2.0,
-        RequireLightForJournalUse = true,
-        ReadingSkillAffectsSpeed = true,
-        -- Min: 0,00 Max: 0,50 Default: 0,10
-        ReadingSpeedBonus = 0.1,
-        -- Min: 1,00 Max: 60,00 Default: 10,00
-        EraseTime = 10.0,
-        -- Min: 5,00 Max: 120,00 Default: 15,00
-        ConvertTime = 15.0,
-        EnableAnimatedJournalVisuals = true,
-        -- Min: 10 Max: 200 Default: 50
-        JournalUIPaginationThreshold = 50,
-        AllowOthersToOpenJournals = false,
-        AllowOthersToClaimFromJournals = false,
-        AllowNegativeTraits = false,
-        AllowPlayerJournalDissolution = false,
-        AllowMutualExclusionCancellation = true,
-        EnableBaselineSnapshots = true,
-        -- Min: 1 Max: 500 Default: 50
-        BaselineSnapshotsPerSteamLimit = 50,
-        BaselineSnapshotsAutoCapture = true,
-        BaselineSnapshotsCaptureOnDeath = true,
-        BaselineSnapshotsProtectOnRestore = false,
-        -- Min: 1 Max: 50 Default: 15
-        RecordBatchSize = 15,
-        -- Min: 1 Max: 50 Default: 15
-        AbsorbBatchSize = 15,
-        -- Min: 0,10 Max: 1,00 Default: 0,25
-        BatchTimeMultiplier = 0.25,
-        AllowTraitPurchaseSkillRecording = false,
-        AllowAdaptiveTraitsManagedTraitRecording = false,
-        AllowEvolvingTraitsWorldManagedTraitRecording = false,
-        AllowEvolvingTraitsWorldManagedTraitLootGeneration = false,
-        AllowDebugCommands = false,
+    SkillRecoveryJournal = {
+        -- Min: 1 Max: 100 Default: 100
+        RecoveryPercentage = 100,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        TranscribeSpeed = 4.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        ReadTimeSpeed = 4.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        -- Min: -1 Max: 100 Default: 0
+        RecoverPassiveSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverPhysicalCategorySkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverCombatSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverFirearmSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverCraftingSkills = 100,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverSurvivalistSkills = 100,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverFarmingCategorySkills = 100,
+        -- Min: -1 Max: 100 Default: 0
+        KillsTrack = 0,
+        RecoverRecipes = true,
+        RecoveryJournalUsed = false,
+        SecurityFeatures = 1,
+        CraftRecipeNeedLearn = false,
+        CraftRecipe = "",
+        ModDataTrack = "",
     },
     B42Horticulture = {
         LearnedRecipe = true,
@@ -1655,6 +1461,53 @@ SandboxVars = {
         MaintenanceSkillBonus = true,
         EnableDebugLogs = false,
         StrictShopOnly = true,
+    },
+    HorseMod = {
+        -- Min: 0,10 Max: 10,00 Default: 1,00
+        WalkSpeed = 1.0,
+        -- Min: 0,10 Max: 10,00 Default: 1,00
+        GallopSpeed = 1.0,
+        -- Min: 0,10 Max: 2,00 Default: 1,00
+        StaminaMultiplier = 1.0,
+    },
+    LanternFix = {
+        PropaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,44
+        PropaneLanternColorBlue = 0.44,
+        -- Min: 2 Max: 14 Default: 7
+        PropaneLanternRadius = 7,
+        HurricaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        HurricaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        HurricaneLanternColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,33
+        HurricaneLanternColorBlue = 0.33,
+        -- Min: 2 Max: 14 Default: 7
+        HurricaneLanternRadius = 7,
+        ImprovisedLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorBlue = 0.5,
+        -- Min: 2 Max: 14 Default: 7
+        ImprovisedLanternRadius = 7,
+        FlashlightHeader = false,
+        FlashlightEnabled = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorRed = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorBlue = 0.4,
+        -- Min: 2 Max: 7 Default: 4
+        FlashlightRadius = 4,
     },
     DecayVehicle = {
         -- Min: 0,00 Max: 1000,00 Default: 435,00
@@ -1757,52 +1610,5 @@ SandboxVars = {
         SunFadeRate = 1.0,
         -- Min: 0,00 Max: 1,00 Default: 0,50
         SunFadeMinSaturation = 0.5,
-    },
-    HorseMod = {
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        WalkSpeed = 1.0,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        GallopSpeed = 1.0,
-        -- Min: 0,10 Max: 2,00 Default: 1,00
-        StaminaMultiplier = 1.0,
-    },
-    LanternFix = {
-        PropaneLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        PropaneLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        PropaneLanternColorGreen = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,44
-        PropaneLanternColorBlue = 0.44,
-        -- Min: 2 Max: 14 Default: 7
-        PropaneLanternRadius = 7,
-        HurricaneLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        HurricaneLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        HurricaneLanternColorGreen = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,33
-        HurricaneLanternColorBlue = 0.33,
-        -- Min: 2 Max: 14 Default: 7
-        HurricaneLanternRadius = 7,
-        ImprovisedLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorGreen = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorBlue = 0.5,
-        -- Min: 2 Max: 14 Default: 7
-        ImprovisedLanternRadius = 7,
-        FlashlightHeader = false,
-        FlashlightEnabled = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorRed = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorGreen = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorBlue = 0.4,
-        -- Min: 2 Max: 7 Default: 4
-        FlashlightRadius = 4,
     },
 }
