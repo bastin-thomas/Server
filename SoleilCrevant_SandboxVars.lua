@@ -732,7 +732,7 @@ SandboxVars = {
     -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 0,80
     DiscomfortFactor = 0.8,
     -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 0,00
-    WoundInfectionFactor = 0.2,
+    WoundInfectionFactor = 1.0,
     -- If true clothing with randomized tints will not be so dark to be virtually black.
     NoBlackClothes = true,
     -- Disables the failure chances when climbing sheet ropes or over walls.
