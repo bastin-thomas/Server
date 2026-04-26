@@ -133,7 +133,7 @@ SandboxVars = {
     ElecShutModifier = 30,
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
     AlarmDecayModifier = 14,
-    -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,60
+    -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,80
     FoodLootNew = 0.5,
     -- All other items that can be read, including books, fliers, and newspapers. Min: 0,00 Max: 4,00 Default: 0,60
     LiteratureLootNew = 0.5,
@@ -149,13 +149,13 @@ SandboxVars = {
     CannedFoodLootNew = 0.3,
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
-    -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 2,00
+    -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 1,20
     RangedWeaponLootNew = 1.2,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
     MechanicsLootNew = 0.5,
-    -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,60
+    -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,80
     OtherLootNew = 0.5,
     -- All wearable items that are not containers. Min: 0,00 Max: 4,00 Default: 0,60
     ClothingLootNew = 0.5,
@@ -211,7 +211,7 @@ SandboxVars = {
     -- 4 = Rainy
     -- 5 = Very Rainy
     Rain = 3,
-    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100%% growth. Default = Normal (100 Days)
+    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100%% growth. Default = Slow (200 Days)
     -- 1 = Very Fast (20 Days)
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
@@ -550,7 +550,7 @@ SandboxVars = {
     PlayerDamageFromCrash = false,
     -- How many in-game hours before a wailing siren shuts off. Min: 0,00 Max: 168,00 Default: 0,00
     SirenShutoffHours = 0.0,
-    -- The chance of finding a vehicle with gas in its tank. Default = Low
+    -- The chance of finding a vehicle with gas in its tank. Default = Normal
     -- 1 = Low
     -- 2 = Normal
     -- 3 = High
@@ -731,7 +731,7 @@ SandboxVars = {
     MuscleStrainFactor = 0.7,
     -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 0,80
     DiscomfortFactor = 0.8,
-    -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 0,00
+    -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 1,00
     WoundInfectionFactor = 1.0,
     -- If true clothing with randomized tints will not be so dark to be virtually black.
     NoBlackClothes = true,
@@ -739,7 +739,10 @@ SandboxVars = {
     EasyClimbing = false,
     -- The maximum hours of fuel that can be placed in a campfire, wood stove etc. Min: 1 Max: 168 Default: 8
     MaximumFireFuelHours = 24,
-    -- Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming.
+    -- Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming. Default = Zombies only
+    -- 1 = Disabled
+    -- 2 = Zombies only
+    -- 3 = All types of target
     FirearmUseDamageChance = 3,
     -- A multiplier for the distance at which zombies can hear gunshots. Min: 0,20 Max: 2,00 Default: 1,00
     FirearmNoiseMultiplier = 1.0,
@@ -830,7 +833,7 @@ SandboxVars = {
         -- 3 = Basic Navigation
         -- 4 = Random
         Cognition = 2,
-        -- Min: 0 Max: 100 Default: 33
+        -- Min: 0 Max: 100 Default: 0
         DoorOpeningPercentage = 0,
         -- How often zombies can crawl under parked vehicles. Default = Often
         -- 1 = Crawlers Only
@@ -1040,27 +1043,6 @@ SandboxVars = {
         NormalGhostTime = 1,
         -- Min: 1 Max: 500 Default: 10
         NewStartTime = 1,
-    },
-    BLTRandomZombies = {
-        -- Min: 0,00 Max: 100,00 Default: 2,00
-        Crawler = 0.0,
-        -- Min: 0,00 Max: 100,00 Default: 15,00
-        Shambler = 17.0,
-        -- Min: 0,00 Max: 100,00 Default: 78,00
-        FastShambler = 80.0,
-        -- Min: 0,00 Max: 100,00 Default: 5,00
-        Sprinter = 3.0,
-        -- Min: 0,00 Max: 100,00 Default: 0,00
-        Fragile = 0.0,
-        -- Min: 0,00 Max: 100,00 Default: 100,00
-        NormalTough = 100.0,
-        -- Min: 0,00 Max: 100,00 Default: 0,00
-        Tough = 0.0,
-        -- Min: 0,00 Max: 100,00 Default: 0,00
-        Smart = 0.0,
-        CheckConfig = true,
-        -- Min: 1000 Max: 60000 Default: 7500
-        Frequency = 7500,
     },
     InteractiveTailoring = {
         -- Min: 0 Max: 9999 Default: 12
@@ -1380,38 +1362,6 @@ SandboxVars = {
         AOSevereTraumas = false,
         AOIgnoreRunningEngine = false,
     },
-    SkillRecoveryJournal = {
-        -- Min: 1 Max: 100 Default: 100
-        RecoveryPercentage = 100,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        TranscribeSpeed = 4.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        ReadTimeSpeed = 4.0,
-        RecoverProfessionAndTraitsBonuses = false,
-        TranscribeTVXP = false,
-        -- Min: -1 Max: 100 Default: 0
-        RecoverPassiveSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverPhysicalCategorySkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverCombatSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverFirearmSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverCraftingSkills = -1,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverSurvivalistSkills = -1,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverFarmingCategorySkills = -1,
-        -- Min: -1 Max: 100 Default: 0
-        KillsTrack = 0,
-        RecoverRecipes = true,
-        RecoveryJournalUsed = false,
-        SecurityFeatures = 1,
-        CraftRecipeNeedLearn = false,
-        CraftRecipe = "",
-        ModDataTrack = "",
-    },
     Plumbing = {
         -- Min: 0,00 Max: 0,10 Default: 0,01
         PumpFilterUsage = 0.007,
@@ -1437,58 +1387,11 @@ SandboxVars = {
         -- Min: 0,01 Max: 20,00 Default: 2,00
         SandbagWeight = 2.0,
     },
-    LanternFix = {
-        PropaneLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        PropaneLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        PropaneLanternColorGreen = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,44
-        PropaneLanternColorBlue = 0.44,
-        -- Min: 2 Max: 14 Default: 7
-        PropaneLanternRadius = 7,
-        HurricaneLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        HurricaneLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        HurricaneLanternColorGreen = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,33
-        HurricaneLanternColorBlue = 0.33,
-        -- Min: 2 Max: 14 Default: 7
-        HurricaneLanternRadius = 7,
-        ImprovisedLanternHeader = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorRed = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorGreen = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
-        ImprovisedLanternColorBlue = 0.5,
-        -- Min: 2 Max: 14 Default: 7
-        ImprovisedLanternRadius = 7,
-        FlashlightHeader = false,
-        FlashlightEnabled = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorRed = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorGreen = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
-        FlashlightColorBlue = 0.4,
-        -- Min: 2 Max: 7 Default: 4
-        FlashlightRadius = 4,
-    },
     ForcedSync = {
         ForceSyncOnKey = true,
         ForceSyncOnWeaponHitCharacter = true,
         ForceSyncOnWeaponSwing = true,
         ForceSyncOnHitZombie = true,
-    },
-    HorseMod = {
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        WalkSpeed = 1.0,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        GallopSpeed = 1.0,
-        -- Min: 0,10 Max: 2,00 Default: 1,00
-        StaminaMultiplier = 1.0,
     },
     BuildablePump = {
         -- Min: 0 Max: 10 Default: 5
@@ -1747,8 +1650,8 @@ SandboxVars = {
         DurabilityMultiplier = 100,
         -- Min: 1 Max: 5 Default: 1
         MaxCartsPerBuilding = 1,
-        -- Min: 0 Max: 100 Default: 100
-        WeightReductionMultiplier = 100,
+        -- Min: 0 Max: 99 Default: 95
+        WeightReduction = 95,
         -- Min: 0 Max: 200 Default: 100
         SpeedPenaltyMultiplier = 100,
         -- Min: 25 Max: 400 Default: 100
@@ -1757,6 +1660,7 @@ SandboxVars = {
         RepairTimeMultiplier = 100,
         MaintenanceSkillBonus = true,
         EnableDebugLogs = false,
+        StrictShopOnly = false,
     },
     DecayVehicle = {
         -- Min: 0,00 Max: 1000,00 Default: 435,00
@@ -1859,5 +1763,52 @@ SandboxVars = {
         SunFadeRate = 1.0,
         -- Min: 0,00 Max: 1,00 Default: 0,50
         SunFadeMinSaturation = 0.5,
+    },
+    HorseMod = {
+        -- Min: 0,10 Max: 10,00 Default: 1,00
+        WalkSpeed = 1.0,
+        -- Min: 0,10 Max: 10,00 Default: 1,00
+        GallopSpeed = 1.0,
+        -- Min: 0,10 Max: 2,00 Default: 1,00
+        StaminaMultiplier = 1.0,
+    },
+    LanternFix = {
+        PropaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,44
+        PropaneLanternColorBlue = 0.44,
+        -- Min: 2 Max: 14 Default: 7
+        PropaneLanternRadius = 7,
+        HurricaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        HurricaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        HurricaneLanternColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,33
+        HurricaneLanternColorBlue = 0.33,
+        -- Min: 2 Max: 14 Default: 7
+        HurricaneLanternRadius = 7,
+        ImprovisedLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorBlue = 0.5,
+        -- Min: 2 Max: 14 Default: 7
+        ImprovisedLanternRadius = 7,
+        FlashlightHeader = false,
+        FlashlightEnabled = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorRed = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorBlue = 0.4,
+        -- Min: 2 Max: 7 Default: 4
+        FlashlightRadius = 4,
     },
 }
