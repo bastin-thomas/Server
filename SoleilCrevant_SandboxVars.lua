@@ -1038,7 +1038,7 @@ SandboxVars = {
         QuitDelaySeconds = 25,
     },
     MinidoracatSafeSpawn = {
-        EnableGhostOnSpawn = false,
+        EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
         NormalGhostTime = 1,
         -- Min: 1 Max: 500 Default: 10
