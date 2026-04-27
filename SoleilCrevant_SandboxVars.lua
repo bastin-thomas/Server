@@ -1442,6 +1442,7 @@ SandboxVars = {
     },
     SaucedCarts = {
         EnableMod = true,
+        EnableCorpseStorage = true,
         -- Min: 0 Max: 500 Default: 100
         SpawnRate = 50,
         -- Min: 25 Max: 400 Default: 100
@@ -1610,5 +1611,26 @@ SandboxVars = {
         SunFadeRate = 1.0,
         -- Min: 0,00 Max: 1,00 Default: 0,50
         SunFadeMinSaturation = 0.5,
+    },
+    PZPW = {
+        ArrowDown = true,
+        ArrowLeft = true,
+        ArrowRight = true,
+        ArrowUp = true,
+        Check = true,
+        DeadInside = true,
+        DeadInside2 = true,
+        DoNotEnter = true,
+        DontOpen = true,
+        DoubleBang = false,
+        Empty = true,
+        FriendlyHere = true,
+        FuckOff = true,
+        GG = false,
+        GoAway = true,
+        O = true,
+        Question = true,
+        SafeZone = true,
+        X = true,
     },
 }
