@@ -1044,6 +1044,9 @@ SandboxVars = {
         -- Min: 1 Max: 500 Default: 10
         NewStartTime = 1,
     },
+    LuaDigitalWatchUI = {
+        MinuteResolution = 1,
+    },
     InteractiveTailoring = {
         -- Min: 0 Max: 9999 Default: 12
         BonusXP = 6,
@@ -1061,6 +1064,17 @@ SandboxVars = {
         MaxAdoptedAnimalsPerPlayer = 0,
         -- Min: 0 Max: 999 Default: 0
         AdoptionExpiryDays = 128,
+    },
+    VMZ = {
+        SpecCar = false,
+        -- Min: 0 Max: 100 Default: 16
+        SpawnRate = 16,
+        -- Min: 0 Max: 100 Default: 50
+        VehiCond = 50,
+        -- Min: 0 Max: 100 Default: 0
+        PartDamage = 0,
+        -- Min: 0 Max: 100 Default: 70
+        KeySpawn = 70,
     },
     DAMN = {
         AllowGreatScottSpawns = false,
@@ -1349,6 +1363,50 @@ SandboxVars = {
         AOSevereTraumas = false,
         AOIgnoreRunningEngine = false,
     },
+    RealisticCold = {
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        HeatDistanceExponent = 1.0,
+        UseOneMinuteUpdates = false,
+        EnableFoodFreezingExperimental = false,
+        -- Min: 5,00 Max: 60,00 Default: 26,00
+        HeatTargetMaximum = 26.0,
+        -- Min: 0,00 Max: 60,00 Default: 25,00
+        VehicleHeaterMaxDelta = 25.0,
+        -- Min: 0 Max: 100 Default: 20
+        IndustrialHeaterSpawnRate = 20,
+        -- Min: 0,10 Max: 5,00 Default: 0,80
+        BreachWeightWindow = 0.8,
+        -- Min: 0,10 Max: 5,00 Default: 1,20
+        BreachWeightDoor = 1.2,
+        -- Min: 0,10 Max: 5,00 Default: 1,40
+        BreachWeightGap = 1.4,
+        -- Min: 1,00 Max: 10,00 Default: 6,00
+        ExposureCap = 6.0,
+        -- Min: 1 Max: 200 Default: 45
+        ColdWorsenPerHour = 45,
+        -- Min: 1 Max: 200 Default: 24
+        ColdRecoverPerHour = 24,
+        -- Min: 1 Max: 200 Default: 36
+        ColdMedicineDecayPerHour = 36,
+        -- Min: 0,10 Max: 5,00 Default: 1,00
+        ColdSicknessMultiplier = 1.0,
+        -- Min: 1 Max: 4 Default: 2
+        CatchColdThreshold = 2,
+        -- Min: 0,10 Max: 5,00 Default: 1,75
+        CatchColdRateMultiplier = 1.75,
+        -- Min: -30,00 Max: 25,00 Default: 16,00
+        ChillyAirThreshold = 16.0,
+        -- Min: 0,00 Max: 2,00 Default: 0,90
+        ChillyCoolingMultiplierThreshold = 0.9,
+        -- Min: 0,00 Max: 2,00 Default: 1,50
+        ChillyInsulationThreshold = 1.5,
+        -- Min: 0,10 Max: 10,00 Default: 4,00
+        ClothingInsulationScale = 4.0,
+        -- Min: 0,10 Max: 10,00 Default: 0,20
+        HypothermiaDamageIntervalMin = 0.2,
+        -- Min: 0,10 Max: 5,00 Default: 0,20
+        HypothermiaDamagePerTick = 0.2,
+    },
     Plumbing = {
         -- Min: 0,00 Max: 0,10 Default: 0,01
         PumpFilterUsage = 0.007,
@@ -1509,6 +1567,29 @@ SandboxVars = {
         FlashlightColorBlue = 0.4,
         -- Min: 2 Max: 7 Default: 4
         FlashlightRadius = 4,
+    },
+    ISA = {
+        ChargeFreq = 1,
+        DrainCalc = 2,
+        -- Min: 1 Max: 100 Default: 25
+        solarPanelEfficiency = 25,
+        -- Min: 0 Max: 1000 Default: 100
+        batteryDegradeChance = 100,
+        -- Min: 1 Max: 10000 Default: 100
+        DIYBatteryMultiplier = 100,
+        -- Min: 0 Max: 100 Default: 25
+        solarPanelWorldSpawns = 25,
+        BatteryBankSpawn = 3,
+        StashMode = 1,
+        -- Min: 0,00 Max: 100,00 Default: 1,00
+        LRMSolarPanels = 1.0,
+        -- Min: 0,00 Max: 100,00 Default: 1,00
+        LRMBatteries = 1.0,
+        -- Min: 0,00 Max: 100,00 Default: 1,00
+        LRMMisc = 1.0,
+        -- Min: 1 Max: 1440 Default: 30
+        ConnectPanelMin = 30,
+        enableExpandedRecipes = false,
     },
     DecayVehicle = {
         -- Min: 0,00 Max: 1000,00 Default: 435,00
