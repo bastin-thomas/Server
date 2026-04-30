@@ -730,7 +730,7 @@ SandboxVars = {
     -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0,00 Max: 10,00 Default: 0,70
     MuscleStrainFactor = 0.7,
     -- Functions as a multiplier when applying discomfort from worn items. Min: 0,00 Max: 10,00 Default: 0,80
-    DiscomfortFactor = 0.8,
+    DiscomfortFactor = 0.4,
     -- If greater than zero damage can be taken from serious wound infections. Min: 0,00 Max: 10,00 Default: 1,00
     WoundInfectionFactor = 1.0,
     -- If true clothing with randomized tints will not be so dark to be virtually black.
