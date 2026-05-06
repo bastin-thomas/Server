@@ -724,7 +724,7 @@ SandboxVars = {
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Min: 0,00 Max: 2,00 Default: 0,50
     RuralLooted = 0.25,
     -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Min: 0 Max: 100 Default: 20
-    MaximumDiminishedLoot = 20,
+    MaximumDiminishedLoot = 80,
     -- How long it takes for Maximum Diminished Loot Percentage to be reached. Min: 0 Max: 3650 Default: 3650
     DaysUntilMaximumDiminishedLoot = 3650,
     -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0,00 Max: 10,00 Default: 0,70
@@ -1040,7 +1040,7 @@ SandboxVars = {
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 1,
+        NormalGhostTime = 3,
         -- Min: 1 Max: 500 Default: 10
         NewStartTime = 1,
     },
