@@ -1051,6 +1051,21 @@ SandboxVars = {
         -- Min: 0 Max: 9999 Default: 12
         BonusXP = 6,
     },
+    RainCleansBlood = {
+        -- Min: 1 Max: 60 Default: 10
+        TilesPerMinute = 10,
+        -- Min: 0,05 Max: 0,95 Default: 0,25
+        WeatherThreshold = 0.25,
+        AlsoCleanAsh = true,
+        AlsoCleanInside = false,
+        AlsoCleanVehicles = true,
+        -- Min: 0,10 Max: 1,00 Default: 0,10
+        VehicleCleanSpeed = 0.1,
+        AlsoCleanClothes = true,
+        -- Min: 1,00 Max: 10,00 Default: 1,00
+        ClothesCleanSpeed = 1.0,
+        AlwaysClean = false,
+    },
     AACS = {
         AllowFaction = true,
         AllowSafehouse = true,
@@ -1066,6 +1081,7 @@ SandboxVars = {
         AdoptionExpiryDays = 128,
     },
     VMZ = {
+        RoadStories = false,
         SpecCar = false,
         -- Min: 0 Max: 100 Default: 16
         SpawnRate = 16,
@@ -1079,10 +1095,11 @@ SandboxVars = {
     DAMN = {
         AllowGreatScottSpawns = false,
         AllowPro440Spawns = true,
+        AllowDemonChildSpawns = false,
         AllowWreckyMcChevySpawns = true,
     },
     AutoMechanics = {
-        -- Min: 0 Max: 100 Default: 0
+        -- Min: 0 Max: 100 Default: 100
         ConditionLossPercentageThreshold = 0,
     },
     DestroyBoulder = {
@@ -1263,6 +1280,8 @@ SandboxVars = {
         CleaningLitterChance = 3,
     },
     LSArt = {
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        GeneralBeautyMultiplier = 3.0,
         BeautyOutdoors = false,
         BeautyShowNegative = false,
         BeautyNeedDecayRate = 1,
@@ -1364,48 +1383,61 @@ SandboxVars = {
         AOIgnoreRunningEngine = false,
     },
     RealisticCold = {
-        -- Min: 0,10 Max: 3,00 Default: 1,00
-        HeatDistanceExponent = 1.0,
-        UseOneMinuteUpdates = false,
+        -- Min: 0,10 Max: 10,00 Default: 4,00
+        ClothingInsulationScale = 4.0,
         EnableFoodFreezingExperimental = false,
-        -- Min: 5,00 Max: 60,00 Default: 26,00
-        HeatTargetMaximum = 26.0,
-        -- Min: 0,00 Max: 60,00 Default: 25,00
-        VehicleHeaterMaxDelta = 25.0,
-        -- Min: 0 Max: 100 Default: 20
-        IndustrialHeaterSpawnRate = 20,
-        -- Min: 0,10 Max: 5,00 Default: 0,80
-        BreachWeightWindow = 0.8,
-        -- Min: 0,10 Max: 5,00 Default: 1,20
-        BreachWeightDoor = 1.2,
-        -- Min: 0,10 Max: 5,00 Default: 1,40
-        BreachWeightGap = 1.4,
-        -- Min: 1,00 Max: 10,00 Default: 6,00
-        ExposureCap = 6.0,
-        -- Min: 1 Max: 200 Default: 45
-        ColdWorsenPerHour = 45,
-        -- Min: 1 Max: 200 Default: 24
-        ColdRecoverPerHour = 24,
-        -- Min: 1 Max: 200 Default: 36
-        ColdMedicineDecayPerHour = 36,
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        SweatRateMultiplier = 1.0,
+        -- Min: 0,00 Max: 3,00 Default: 1,00
+        EvapCoolingStrength = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,30
+        InsulationSpreadBias = 0.3,
+        -- Min: 0,00 Max: 3,00 Default: 1,00
+        ConvectiveBridgeStrength = 1.0,
+        -- Min: 0,10 Max: 2,00 Default: 0,50
+        WarmingRateCapCPM = 0.5,
         -- Min: 0,10 Max: 5,00 Default: 1,00
         ColdSicknessMultiplier = 1.0,
         -- Min: 1 Max: 4 Default: 2
         CatchColdThreshold = 2,
         -- Min: 0,10 Max: 5,00 Default: 1,75
         CatchColdRateMultiplier = 1.75,
+        -- Min: 1 Max: 200 Default: 45
+        ColdWorsenPerHour = 45,
+        -- Min: 1 Max: 200 Default: 24
+        ColdRecoverPerHour = 24,
+        -- Min: 1 Max: 200 Default: 36
+        ColdMedicineDecayPerHour = 36,
+        -- Min: 0,10 Max: 10,00 Default: 0,20
+        HypothermiaDamageIntervalMin = 0.2,
+        -- Min: 0,10 Max: 5,00 Default: 0,20
+        HypothermiaDamagePerTick = 0.2,
         -- Min: -30,00 Max: 25,00 Default: 16,00
         ChillyAirThreshold = 16.0,
         -- Min: 0,00 Max: 2,00 Default: 0,90
         ChillyCoolingMultiplierThreshold = 0.9,
         -- Min: 0,00 Max: 2,00 Default: 1,50
         ChillyInsulationThreshold = 1.5,
-        -- Min: 0,10 Max: 10,00 Default: 4,00
-        ClothingInsulationScale = 4.0,
-        -- Min: 0,10 Max: 10,00 Default: 0,20
-        HypothermiaDamageIntervalMin = 0.2,
-        -- Min: 0,10 Max: 5,00 Default: 0,20
-        HypothermiaDamagePerTick = 0.2,
+        -- Min: 5,00 Max: 60,00 Default: 26,00
+        HeatTargetMaximum = 26.0,
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        HeatDistanceExponent = 1.0,
+        -- Min: 0,00 Max: 60,00 Default: 25,00
+        VehicleHeaterMaxDelta = 25.0,
+        -- Min: 0 Max: 100 Default: 20
+        IndustrialHeaterSpawnRate = 20,
+        -- Min: 1,00 Max: 10,00 Default: 6,00
+        ExposureCap = 6.0,
+        -- Min: 0,10 Max: 5,00 Default: 0,80
+        BreachWeightWindow = 0.8,
+        -- Min: 0,10 Max: 5,00 Default: 1,20
+        BreachWeightDoor = 1.2,
+        -- Min: 0,10 Max: 5,00 Default: 1,40
+        BreachWeightGap = 1.4,
+        -- Min: 0,10 Max: 5,00 Default: 0,30
+        BreachWeightCurtain = 0.3,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        SealedPassiveTransferStrength = 1.0,
     },
     Plumbing = {
         -- Min: 0,00 Max: 0,10 Default: 0,01
@@ -1459,38 +1491,6 @@ SandboxVars = {
     RepairableWindows = {
         BreakChance = 1,
     },
-    SkillRecoveryJournal = {
-        -- Min: 1 Max: 100 Default: 100
-        RecoveryPercentage = 100,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        TranscribeSpeed = 4.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        ReadTimeSpeed = 4.0,
-        RecoverProfessionAndTraitsBonuses = false,
-        TranscribeTVXP = false,
-        -- Min: -1 Max: 100 Default: 0
-        RecoverPassiveSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverPhysicalCategorySkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverCombatSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverFirearmSkills = 75,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverCraftingSkills = 100,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverSurvivalistSkills = 100,
-        -- Min: -1 Max: 100 Default: -1
-        RecoverFarmingCategorySkills = 100,
-        -- Min: -1 Max: 100 Default: 0
-        KillsTrack = 0,
-        RecoverRecipes = true,
-        RecoveryJournalUsed = false,
-        SecurityFeatures = 1,
-        CraftRecipeNeedLearn = false,
-        CraftRecipe = "",
-        ModDataTrack = "",
-    },
     B42Horticulture = {
         LearnedRecipe = true,
     },
@@ -1520,6 +1520,7 @@ SandboxVars = {
         MaintenanceSkillBonus = true,
         EnableDebugLogs = false,
         StrictShopOnly = true,
+        EnableOutdoorSpawns = true,
     },
     HorseMod = {
         -- Min: 0,10 Max: 10,00 Default: 1,00
