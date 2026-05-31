@@ -1044,6 +1044,37 @@ SandboxVars = {
         -- Min: 1 Max: 500 Default: 10
         NewStartTime = 1,
     },
+    PZTrueMusicSandbox = {
+        SpawnTrueMoozicVan = false,
+        -- Min: 0 Max: 100 Default: 5
+        SkypeRingChance = 5,
+        -- Min: 1 Max: 365 Default: 47
+        SkypeRingCooldownDays = 47,
+        -- Min: 0 Max: 100000 Default: 100
+        CassetteSpawnRate = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        CassetteCaseSpawnRate = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        VinylSpawn = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        VinylPlayerSpawn = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        WalkmanSpawn = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        BoomboxSpawn = 100,
+        -- Min: 0 Max: 100000 Default: 100
+        ZombieWalkmanSpawnRate = 100,
+        StartWithDevice = 1,
+        -- Min: 600 Max: 172800 Default: 2100
+        MusicPlaybackTimeoutSeconds = 2100,
+        -- Min: 1 Max: 50 Default: 5
+        MusicTimer = 5,
+        EnableDisassembly = true,
+        TMSpeakerDebug = false,
+        AudioSilenceDebug = false,
+        SkypeRingDebugAlwaysFire = false,
+        SkypeRingEnabled = true,
+    },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
     },
@@ -1175,40 +1206,6 @@ SandboxVars = {
         EnableGodRays = true,
         EnableStormMood = true,
         StormMoodPreset = 2,
-    },
-    ImmersiveBlackouts = {
-        DaysReset = false,
-        LightsFlickering = true,
-        FlickerAroundPlayers = false,
-        -- Min: 0 Max: 100 Default: 1
-        WaterPercentOFF = 1,
-        -- Min: 0 Max: 100 Default: 5
-        WaterPercentON = 5,
-        -- Min: 0 Max: 168 Default: 0
-        WaterCooldown = 0,
-        -- Min: 0 Max: 100 Default: 1
-        ElectricityPercentOFF = 1,
-        -- Min: 0 Max: 100 Default: 5
-        ElectricityPercentON = 5,
-        -- Min: 0 Max: 168 Default: 0
-        ElectricityCooldown = 0,
-        -- Min: 1 Max: 2147483647 Default: 7
-        StartDay = 7,
-        IgnoreStartDay = false,
-    },
-    ImmersiveWaterShutoff = {
-        WaterRemovalMode = 3,
-        ToiletsKeepWater = true,
-        BathsKeepWater = false,
-        FillableBaths = true,
-        -- Min: 0 Max: 100 Default: 10
-        BathPercent = 10,
-        -- Min: 0 Max: 100 Default: 90
-        MinPercent = 90,
-        -- Min: 0 Max: 100 Default: 100
-        MaxPercent = 100,
-        -- Min: -1 Max: 100000 Default: -1
-        TaintedWater = -1,
     },
     Text = {
         DividerMusicNew = true,
@@ -1591,6 +1588,65 @@ SandboxVars = {
         -- Min: 1 Max: 1440 Default: 30
         ConnectPanelMin = 30,
         enableExpandedRecipes = false,
+    },
+    EPR = {
+        -- Min: 0,25 Max: 4,00 Default: 1,00
+        RepairSpeedMultiplier = 1.0,
+        -- Min: 5 Max: 120 Default: 30
+        AssessmentTimeMinutes = 30,
+        -- Min: 60 Max: 960 Default: 360
+        PartReplacementTimeMinutes = 360,
+        -- Min: 15 Max: 240 Default: 90
+        CalibrationTimeMinutes = 90,
+        -- Min: 1 Max: 30 Default: 5
+        StartupDefenseTimeMinutes = 5,
+        -- Min: 0,50 Max: 2,00 Default: 1,00
+        SkillRequirementMultiplier = 1.0,
+        -- Min: 1 Max: 10 Default: 7
+        MinElectricalSkill = 7,
+        -- Min: 1 Max: 10 Default: 4
+        MinMetalworkSkill = 4,
+        -- Min: 1 Max: 5 Default: 2
+        FieldComponentCount = 2,
+        -- Min: 1 Max: 10 Default: 5
+        WaterPlantElectricalSkill = 5,
+        -- Min: 1 Max: 10 Default: 5
+        WaterPlantMetalworkSkill = 5,
+        -- Min: 0,25 Max: 4,00 Default: 1,00
+        DegradationRate = 1.0,
+        RandomBreakdownEnabled = true,
+        BreakdownWarningEnabled = true,
+        ZombieAttractionEnabled = true,
+        -- Min: 0,00 Max: 3,00 Default: 1,00
+        ZombieAttractionMultiplier = 1.0,
+        -- Min: 25 Max: 200 Default: 100
+        RepairNoiseRadius = 100,
+        -- Min: 50 Max: 300 Default: 150
+        StartupNoiseRadius = 150,
+        -- Min: 0,50 Max: 8,00 Default: 1,00
+        PartRequirementMultiplier = 1.0,
+        -- Min: 0,50 Max: 8,00 Default: 1,00
+        MaintenancePartMultiplier = 1.0,
+        -- Min: 1 Max: 90 Default: 14
+        BuildingMaintenanceDays = 14,
+        RequireTools = true,
+        ToolsConsumed = true,
+        -- Min: 0,25 Max: 4,00 Default: 1,00
+        GeneratorFuelConsumption = 1.0,
+        GeneratorAutoConnect = true,
+        SpriteGeneratorVirtualOnly = true,
+        WaterTankRequiresPower = false,
+        ManualPumpEnabled = true,
+        RequirePrerequisite = true,
+        LouisvillePlantEnabled = true,
+        DebugMode = false,
+        ShowMapOverlay = false,
+        RequirePowerOff = true,
+        IBCompatMode = true,
+        StormBlackoutsEnabled = true,
+        -- Min: 0 Max: 100 Default: 25
+        StormBlackoutChancePerCheck = 15,
+        StormBlackoutRequireThunder = true,
     },
     DecayVehicle = {
         -- Min: 0,00 Max: 1000,00 Default: 435,00
