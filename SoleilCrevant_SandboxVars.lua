@@ -1517,7 +1517,7 @@ SandboxVars = {
         MaintenanceSkillBonus = true,
         EnableDebugLogs = false,
         StrictShopOnly = true,
-        EnableOutdoorSpawns = true,
+        OutdoorSpawnDensity = 3,
     },
     HorseMod = {
         -- Min: 0,10 Max: 10,00 Default: 1,00
@@ -1612,7 +1612,7 @@ SandboxVars = {
         WaterPlantElectricalSkill = 5,
         -- Min: 1 Max: 10 Default: 5
         WaterPlantMetalworkSkill = 5,
-        -- Min: 0,25 Max: 4,00 Default: 1,00
+        -- Min: 0,00 Max: 4,00 Default: 1,00
         DegradationRate = 1.0,
         RandomBreakdownEnabled = true,
         BreakdownWarningEnabled = true,
