@@ -1771,4 +1771,9 @@ SandboxVars = {
         SafeZone = true,
         X = true,
     },
+    DontTellMeMyPosition = {
+        ShowUnvisited = true,
+        ConvertNewKnownToVisited = true,
+        RequireCartographyItem = false,
+    },
 }
