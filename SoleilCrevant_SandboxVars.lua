@@ -211,7 +211,7 @@ SandboxVars = {
     -- 4 = Rainy
     -- 5 = Very Rainy
     Rain = 3,
-    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100%% growth. Default = Slow (200 Days)
+    -- Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100% growth. Default = Slow (200 Days)
     -- 1 = Very Fast (20 Days)
     -- 2 = Fast (50 Days)
     -- 3 = Normal (100 Days)
@@ -631,7 +631,7 @@ SandboxVars = {
     AnimalGrassRegrowTime = 240,
     -- If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night.
     AnimalMetaPredator = false,
-    -- If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round.
+    -- If on, animals will only mate during their breeding season (if any).  Otherwise they can reproduce/lay eggs all year round.
     AnimalMatingSeason = true,
     -- How long before baby animals will hatch from eggs. Default = Normal
     -- 1 = Ultra Fast
@@ -930,7 +930,7 @@ SandboxVars = {
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
         RallyGroupSize = 20,
-        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50%% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
+        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
         RallyGroupSizeVariance = 50,
         -- The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20
         RallyTravelDistance = 20,
