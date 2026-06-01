@@ -1051,9 +1051,9 @@ SandboxVars = {
         -- Min: 1 Max: 365 Default: 47
         SkypeRingCooldownDays = 47,
         -- Min: 0 Max: 100000 Default: 100
-        CassetteSpawnRate = 25,
+        CassetteSpawnRate = 15,
         -- Min: 0 Max: 100000 Default: 100
-        CassetteCaseSpawnRate = 25,
+        CassetteCaseSpawnRate = 15,
         -- Min: 0 Max: 100000 Default: 100
         VinylSpawn = 100,
         -- Min: 0 Max: 100000 Default: 100
