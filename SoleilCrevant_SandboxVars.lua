@@ -762,6 +762,9 @@ SandboxVars = {
     GeneratorTileRange = 20,
     -- How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3
     GeneratorVerticalPowerRange = 3,
+    DrugTime89_LootRarity = 2,
+    DrugTime89_ZombieLootRarity = 1,
+    DrugTime89_DebugLogs = false,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1771,9 +1774,48 @@ SandboxVars = {
         SafeZone = true,
         X = true,
     },
+    TOC = {
+        -- Min: 1 Max: 10 Default: 1
+        CicatrizationSpeed = 1,
+        -- Min: 0 Max: 5 Default: 1
+        WoundDirtynessMultiplier = 1,
+        -- Min: 1 Max: 3 Default: 2
+        SurgeonAbilityImportance = 2,
+    },
+    UnseasonalWeather = {
+        Enabled = true,
+        -- Min: 0 Max: 100 Default: 25
+        DailyEventChance = 25,
+        -- Min: 1 Max: 48 Default: 3
+        MinDuration = 3,
+        -- Min: 1 Max: 72 Default: 8
+        MaxDuration = 8,
+        -- Min: 0,20 Max: 3,00 Default: 1,00
+        IntensityMultiplier = 1.0,
+        HardcoreWinterTemps = false,
+        HardcoreSummerTemps = false,
+        DryEvents = false,
+        EnhancedRainExposure = true,
+        LightningAttractsZombiesGlobal = false,
+        ClockUIEnabled = true,
+    },
+    UW_RadioForecasting = {
+        Enabled = true,
+        UseNightWindow = false,
+        WalkieHints = true,
+        DebugLogging = false,
+    },
     DontTellMeMyPosition = {
         ShowUnvisited = true,
         ConvertNewKnownToVisited = true,
         RequireCartographyItem = false,
+    },
+    NoCheesyFenceKills = {
+        -- Min: 1 Max: 100 Default: 50
+        knockdownChance = 50,
+        -- Min: 2 Max: 8 Default: 4
+        maxDistanceSQ = 2,
+        -- Min: 1 Max: 1000 Default: 100
+        knockdownDelayMS = 100,
     },
 }
