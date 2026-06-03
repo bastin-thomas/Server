@@ -1043,9 +1043,9 @@ SandboxVars = {
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 3,
+        NormalGhostTime = 5,
         -- Min: 1 Max: 500 Default: 10
-        NewStartTime = 1,
+        NewStartTime = 5,
     },
     PZTrueMusicSandbox = {
         SpawnTrueMoozicVan = false,
