@@ -1131,6 +1131,18 @@ SandboxVars = {
         AllowPro440Spawns = true,
         AllowDemonChildSpawns = false,
         AllowWreckyMcChevySpawns = true,
+        AllowShitSpawns = true,
+        AllowSuckyMcSuckfaceSpawns = true,
+    },
+    CF8KSweeper = {
+        AllowTiles = true,
+        SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
+        AllowBlood = true,
+        AllowGrime = true,
+        AllowAshes = true,
+        AllowItems = true,
+        AllowCorpses = true,
+        AllowUserAutoDelete = false,
     },
     AutoMechanics = {
         -- Min: 0 Max: 100 Default: 100
