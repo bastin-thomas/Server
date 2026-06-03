@@ -1794,29 +1794,6 @@ SandboxVars = {
         -- Min: 1 Max: 3 Default: 2
         SurgeonAbilityImportance = 2,
     },
-    UnseasonalWeather = {
-        Enabled = true,
-        -- Min: 0 Max: 100 Default: 25
-        DailyEventChance = 25,
-        -- Min: 1 Max: 48 Default: 3
-        MinDuration = 3,
-        -- Min: 1 Max: 72 Default: 8
-        MaxDuration = 8,
-        -- Min: 0,20 Max: 3,00 Default: 1,00
-        IntensityMultiplier = 1.0,
-        HardcoreWinterTemps = false,
-        HardcoreSummerTemps = false,
-        DryEvents = false,
-        EnhancedRainExposure = true,
-        LightningAttractsZombiesGlobal = false,
-        ClockUIEnabled = true,
-    },
-    UW_RadioForecasting = {
-        Enabled = true,
-        UseNightWindow = false,
-        WalkieHints = true,
-        DebugLogging = false,
-    },
     DontTellMeMyPosition = {
         ShowUnvisited = true,
         ConvertNewKnownToVisited = true,
