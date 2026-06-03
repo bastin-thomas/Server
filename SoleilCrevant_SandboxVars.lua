@@ -1227,7 +1227,7 @@ SandboxVars = {
         DividerDancingNew = true,
         DividerMeditationNew = true,
         DividerHygiene = true,
-        DividerArt = false,
+        DividerArt = true,
         LSDividerOther = false,
         DividerDebug = false,
     },
@@ -1293,7 +1293,7 @@ SandboxVars = {
     },
     LSArt = {
         -- Min: 0,10 Max: 3,00 Default: 1,00
-        GeneralBeautyMultiplier = 3.0,
+        GeneralBeautyMultiplier = 0.0,
         BeautyOutdoors = false,
         BeautyShowNegative = false,
         BeautyNeedDecayRate = 1,
