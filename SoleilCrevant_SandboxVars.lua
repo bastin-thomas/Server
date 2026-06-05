@@ -1807,4 +1807,41 @@ SandboxVars = {
         -- Min: 1 Max: 1000 Default: 100
         knockdownDelayMS = 100,
     },
+    ComputerMod = {
+        -- Min: 0 Max: 100 Default: 14
+        DiscSpawnChance = 14,
+        -- Min: 0 Max: 300 Default: 100
+        GameDiscWeightPercent = 100,
+        -- Min: 0 Max: 300 Default: 100
+        SystemDiscWeightPercent = 100,
+        -- Min: 0 Max: 300 Default: 100
+        BlankDiscWeightPercent = 100,
+        -- Min: 0 Max: 300 Default: 100
+        HackDiscWeightPercent = 100,
+        -- Min: 0 Max: 100 Default: 60
+        PreinstalledGameChance = 60,
+        -- Min: 0 Max: 100 Default: 34
+        PasswordChance = 34,
+        -- Min: 0 Max: 10 Default: 1
+        HackRequiredElectricalLevel = 1,
+        -- Min: 0 Max: 100 Default: 28
+        EmptyFolderChance = 28,
+        -- Min: 0 Max: 100 Default: 12
+        FolderMagazineChance = 12,
+        -- Min: 0 Max: 100 Default: 18
+        FolderNewspaperChance = 18,
+        -- Min: 0 Max: 100 Default: 9
+        FolderVideoChance = 9,
+        -- Min: 0 Max: 100 Default: 42
+        MailAccountChance = 42,
+        -- Min: 0 Max: 100 Default: 55
+        MailLoggedInChance = 55,
+        -- Min: 0 Max: 100 Default: 28
+        SecretSiteHintChance = 28,
+    },
+    ArmorMakesSense = {
+        EnableThermalModel = true,
+        EnableMuscleStrainModel = true,
+        EnableSleepPenaltyModel = false,
+    },
 }
