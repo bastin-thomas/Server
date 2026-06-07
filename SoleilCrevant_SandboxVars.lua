@@ -295,7 +295,7 @@ SandboxVars = {
     -- Items will not respawn in buildings that players have barricaded or built in.
     ConstructionPreventsLootRespawn = true,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay,Skateboard.Skateboard,Base.LargeStone",
+    WorldItemRemovalList = "Base.FabricRoll_Cotton,Base.FabricRoll_DenimDarkBlue,Base.FabricRoll_DenimBlack,Base.FabricRoll_DenimBlue,Base.PropaneTank,Base.Hat,Base.Glasses,Base.Maggots,Base.Slug,Base.Slug2,Base.Snail,Base.Worm,Base.Dung_Cow,Base.Dung_Pig,Base.Dung_Sheep,Base.Dung_Turkey,Base.Dung_Chicken,Base.Dung_Rabbit,Base.Dung_Raccoon,Base.LogStacks4,Base.LogStacks3,Base.LogStacks2,Base.Coke,Base.Charcoal,Base.Clay,Skateboard.Skateboard,Base.LargeStone,Base.Sledgehammer,Base.Sledgehammer2,Base.SledgehammerForged,",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.   Zero means items are not removed. Min: 0,00 Max: 2147483647,00 Default: 24,00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
@@ -928,7 +928,7 @@ SandboxVars = {
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,00
         RespawnMultiplier = 0.75,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0,00 Max: 8760,00 Default: 12,00
-        RedistributeHours = 48.0,
+        RedistributeHours = 24.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
