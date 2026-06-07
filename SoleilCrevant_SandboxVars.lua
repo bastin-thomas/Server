@@ -712,7 +712,7 @@ SandboxVars = {
     -- When enabled, the growth of plants is affected by seasons.
     PlantGrowingSeasons = true,
     -- <BHC> [!] It is recommended that you DO NOT change this. Changing this can result in performance issues. [!] <RGB:1,1,1>   When enabled, dirt can be placed, and farming performed on other than the ground level.
-    PlaceDirtAboveground = false,
+    PlaceDirtAboveground = true,
     -- The speed of plant growth. Min: 0,10 Max: 100,00 Default: 1,00
     FarmingSpeedNew = 1.0,
     -- The abundance of harvested crops. Min: 0,10 Max: 10,00 Default: 1,00
