@@ -922,7 +922,7 @@ SandboxVars = {
         -- The day when the population reaches its peak. Min: 1 Max: 365 Default: 28
         PopulationPeakDay = 365,
         -- The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0,00 Max: 8760,00 Default: 0,00
-        RespawnHours = 48.0,
+        RespawnHours = 144.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0,00 Max: 8760,00 Default: 0,00
         RespawnUnseenHours = 96.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,00
@@ -930,7 +930,7 @@ SandboxVars = {
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0,00 Max: 8760,00 Default: 12,00
         RedistributeHours = 24.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
-        FollowSoundDistance = 100,
+        FollowSoundDistance = 300,
         -- The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20
         RallyGroupSize = 20,
         -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50
