@@ -1391,7 +1391,7 @@ SandboxVars = {
         BatteryCapacity = 1.0,
         -- Min: 0,00 Max: 1,00 Default: 0,20
         BatteryCapacityLowConditionMultiplier = 0.2,
-        AOSevereTraumas = false,
+        AOSevereTraumas = true,
         AOIgnoreRunningEngine = false,
     },
     RealisticCold = {
