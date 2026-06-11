@@ -926,7 +926,7 @@ SandboxVars = {
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0,00 Max: 8760,00 Default: 0,00
         RespawnUnseenHours = 96.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0,00 Max: 1,00 Default: 0,00
-        RespawnMultiplier = 0.10,
+        RespawnMultiplier = 0.1,
         -- The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0,00 Max: 8760,00 Default: 12,00
         RedistributeHours = 24.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100
@@ -1047,37 +1047,6 @@ SandboxVars = {
         -- Min: 1 Max: 500 Default: 10
         NewStartTime = 5,
     },
-    PZTrueMusicSandbox = {
-        SpawnTrueMoozicVan = false,
-        -- Min: 0 Max: 100 Default: 5
-        SkypeRingChance = 5,
-        -- Min: 1 Max: 365 Default: 47
-        SkypeRingCooldownDays = 47,
-        -- Min: 0 Max: 100000 Default: 100
-        CassetteSpawnRate = 15,
-        -- Min: 0 Max: 100000 Default: 100
-        CassetteCaseSpawnRate = 15,
-        -- Min: 0 Max: 100000 Default: 100
-        VinylSpawn = 100,
-        -- Min: 0 Max: 100000 Default: 100
-        VinylPlayerSpawn = 100,
-        -- Min: 0 Max: 100000 Default: 100
-        WalkmanSpawn = 100,
-        -- Min: 0 Max: 100000 Default: 100
-        BoomboxSpawn = 100,
-        -- Min: 0 Max: 100000 Default: 100
-        ZombieWalkmanSpawnRate = 100,
-        StartWithDevice = 1,
-        -- Min: 600 Max: 172800 Default: 2100
-        MusicPlaybackTimeoutSeconds = 2100,
-        -- Min: 1 Max: 50 Default: 5
-        MusicTimer = 5,
-        EnableDisassembly = true,
-        TMSpeakerDebug = false,
-        AudioSilenceDebug = false,
-        SkypeRingDebugAlwaysFire = false,
-        SkypeRingEnabled = true,
-    },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
     },
@@ -1099,20 +1068,6 @@ SandboxVars = {
         -- Min: 1,00 Max: 10,00 Default: 1,00
         ClothesCleanSpeed = 1.0,
         AlwaysClean = false,
-    },
-    AACS = {
-        AllowFaction = true,
-        AllowSafehouse = true,
-        AdminBypass = true,
-        DefaultPickupMode = 1,
-        DefaultLeashMode = 1,
-        VerboseLogs = false,
-        RequireDocumentToAdopt = false,
-        ReturnDocumentOnUnadopt = true,
-        -- Min: 0 Max: 999 Default: 0
-        MaxAdoptedAnimalsPerPlayer = 0,
-        -- Min: 0 Max: 999 Default: 0
-        AdoptionExpiryDays = 128,
     },
     VMZ = {
         RoadStories = false,
@@ -1155,28 +1110,76 @@ SandboxVars = {
         RocksMax = 15,
         -- Min: 0 Max: 100 Default: 2
         IronOreChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        IronOreMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        IronOreMax = 1,
         -- Min: 0 Max: 100 Default: 2
         FlintChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        FlintMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        FlintMax = 1,
         -- Min: 0 Max: 100 Default: 2
         LargeStoneChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        LargeStoneMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        LargeStoneMax = 1,
         -- Min: 0 Max: 100 Default: 2
         IronBloomChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        IronBloomMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        IronBloomMax = 1,
         -- Min: 0 Max: 100 Default: 2
         AluminumFragmentsChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        AluminumFragmentsMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        AluminumFragmentsMax = 1,
         -- Min: 0 Max: 100 Default: 2
         CopperOreChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        CopperOreMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        CopperOreMax = 1,
         -- Min: 0 Max: 100 Default: 2
         FlatStoneChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        FlatStoneMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        FlatStoneMax = 1,
         -- Min: 0 Max: 100 Default: 2
         StoneBlockChance = 2,
+        -- Min: 0 Max: 50 Default: 1
+        StoneBlockMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        StoneBlockMax = 1,
         -- Min: 0 Max: 100 Default: 2
         SteelBlockChance = 0,
+        -- Min: 0 Max: 50 Default: 1
+        SteelBlockMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        SteelBlockMax = 1,
         -- Min: 0 Max: 100 Default: 2
         SteelPieceChance = 0,
+        -- Min: 0 Max: 50 Default: 1
+        SteelPieceMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        SteelPieceMax = 1,
         -- Min: 0 Max: 100 Default: 2
         SteelSlugChance = 0,
+        -- Min: 0 Max: 50 Default: 1
+        SteelSlugMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        SteelSlugMax = 1,
         -- Min: 0 Max: 100 Default: 10
         SharpenStoneChance = 10,
+        -- Min: 0 Max: 50 Default: 1
+        SharpenStoneMin = 1,
+        -- Min: 0 Max: 50 Default: 1
+        SharpenStoneMax = 1,
         -- Min: 1 Max: 10 Default: 2
         ToolUsesPerConditionLoss = 2,
     },
@@ -1650,6 +1653,7 @@ SandboxVars = {
         GeneratorFuelConsumption = 1.0,
         GeneratorAutoConnect = true,
         SpriteGeneratorVirtualOnly = true,
+        EnableSpriteGenerators = false,
         WaterTankRequiresPower = false,
         ManualPumpEnabled = true,
         RequirePrerequisite = true,
@@ -1832,6 +1836,17 @@ SandboxVars = {
         FolderNewspaperChance = 18,
         -- Min: 0 Max: 100 Default: 9
         FolderVideoChance = 9,
+        -- Min: 0 Max: 100 Default: 10
+        PaintFileChance = 10,
+        EnableBoardApp = true,
+        EnableChatApp = true,
+        EnableCommerceApp = true,
+        NetworkOutageOnPowerLoss = true,
+        NetworkTerminalNeedsPower = true,
+        -- Min: 1 Max: 168 Default: 24
+        MarketShopRefreshHours = 24,
+        -- Min: 1 Max: 168 Default: 24
+        MarketJobRefreshHours = 24,
         -- Min: 0 Max: 100 Default: 42
         MailAccountChance = 42,
         -- Min: 0 Max: 100 Default: 55
@@ -1843,5 +1858,28 @@ SandboxVars = {
         EnableThermalModel = true,
         EnableMuscleStrainModel = true,
         EnableSleepPenaltyModel = false,
+    },
+    NewMusic = {
+        -- Min: 0 Max: 36000 Default: 1500
+        MaxTrackingRange = 1500,
+        -- Min: 4 Max: 50 Default: 10
+        ActiveDeviceLimit = 10,
+        -- Min: 0,02 Max: 1000,00 Default: 24,00
+        BatteryDrainRate = 24.0,
+        Disassembly = true,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CassettesSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        VinylRecordsSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CDsSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        WalkmanSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        BoomboxSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CDPlayerSpawnRate = 0.6,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        RecordPlayerSpawnRate = 0.6,
     },
 }
