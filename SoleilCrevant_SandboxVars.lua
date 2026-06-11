@@ -1868,18 +1868,18 @@ SandboxVars = {
         BatteryDrainRate = 24.0,
         Disassembly = true,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        CassettesSpawnRate = 0.6,
+        CassettesSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        VinylRecordsSpawnRate = 0.6,
+        VinylRecordsSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        CDsSpawnRate = 0.6,
+        CDsSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        WalkmanSpawnRate = 0.6,
+        WalkmanSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        BoomboxSpawnRate = 0.6,
+        BoomboxSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        CDPlayerSpawnRate = 0.6,
+        CDPlayerSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        RecordPlayerSpawnRate = 0.6,
+        RecordPlayerSpawnRate = 0.3,
     },
 }
