@@ -765,6 +765,9 @@ SandboxVars = {
     DrugTime89_LootRarity = 2,
     DrugTime89_ZombieLootRarity = 1,
     DrugTime89_DebugLogs = false,
+    DrugTime89_EffectDuration = 1,
+    DrugTime89_SoftActionDuration = 1,
+    DrugTime89_HardActionDuration = 1,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1071,6 +1074,8 @@ SandboxVars = {
     },
     VMZ = {
         RoadStories = false,
+        -- Min: 0,00 Max: 2,00 Default: 1,00
+        RoadStoriesMultiplier = 0.01,
         SpecCar = false,
         -- Min: 0 Max: 100 Default: 16
         SpawnRate = 16,
@@ -1183,9 +1188,10 @@ SandboxVars = {
         -- Min: 1 Max: 10 Default: 2
         ToolUsesPerConditionLoss = 2,
     },
-    coldwinters = {
+    ColdWinters = {
         EnableBlizzards = true,
         GeneratorFailures = false,
+        EnableEaster = true,
     },
     Excavation = {
         DisableDepthLimit = false,
@@ -1219,6 +1225,7 @@ SandboxVars = {
         GenDiscoverRadius = 60,
         -- Min: 30 Max: 360 Default: 180
         TogglePollRadius = 180,
+        ExcludeSprites = "\"\"",
     },
     HereGoesTheSun = {
         EnableGodRays = true,
@@ -1291,6 +1298,8 @@ SandboxVars = {
         ColdSeverity = 2,
         -- Min: 0,00 Max: 3,00 Default: 0,00
         ColdChanceMultiplier = 0.0,
+        -- Min: 1 Max: 100 Default: 10
+        OuthouseRange = 10,
         CleaningExpectationTime = 2,
         CleaningLitterChance = 3,
     },
@@ -1536,6 +1545,7 @@ SandboxVars = {
         EnableDebugLogs = false,
         StrictShopOnly = true,
         OutdoorSpawnDensity = 3,
+        LoadedCartSpawns = 1,
     },
     HorseMod = {
         -- Min: 0,10 Max: 10,00 Default: 1,00
@@ -1826,6 +1836,10 @@ SandboxVars = {
         PreinstalledGameChance = 60,
         -- Min: 0 Max: 100 Default: 34
         PasswordChance = 34,
+        -- Min: 0 Max: 100 Default: 12
+        FramePasswordNoteChance = 12,
+        -- Min: 0 Max: 100 Default: 18
+        NearbyPasswordNoteChance = 18,
         -- Min: 0 Max: 10 Default: 1
         HackRequiredElectricalLevel = 1,
         -- Min: 0 Max: 100 Default: 28
@@ -1838,6 +1852,9 @@ SandboxVars = {
         FolderVideoChance = 9,
         -- Min: 0 Max: 100 Default: 10
         PaintFileChance = 10,
+        EnableGameInstallVirus = true,
+        -- Min: 0 Max: 100 Default: 8
+        GameInstallVirusChance = 8,
         EnableBoardApp = true,
         EnableChatApp = true,
         EnableCommerceApp = true,
@@ -1859,27 +1876,22 @@ SandboxVars = {
         EnableMuscleStrainModel = true,
         EnableSleepPenaltyModel = false,
     },
-    NewMusic = {
-        -- Min: 0 Max: 36000 Default: 1500
-        MaxTrackingRange = 1500,
-        -- Min: 4 Max: 50 Default: 10
-        ActiveDeviceLimit = 10,
-        -- Min: 0,02 Max: 1000,00 Default: 24,00
-        BatteryDrainRate = 12.0,
-        Disassembly = true,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        CassettesSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        VinylRecordsSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        CDsSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        WalkmanSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        BoomboxSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        CDPlayerSpawnRate = 0.6,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
-        RecordPlayerSpawnRate = 0.6,
+    OfflineSurvivorV2 = {
+        EnableMod = true,
+        EnableLoot = false,
+        -- Min: 1 Max: 20 Default: 3
+        LootMaxItems = 3,
+        -- Min: 0 Max: 720 Default: 24
+        LootCooldownHours = 24,
+        -- Min: 1 Max: 10 Default: 2
+        LootDistance = 2,
+        -- Min: 0 Max: 5 Default: 1
+        BedRadius = 2,
+        -- Min: 0 Max: 5 Default: 1
+        SofaRadius = 2,
+        -- Min: 0 Max: 720 Default: 0
+        DespawnHours = 0,
+        AdminTestBodyWhenHidden = false,
+        BlockAdminOfflineBodies = false,
     },
 }
