@@ -1053,24 +1053,13 @@ SandboxVars = {
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
     },
+    GWG = {
+        -- Min: 0 Max: 5 Default: 0
+        MultiplayerTick = 0,
+    },
     InteractiveTailoring = {
         -- Min: 0 Max: 9999 Default: 12
-        BonusXP = 6,
-    },
-    RainCleansBlood = {
-        -- Min: 1 Max: 60 Default: 10
-        TilesPerMinute = 10,
-        -- Min: 0,05 Max: 0,95 Default: 0,25
-        WeatherThreshold = 0.25,
-        AlsoCleanAsh = true,
-        AlsoCleanInside = false,
-        AlsoCleanVehicles = true,
-        -- Min: 0,10 Max: 1,00 Default: 0,10
-        VehicleCleanSpeed = 0.1,
-        AlsoCleanClothes = true,
-        -- Min: 1,00 Max: 10,00 Default: 1,00
-        ClothesCleanSpeed = 1.0,
-        AlwaysClean = false,
+        BonusXP = 12,
     },
     VMZ = {
         RoadStories = false,
@@ -1093,6 +1082,9 @@ SandboxVars = {
         AllowWreckyMcChevySpawns = true,
         AllowShitSpawns = true,
         AllowSuckyMcSuckfaceSpawns = true,
+        AllowEV6spawns = true,
+        AllowTBCspawns = true,
+        AllowUBCspawns = true,
     },
     CF8KSweeper = {
         AllowTiles = true,
@@ -1893,5 +1885,59 @@ SandboxVars = {
         DespawnHours = 0,
         AdminTestBodyWhenHidden = false,
         BlockAdminOfflineBodies = false,
+    },
+    JSling = {
+        EnableSlingLoot = true,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        SlingLootMultiplier = 0.3,
+        EnableAccessoryLoot = true,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        AccessoryLootMultiplier = 0.3,
+        EnableZombieSlings = true,
+        -- Min: 0 Max: 100 Default: 4
+        PoliceZombieSlingChance = 0,
+        -- Min: 0 Max: 100 Default: 8
+        MilitaryZombieSlingChance = 0,
+        -- Min: 0 Max: 100 Default: 2
+        MilitaryZombieFirearmChance = 1,
+    },
+    MilitaryTents = {
+        -- Min: 0,00 Max: 100,00 Default: 10,00
+        LootSpawnPercent = 0.0,
+    },
+    TacHold = {
+        -- Min: 0 Max: 10 Default: 0
+        AimingRequirement = 6,
+        -- Min: 0 Max: 10 Default: 0
+        PistolAimingRequirement = 6,
+    },
+    NewMusic = {
+        -- Min: 0 Max: 36000 Default: 1500
+        MaxTrackingRange = 1500,
+        -- Min: 4 Max: 50 Default: 10
+        ActiveDeviceLimit = 10,
+        -- Min: 0,02 Max: 1000,00 Default: 24,00
+        BatteryDrainRate = 12.0,
+        -- Min: 9 Max: 100 Default: 35
+        AudioMaxRadius = 35,
+        FancyUI = true,
+        Disassembly = true,
+        ZomboidOST = true,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CassettesSpawnRate = 0.2,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        VinylRecordsSpawnRate = 0.2,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CDsSpawnRate = 0.2,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        WalkmanSpawnRate = 0.4,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        BoomboxSpawnRate = 0.3,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        CDPlayerSpawnRate = 0.3,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        RecordPlayerSpawnRate = 0.3,
+        -- Min: 0,00 Max: 4,00 Default: 0,60
+        MusicalZombiesSpawnRate = 0.3,
     },
 }
