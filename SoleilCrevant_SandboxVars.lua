@@ -768,6 +768,8 @@ SandboxVars = {
     DrugTime89_EffectDuration = 1,
     DrugTime89_SoftActionDuration = 1,
     DrugTime89_HardActionDuration = 1,
+    -- Min: 1 Max: 10 Default: 4
+    UH1BHueyMinSpawnCount = 4,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1099,6 +1101,29 @@ SandboxVars = {
     AutoMechanics = {
         -- Min: 0 Max: 100 Default: 100
         ConditionLossPercentageThreshold = 0,
+    },
+    WarThunder = {
+        -- Min: 0 Max: 1000 Default: 1
+        AmmoPrice = 1,
+    },
+    WT = {
+        TigerDestoryBuilding = false,
+        TigerDestorySafeHouse = false,
+        TigerDestoryNormalCar = false,
+        TigerDestoryBurnedCarOnly = false,
+        DestoryStartAsh = false,
+        SpawnTigerInWorld = false,
+        TigerNeedShovel = false,
+        SpawnAmmoIntheWorld = false,
+        -- Min: 0 Max: 1000 Default: 2
+        SpawnAmmoIntheWorldPercent = 2,
+        UnlockAllRearch = false,
+        DisableAmmoBuy = false,
+        -- Min: 0,00 Max: 10,00 Default: 1,00
+        HeliGasMultiples = 1.0,
+        RepairWhenSpawn = true,
+        SpawnBurned = true,
+        FloorHit = true,
     },
     DestroyBoulder = {
         -- Min: 0 Max: 50 Default: 5
