@@ -1,1 +1,0 @@
-moodlesinlua;DynamicMoodles;redrawnmoodles;PMResurrection;quarterbordermoodles;SimpleMoodleIndicators;
