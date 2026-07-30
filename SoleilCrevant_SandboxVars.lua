@@ -981,9 +981,9 @@ SandboxVars = {
         -- Rate at which First Aid skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Doctor = 1.0,
         -- Rate at which Electrical skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
-        Electricity = 1.5,
+        Electricity = 1.75,
         -- Rate at which Welding skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
-        MetalWelding = 1.5,
+        MetalWelding = 1.25,
         -- Rate at which Mechanics skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Mechanics = 1.0,
         -- Rate at which Tailoring skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
