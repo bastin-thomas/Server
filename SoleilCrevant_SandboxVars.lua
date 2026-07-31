@@ -1048,9 +1048,9 @@ SandboxVars = {
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 5,
+        NormalGhostTime = 15,
         -- Min: 1 Max: 500 Default: 10
-        NewStartTime = 5,
+        NewStartTime = 15,
     },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
@@ -1064,7 +1064,7 @@ SandboxVars = {
         BonusXP = 12,
     },
     VMZ = {
-        RoadStories = false,
+        RoadStories = true,
         -- Min: 0,00 Max: 2,00 Default: 1,00
         RoadStoriesMultiplier = 0.01,
         SpecCar = false,
@@ -1949,13 +1949,13 @@ SandboxVars = {
         Disassembly = true,
         ZomboidOST = true,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        CassettesSpawnRate = 0.2,
+        CassettesSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        VinylRecordsSpawnRate = 0.2,
+        VinylRecordsSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        CDsSpawnRate = 0.2,
+        CDsSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
-        WalkmanSpawnRate = 0.4,
+        WalkmanSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
         BoomboxSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
