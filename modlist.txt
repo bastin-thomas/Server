@@ -31,6 +31,7 @@ Moodle Framework - https://steamcommunity.com/sharedfiles/filedetails/?id=339644
 [42 + MP] Gunworks Framework - https://steamcommunity.com/sharedfiles/filedetails/?id=3722064198
 [B42] WarThunderVehicleLibrary - https://steamcommunity.com/sharedfiles/filedetails/?id=3399660368
 Camden County B42 - https://steamcommunity.com/sharedfiles/filedetails/?id=3504080284
+[B42] The Only Cure - https://steamcommunity.com/sharedfiles/filedetails/?id=3580276809
 Extensive Health Rework Evolved - https://steamcommunity.com/sharedfiles/filedetails/?id=3726328119
 Indoor Climate (EHR Addon) - https://steamcommunity.com/sharedfiles/filedetails/?id=3772549209
 New Music - The Full Collection - https://steamcommunity.com/sharedfiles/filedetails/?id=3750282386
@@ -97,7 +98,6 @@ More Damaged Objects [42MP] - https://steamcommunity.com/sharedfiles/filedetails
 [B42.19] Make Dried Fruit - https://steamcommunity.com/sharedfiles/filedetails/?id=3417502641
 [B42 Stable] SaucedCarts - Pushable Carts - https://steamcommunity.com/sharedfiles/filedetails/?id=3651954650
 Hounskull Bascinet [B42.13+] - https://steamcommunity.com/sharedfiles/filedetails/?id=3655316184
-[B42] The Only Cure - https://steamcommunity.com/sharedfiles/filedetails/?id=3580276809
 DrugTime 89 [B42 SP/MP] - https://steamcommunity.com/sharedfiles/filedetails/?id=3632964785
 Nena Music | Album: 99 Luftballons - https://steamcommunity.com/sharedfiles/filedetails/?id=3756205006
 Nirvana Music | Album: Nevermind - https://steamcommunity.com/sharedfiles/filedetails/?id=3754258757
@@ -169,7 +169,7 @@ Old border for moodles [B42+] - https://steamcommunity.com/sharedfiles/filedetai
 Square border for moodles [B42+] - https://steamcommunity.com/sharedfiles/filedetails/?id=3387023791
 [B42] Buildable Garage Doors - https://steamcommunity.com/sharedfiles/filedetails/?id=3727753275
 Walkie and Radio Fix - https://steamcommunity.com/sharedfiles/filedetails/?id=3732952669
-ZombieBuddy - https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853
+ZombieBuddy - https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853 [Mod IDs: ]
 Knox Acoustics [B42] [ZB] [MP Fixed] - https://steamcommunity.com/sharedfiles/filedetails/?id=3774192369
 Staircast  | B41/B42 - https://steamcommunity.com/sharedfiles/filedetails/?id=3684713089
 [B42] Water Pipes - https://steamcommunity.com/sharedfiles/filedetails/?id=3546314080
