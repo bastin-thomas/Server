@@ -768,7 +768,6 @@ SandboxVars = {
     DrugTime89_EffectDuration = 1,
     DrugTime89_SoftActionDuration = 1,
     DrugTime89_HardActionDuration = 1,
-    StartYear = 1,
     -- Min: 1 Max: 10 Default: 4
     UH1BHueyMinSpawnCount = 4,
     Basement = {
