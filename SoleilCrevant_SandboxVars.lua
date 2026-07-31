@@ -1328,7 +1328,7 @@ SandboxVars = {
         BlockAdminOfflineBodies = false,
     },
     ArmorMakesSense = {
-        EnableThermalModel = false,
+        EnableThermalModel = true,
         EnableMuscleStrainModel = true,
         EnableSleepPenaltyModel = true,
     },
