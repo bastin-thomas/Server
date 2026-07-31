@@ -45,7 +45,6 @@ Military Tents [B42.17+ MP] - https://steamcommunity.com/sharedfiles/filedetails
 Offline Survivor [B42.20 Stable] - https://steamcommunity.com/sharedfiles/filedetails/?id=3771083376 [Mod IDs: OfflineSurvivor]
 Ladders?! B42.20 SP/MP (Unofficial) - https://steamcommunity.com/sharedfiles/filedetails/?id=3629835761
 Project Cook [B42] - https://steamcommunity.com/sharedfiles/filedetails/?id=3490188370 [Mod IDs: Project_Cook, Project_Cook_Pixel_Icon_Pack]
-Water Pipes (Continued) B42.19+ - https://steamcommunity.com/sharedfiles/filedetails/?id=3768656166
 Vanilla Foods Expanded - https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007
 [B42] Keep that radio on! (Legacy) - https://steamcommunity.com/sharedfiles/filedetails/?id=3553076000
 B42 Loot Fix - https://steamcommunity.com/sharedfiles/filedetails/?id=3734168173
@@ -173,3 +172,5 @@ Walkie and Radio Fix - https://steamcommunity.com/sharedfiles/filedetails/?id=37
 ZombieBuddy - https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853
 Knox Acoustics [B42] [ZB] [MP Fixed] - https://steamcommunity.com/sharedfiles/filedetails/?id=3774192369
 Staircast  | B41/B42 - https://steamcommunity.com/sharedfiles/filedetails/?id=3684713089
+[B42] Water Pipes - https://steamcommunity.com/sharedfiles/filedetails/?id=3546314080
+[B42] Water Pipes - Add-on: Basement Water - https://steamcommunity.com/sharedfiles/filedetails/?id=3743352602
