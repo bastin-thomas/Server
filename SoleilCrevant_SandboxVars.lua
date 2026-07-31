@@ -51,7 +51,6 @@ SandboxVars = {
     -- 26 = 23 Hours
     -- 27 = Real-time
     DayLength = 4,
-    StartYear = 1,
     -- Month in which the game starts. Default = July
     -- 1 = January
     -- 2 = February
