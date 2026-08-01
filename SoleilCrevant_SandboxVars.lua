@@ -51,6 +51,7 @@ SandboxVars = {
     -- 26 = 23 Hours
     -- 27 = Real-time
     DayLength = 4,
+    StartYear = 1,
     -- Month in which the game starts. Default = July
     -- 1 = January
     -- 2 = February
@@ -767,6 +768,7 @@ SandboxVars = {
     DrugTime89_EffectDuration = 1,
     DrugTime89_SoftActionDuration = 1,
     DrugTime89_HardActionDuration = 1,
+    StartYear = 1,
     -- Min: 1 Max: 10 Default: 4
     UH1BHueyMinSpawnCount = 4,
     Basement = {
@@ -1088,172 +1090,6 @@ SandboxVars = {
         WoundDirtynessMultiplier = 1,
         -- Min: 1 Max: 3 Default: 2
         SurgeonAbilityImportance = 2,
-    },
-    ExtensiveHealthRework = {
-        -- Min: 0,50 Max: 5,00 Default: 2,00
-        BloodLossMultiplier = 2.0,
-        -- Min: 70 Max: 100 Default: 85
-        BloodThresholdHealthy = 85,
-        -- Min: 60 Max: 95 Default: 80
-        BloodThresholdMild = 80,
-        -- Min: 50 Max: 90 Default: 70
-        BloodThresholdModerate = 70,
-        BloodRegenEnabled = true,
-        -- Min: 0,50 Max: 12,00 Default: 2,00
-        BloodRegenDelayHours = 2.0,
-        -- Min: 10 Max: 200 Default: 50
-        BloodRegenRatePerHour = 50,
-        -- Min: 10 Max: 70 Default: 30
-        BloodRegenMinimumPercent = 30,
-        BlackoutEnabled = true,
-        -- Min: 0,50 Max: 24,00 Default: 1,00
-        BlackoutCooldownHours = 1.0,
-        -- Min: 10 Max: 200 Default: 50
-        BlackoutChance = 50,
-        DiseaseEnabled = true,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        DiseaseSpeed = 1.0,
-        WoundInfectionEnabled = true,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        WoundInfectionSpeed = 1.0,
-        CellulitisEnabled = true,
-        SepsisEnabled = true,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        SepsisSpeed = 1.0,
-        TetanusEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        TetanusChanceMultiplier = 1.0,
-        FoodPoisoningEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        FoodPoisoningChanceMultiplier = 1.0,
-        GastroenteritisEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        GastroenteritisChanceMultiplier = 1.0,
-        TrichinosisEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        TrichinosisChanceMultiplier = 1.0,
-        ToxinPoisoningEnabled = true,
-        HyperkeratoticScabiesEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        ScabiesChanceMultiplier = 1.0,
-        ScabiesWinterBlock = true,
-        ScabiesSnowBlock = true,
-        DysenteryEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        DysenteryChanceMultiplier = 1.0,
-        CommonColdEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        CommonColdExposureMultiplier = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        CommonColdChanceMultiplier = 1.0,
-        PneumoniaEnabled = true,
-        HypothermiaEnabled = true,
-        HeatExhaustionEnabled = true,
-        HeatStrokeEnabled = true,
-        ConcussionEnabled = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        ConcussionFallChanceMultiplier = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        ConcussionVehicleChanceMultiplier = 1.0,
-        DeliriumEnabled = true,
-        InsomniaEnabled = true,
-        AHTREnabled = true,
-        CorpseSicknessEnabled = true,
-        CadavericAspergillosisEnabled = true,
-        PutrefactionSicknessEnabled = true,
-        TuberculosisEnabled = true,
-        -- Min: 0,10 Max: 10,00 Default: 1,00
-        CorpseDiseaseSpeed = 1.0,
-        BodyTemperatureEnabled = true,
-        -- Min: 0,25 Max: 4,00 Default: 1,00
-        TemperatureChangeSpeed = 1.0,
-        PreDiseaseEffectsEnabled = true,
-        -- Min: 20,00 Max: 50,00 Default: 30,00
-        HeatExposureTemperatureThreshold = 30.0,
-        -- Min: 0 Max: 23 Default: 9
-        HeatExposureStartHour = 9,
-        -- Min: 0 Max: 23 Default: 20
-        HeatExposureEndHour = 20,
-        -- Min: 0,25 Max: 24,00 Default: 4,00
-        HeatExposureHoursToFull = 4.0,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        HeatExposureGainMultiplier = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        HeatExposureRecoveryMultiplier = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
-        HeatStrokeChanceMultiplier = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,30
-        HeatHeadwearExposureMultiplier = 0.3,
-        -- Min: 30,00 Max: 37,00 Default: 35,00
-        HypothermiaStage1Temp = 35.0,
-        -- Min: 29,00 Max: 36,50 Default: 34,00
-        HypothermiaStage2Temp = 34.0,
-        -- Min: 28,00 Max: 36,00 Default: 32,00
-        HypothermiaStage3Temp = 32.0,
-        -- Min: 27,00 Max: 35,50 Default: 31,00
-        HypothermiaStage4Temp = 31.0,
-        -- Min: 31,00 Max: 38,00 Default: 35,50
-        HypothermiaClearTemp = 35.5,
-        RealisticTemperatureCompatibility = 1,
-        KnoxCureItemsEnabled = false,
-        -- Min: 0,00 Max: 2,00 Default: 1,00
-        MedicationLootMultiplier = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
-        MedicalWatchLootMultiplier = 0.0,
-        MedicationPackageFill = 3,
-        AllowFullPharmacyPackages = true,
-        HouseholdPrescriptionLoot = true,
-        HealingRequiresFed = true,
-        HealingRequiresHydrated = true,
-        HealingRequiresRested = true,
-        HealingRequiresCalm = true,
-        HealingRequiresNoPain = false,
-        PainSoundsEnabled = true,
-        CoughSoundsEnabled = true,
-        -- Min: 60 Max: 900 Default: 300
-        PainSoundCooldown = 300,
-        -- Min: 10 Max: 100 Default: 40
-        ZombieAttractionRadius = 40,
-        DialogueFrequency = 2,
-        FirstAidXPEnabled = true,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
-        FirstAidXPMultiplier = 1.0,
-        StitchMinigameEnabled = true,
-        TheLastPrescriptionEnabled = true,
-        MedicalWatchRequired = true,
-        PatientZeroTraitDisabled = true,
-        ImmunitySystemEnabled = true,
-        ImmunityGameplayEffects = true,
-        -- Min: 0,00 Max: 2,00 Default: 1,00
-        ImmunityEffectStrength = 1.0,
-        -- Min: 0,25 Max: 3,00 Default: 1,00
-        ImmunityRecoveryRate = 1.0,
-        -- Min: 0,25 Max: 3,00 Default: 1,00
-        ImmunityDeclineRate = 1.0,
-        DebugMode = false,
-    },
-    IndoorClimateLite = {
-        Enabled = true,
-        -- Min: 1 Max: 60 Default: 1
-        UpdateMinutes = 10,
-        -- Min: 0,00 Max: 10,00 Default: 2,00
-        UnvisitedOffsetC = 2.0,
-        -- Min: 0,00 Max: 0,25 Default: 0,04
-        HeaterGeneratorFuelPerHour = 0.04,
-        -- Min: 22,00 Max: 27,00 Default: 22,00
-        PoweredTargetC = 22.0,
-        -- Min: 0,10 Max: 10,00 Default: 3,00
-        PoweredRatePerHour = 3.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,75
-        PoweredLeakInfluence = 0.75,
-        -- Min: 0,01 Max: 0,50 Default: 0,06
-        SealedLossPerHour = 0.06,
-        -- Min: 1,00 Max: 30,00 Default: 12,00
-        BreachMultiplier = 12.0,
-        -- Min: 2 Max: 10 Default: 5
-        ScanRadius = 5,
-        NativeBridge = true,
-        DebugLogging = false,
     },
     NewMusic = {
         -- Min: 0 Max: 36000 Default: 1500
@@ -1916,9 +1752,6 @@ SandboxVars = {
         CustomIcons = true,
         CasingSounds = true,
     },
-    MarzVanillaGuns = {
-        Enable_TacticalReload = false,
-    },
     VMZ = {
         RoadStories = true,
         -- Min: 0,00 Max: 2,00 Default: 1,00
@@ -2069,5 +1902,84 @@ SandboxVars = {
         sneakReduce = 0.66,
         skillsInfluence = 1,
         traitsInfluence = 1,
+    },
+    RealisticCold = {
+        -- Min: 0,10 Max: 10,00 Default: 4,00
+        ClothingInsulationScale = 4.0,
+        EnableFoodFreezingExperimental = false,
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        SweatRateMultiplier = 1.0,
+        -- Min: 0,00 Max: 3,00 Default: 1,00
+        EvapCoolingStrength = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,30
+        InsulationSpreadBias = 0.3,
+        -- Min: 0,00 Max: 3,00 Default: 1,00
+        ConvectiveBridgeStrength = 1.0,
+        -- Min: 0,10 Max: 2,00 Default: 0,50
+        WarmingRateCapCPM = 0.5,
+        -- Min: 0,10 Max: 5,00 Default: 1,00
+        ColdSicknessMultiplier = 1.0,
+        -- Min: 1 Max: 4 Default: 2
+        CatchColdThreshold = 2,
+        -- Min: 0,10 Max: 5,00 Default: 1,75
+        CatchColdRateMultiplier = 1.75,
+        -- Min: 1 Max: 200 Default: 45
+        ColdWorsenPerHour = 45,
+        -- Min: 1 Max: 200 Default: 24
+        ColdRecoverPerHour = 24,
+        -- Min: 1 Max: 200 Default: 36
+        ColdMedicineDecayPerHour = 36,
+        -- Min: 0,10 Max: 10,00 Default: 0,20
+        HypothermiaDamageIntervalMin = 0.2,
+        -- Min: 0,10 Max: 5,00 Default: 0,20
+        HypothermiaDamagePerTick = 0.2,
+        -- Min: -30,00 Max: 25,00 Default: 16,00
+        ChillyAirThreshold = 16.0,
+        -- Min: 0,00 Max: 2,00 Default: 0,90
+        ChillyCoolingMultiplierThreshold = 0.9,
+        -- Min: 0,00 Max: 2,00 Default: 1,50
+        ChillyInsulationThreshold = 1.5,
+        -- Min: 5,00 Max: 60,00 Default: 26,00
+        HeatTargetMaximum = 26.0,
+        -- Min: 0,10 Max: 3,00 Default: 1,00
+        HeatDistanceExponent = 1.0,
+        -- Min: 0,00 Max: 60,00 Default: 25,00
+        VehicleHeaterMaxDelta = 25.0,
+        -- Min: 0 Max: 100 Default: 20
+        IndustrialHeaterSpawnRate = 20,
+        -- Min: 1,00 Max: 10,00 Default: 6,00
+        ExposureCap = 6.0,
+        -- Min: 0,10 Max: 5,00 Default: 0,80
+        BreachWeightWindow = 0.8,
+        -- Min: 0,10 Max: 5,00 Default: 1,20
+        BreachWeightDoor = 1.2,
+        -- Min: 0,10 Max: 5,00 Default: 1,40
+        BreachWeightGap = 1.4,
+        -- Min: 0,10 Max: 5,00 Default: 0,30
+        BreachWeightCurtain = 0.3,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        SealedPassiveTransferStrength = 1.0,
+    },
+    Medicae = {
+        -- Min: 0,10 Max: 5,00 Default: 1,00
+        BLEED_BASE = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,02
+        REGEN_PER_TICK = 0.0198,
+        -- Min: 5,00 Max: 100,00 Default: 25,00
+        TRANSFUSION_RESTORE = 25.0,
+        -- Min: 1,00 Max: 40,00 Default: 12,00
+        DONATION_COST = 12.0,
+        -- Min: 1 Max: 500 Default: 40
+        DEATH_CHANCE_ONE_IN = 40,
+        -- Min: 1 Max: 100 Default: 6
+        SYNCOPE_CHANCE_ONE_IN = 6,
+        -- Min: 0,00 Max: 0,50 Default: 0,00
+        HCT_REGEN_PER_TICK = 0.00231,
+        -- Min: 1,00 Max: 10,00 Default: 2,00
+        HCT_PILL_MULTIPLIER = 2.0,
+        -- Min: 5,00 Max: 60,00 Default: 25,00
+        SALINE_VOLUME = 25.0,
+        ALWAYS_SHOW_NUMBERS = false,
+        ENABLE_VACCINE = false,
     },
 }
