@@ -1049,9 +1049,9 @@ SandboxVars = {
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 15,
+        NormalGhostTime = 7,
         -- Min: 1 Max: 500 Default: 10
-        NewStartTime = 15,
+        NewStartTime = 0,
     },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
