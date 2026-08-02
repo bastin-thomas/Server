@@ -1049,9 +1049,9 @@ SandboxVars = {
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
         -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 7,
+        NormalGhostTime = 15,
         -- Min: 1 Max: 500 Default: 10
-        NewStartTime = 0,
+        NewStartTime = 15,
     },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
@@ -1133,6 +1133,104 @@ SandboxVars = {
         EnableAccessoryLoot = true,
         -- Min: 0,00 Max: 5,00 Default: 1,00
         AccessoryLootMultiplier = 0.3,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyBunkerLockers = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyBunkerStorage = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyHangarOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceLockers = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceStorageGuns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceStorageAmmunition = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceStorageArmor = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceStateOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PoliceStorageOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_Police_TruckBed = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyStorageGuns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyStorageAmmunition = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmyStorageOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmySurplusBackpacks = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmySurplusOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmySurplusMisc = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_ArmySurplusTools = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_LockerArmyBedroom = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_LockerArmyBedroomHome = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreDisplayCase = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreShelf = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreAccessories = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreGuns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreRifles = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreShotguns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GunStoreBodyArmor = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_HuntingLockers = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_RangerLockers = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_RangerStorageGuns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_RangerOutfit = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_SurvivalGear = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_SurvivalistTruckBed = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_HunterTruckBed = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_FirearmWeapons = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_GarageFirearms = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_CampingStoreGear = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_CampingStoreBackpacks = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_CampingLockers = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PawnShopGunsSpecial = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PawnShopKnives = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_PlankStashGun = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_MeleeWeapons = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_WardrobeRedneck = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_DrugLabGuns = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_SurvivorCache1_SurvivorCrate = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_SurvivorCache2_SurvivorCrate = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_Bag_WeaponBag = 1.0,
+        -- Min: 0,00 Max: 5,00 Default: 1,00
+        LootSource_Bag_SurvivorBag = 1.0,
         EnableZombieSlings = true,
         -- Min: 0 Max: 100 Default: 4
         PoliceZombieSlingChance = 0,
@@ -1981,5 +2079,47 @@ SandboxVars = {
         SALINE_VOLUME = 25.0,
         ALWAYS_SHOW_NUMBERS = false,
         ENABLE_VACCINE = false,
+    },
+    LanternFix = {
+        PropaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        PropaneLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,44
+        PropaneLanternColorBlue = 0.44,
+        -- Min: 2 Max: 14 Default: 7
+        PropaneLanternRadius = 7,
+        HurricaneLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        HurricaneLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        HurricaneLanternColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,33
+        HurricaneLanternColorBlue = 0.33,
+        -- Min: 2 Max: 14 Default: 7
+        HurricaneLanternRadius = 7,
+        ImprovisedLanternHeader = false,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorRed = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorGreen = 0.5,
+        -- Min: 0,00 Max: 1,00 Default: 0,50
+        ImprovisedLanternColorBlue = 0.5,
+        -- Min: 2 Max: 14 Default: 7
+        ImprovisedLanternRadius = 7,
+        FlashlightHeader = false,
+        FlashlightEnabled = true,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorRed = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorGreen = 0.4,
+        -- Min: 0,00 Max: 1,00 Default: 0,40
+        FlashlightColorBlue = 0.4,
+        -- Min: 2 Max: 7 Default: 4
+        FlashlightRadius = 4,
+    },
+    ProximityInventory = {
+        ZombieOnly = true,
     },
 }
