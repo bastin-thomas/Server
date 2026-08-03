@@ -51,6 +51,107 @@ SandboxVars = {
     -- 26 = 23 Hours
     -- 27 = Real-time
     DayLength = 4,
+    -- Default = 1993
+    -- 1 = 1993
+    -- 2 = 1994
+    -- 3 = 1995
+    -- 4 = 1996
+    -- 5 = 1997
+    -- 6 = 1998
+    -- 7 = 1999
+    -- 8 = 2000
+    -- 9 = 2001
+    -- 10 = 2002
+    -- 11 = 2003
+    -- 12 = 2004
+    -- 13 = 2005
+    -- 14 = 2006
+    -- 15 = 2007
+    -- 16 = 2008
+    -- 17 = 2009
+    -- 18 = 2010
+    -- 19 = 2011
+    -- 20 = 2012
+    -- 21 = 2013
+    -- 22 = 2014
+    -- 23 = 2015
+    -- 24 = 2016
+    -- 25 = 2017
+    -- 26 = 2018
+    -- 27 = 2019
+    -- 28 = 2020
+    -- 29 = 2021
+    -- 30 = 2022
+    -- 31 = 2023
+    -- 32 = 2024
+    -- 33 = 2025
+    -- 34 = 2026
+    -- 35 = 2027
+    -- 36 = 2028
+    -- 37 = 2029
+    -- 38 = 2030
+    -- 39 = 2031
+    -- 40 = 2032
+    -- 41 = 2033
+    -- 42 = 2034
+    -- 43 = 2035
+    -- 44 = 2036
+    -- 45 = 2037
+    -- 46 = 2038
+    -- 47 = 2039
+    -- 48 = 2040
+    -- 49 = 2041
+    -- 50 = 2042
+    -- 51 = 2043
+    -- 52 = 2044
+    -- 53 = 2045
+    -- 54 = 2046
+    -- 55 = 2047
+    -- 56 = 2048
+    -- 57 = 2049
+    -- 58 = 2050
+    -- 59 = 2051
+    -- 60 = 2052
+    -- 61 = 2053
+    -- 62 = 2054
+    -- 63 = 2055
+    -- 64 = 2056
+    -- 65 = 2057
+    -- 66 = 2058
+    -- 67 = 2059
+    -- 68 = 2060
+    -- 69 = 2061
+    -- 70 = 2062
+    -- 71 = 2063
+    -- 72 = 2064
+    -- 73 = 2065
+    -- 74 = 2066
+    -- 75 = 2067
+    -- 76 = 2068
+    -- 77 = 2069
+    -- 78 = 2070
+    -- 79 = 2071
+    -- 80 = 2072
+    -- 81 = 2073
+    -- 82 = 2074
+    -- 83 = 2075
+    -- 84 = 2076
+    -- 85 = 2077
+    -- 86 = 2078
+    -- 87 = 2079
+    -- 88 = 2080
+    -- 89 = 2081
+    -- 90 = 2082
+    -- 91 = 2083
+    -- 92 = 2084
+    -- 93 = 2085
+    -- 94 = 2086
+    -- 95 = 2087
+    -- 96 = 2088
+    -- 97 = 2089
+    -- 98 = 2090
+    -- 99 = 2091
+    -- 100 = 2092
     StartYear = 1,
     -- Month in which the game starts. Default = July
     -- 1 = January
@@ -762,15 +863,135 @@ SandboxVars = {
     GeneratorTileRange = 20,
     -- How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3
     GeneratorVerticalPowerRange = 3,
+    -- Controls how often DrugTime items appear in the world. Default = Rare
+    -- 1 = Very Rare
+    -- 2 = Rare
+    -- 3 = Normal
     DrugTime89_LootRarity = 2,
+    -- Controls how often zombies drop DrugTime items on death. Default = Rare
+    -- 1 = Very Rare
+    -- 2 = Rare
+    -- 3 = Normal
     DrugTime89_ZombieLootRarity = 1,
+    -- Enables DrugTime debug logs in the console. Keep disabled unless testing.
     DrugTime89_DebugLogs = false,
+    -- Default = Normal
+    -- 1 = Normal
+    -- 2 = Long
+    -- 3 = Very long
     DrugTime89_EffectDuration = 1,
+    -- Controls the action time when smoking DrugTime joint items. Default = Normal
+    -- 1 = Normal
+    -- 2 = Long
+    -- 3 = Very long
     DrugTime89_SoftActionDuration = 1,
+    -- Controls the action time when smoking crack or crystal meth with a pipe. Default = Normal
+    -- 1 = Normal
+    -- 2 = Long
+    -- 3 = Very long
     DrugTime89_HardActionDuration = 1,
+    -- Default = 1993
+    -- 1 = 1993
+    -- 2 = 1994
+    -- 3 = 1995
+    -- 4 = 1996
+    -- 5 = 1997
+    -- 6 = 1998
+    -- 7 = 1999
+    -- 8 = 2000
+    -- 9 = 2001
+    -- 10 = 2002
+    -- 11 = 2003
+    -- 12 = 2004
+    -- 13 = 2005
+    -- 14 = 2006
+    -- 15 = 2007
+    -- 16 = 2008
+    -- 17 = 2009
+    -- 18 = 2010
+    -- 19 = 2011
+    -- 20 = 2012
+    -- 21 = 2013
+    -- 22 = 2014
+    -- 23 = 2015
+    -- 24 = 2016
+    -- 25 = 2017
+    -- 26 = 2018
+    -- 27 = 2019
+    -- 28 = 2020
+    -- 29 = 2021
+    -- 30 = 2022
+    -- 31 = 2023
+    -- 32 = 2024
+    -- 33 = 2025
+    -- 34 = 2026
+    -- 35 = 2027
+    -- 36 = 2028
+    -- 37 = 2029
+    -- 38 = 2030
+    -- 39 = 2031
+    -- 40 = 2032
+    -- 41 = 2033
+    -- 42 = 2034
+    -- 43 = 2035
+    -- 44 = 2036
+    -- 45 = 2037
+    -- 46 = 2038
+    -- 47 = 2039
+    -- 48 = 2040
+    -- 49 = 2041
+    -- 50 = 2042
+    -- 51 = 2043
+    -- 52 = 2044
+    -- 53 = 2045
+    -- 54 = 2046
+    -- 55 = 2047
+    -- 56 = 2048
+    -- 57 = 2049
+    -- 58 = 2050
+    -- 59 = 2051
+    -- 60 = 2052
+    -- 61 = 2053
+    -- 62 = 2054
+    -- 63 = 2055
+    -- 64 = 2056
+    -- 65 = 2057
+    -- 66 = 2058
+    -- 67 = 2059
+    -- 68 = 2060
+    -- 69 = 2061
+    -- 70 = 2062
+    -- 71 = 2063
+    -- 72 = 2064
+    -- 73 = 2065
+    -- 74 = 2066
+    -- 75 = 2067
+    -- 76 = 2068
+    -- 77 = 2069
+    -- 78 = 2070
+    -- 79 = 2071
+    -- 80 = 2072
+    -- 81 = 2073
+    -- 82 = 2074
+    -- 83 = 2075
+    -- 84 = 2076
+    -- 85 = 2077
+    -- 86 = 2078
+    -- 87 = 2079
+    -- 88 = 2080
+    -- 89 = 2081
+    -- 90 = 2082
+    -- 91 = 2083
+    -- 92 = 2084
+    -- 93 = 2085
+    -- 94 = 2086
+    -- 95 = 2087
+    -- 96 = 2088
+    -- 97 = 2089
+    -- 98 = 2090
+    -- 99 = 2091
+    -- 100 = 2092
     StartYear = 1,
-    -- Min: 1 Max: 10 Default: 4
-    UH1BHueyMinSpawnCount = 4,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1025,16 +1246,6 @@ SandboxVars = {
         Butchering = 1.0,
         -- Rate at which Glassmaking skill levels up. Min: 0,00 Max: 1000,00 Default: 1,00
         Glassmaking = 1.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Art = 1.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Cleaning = 2.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Dancing = 1.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Meditation = 1.0,
-        -- Min: 0,00 Max: 1000,00 Default: 1,00
-        Music = 1.5,
     },
     WorkshopModServerUpdate = {
         EnableMod = true,
@@ -1047,41 +1258,19 @@ SandboxVars = {
         QuitDelaySeconds = 25,
     },
     MinidoracatSafeSpawn = {
+        -- Enable ghost protection when player spawns or respawns
         EnableGhostOnSpawn = true,
-        -- Min: 1 Max: 500 Default: 3
+        -- Ghost time for veteran characters (longer survival time) in minutes Min: 1 Max: 500 Default: 3
         NormalGhostTime = 15,
-        -- Min: 1 Max: 500 Default: 10
+        -- Ghost time for new characters (shorter survival time) in minutes Min: 1 Max: 500 Default: 10
         NewStartTime = 15,
     },
     LuaDigitalWatchUI = {
+        -- Controls how often the minute display updates. 'Mod Default' uses the framework or mod author's preference (1-minute by default). '1 Minute' forces the display to update every in-game minute. '10 Minutes' matches the vanilla clock behavior. Default = Mod Default
+        -- 1 = Mod Default
+        -- 2 = 1 Minute
+        -- 3 = 10 Minutes
         MinuteResolution = 1,
-    },
-    GWG = {
-        -- Min: 0 Max: 5 Default: 0
-        MultiplayerTick = 0,
-    },
-    WarThunder = {
-        -- Min: 0 Max: 1000 Default: 1
-        AmmoPrice = 1,
-    },
-    WT = {
-        TigerDestoryBuilding = false,
-        TigerDestorySafeHouse = false,
-        TigerDestoryNormalCar = false,
-        TigerDestoryBurnedCarOnly = false,
-        DestoryStartAsh = false,
-        SpawnTigerInWorld = false,
-        TigerNeedShovel = false,
-        SpawnAmmoIntheWorld = false,
-        -- Min: 0 Max: 1000 Default: 2
-        SpawnAmmoIntheWorldPercent = 2,
-        UnlockAllRearch = false,
-        DisableAmmoBuy = false,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
-        HeliGasMultiples = 1.0,
-        RepairWhenSpawn = true,
-        SpawnBurned = true,
-        FloorHit = true,
     },
     TOC = {
         -- Min: 1 Max: 10 Default: 1
@@ -1092,46 +1281,57 @@ SandboxVars = {
         SurgeonAbilityImportance = 2,
     },
     NewMusic = {
-        -- Min: 0 Max: 36000 Default: 1500
+        -- Determines how far each client retains tracking for active devices. Set to 0 for infinite range. Min: 0 Max: 36000 Default: 1500
         MaxTrackingRange = 1500,
-        -- Min: 4 Max: 50 Default: 10
+        -- Hard cap on actively synced/playback-managed devices per client. Min: 4 Max: 50 Default: 10
         ActiveDeviceLimit = 10,
-        -- Min: 0,02 Max: 1000,00 Default: 24,00
+        -- How fast the battery drains in real life hours. Min: 0,02 Max: 1000,00 Default: 24,00
         BatteryDrainRate = 12.0,
-        -- Min: 9 Max: 100 Default: 35
+        -- How far (in tiles) world playback devices can be heard at max volume. (Effects zombie attraction radius) Min: 9 Max: 100 Default: 35
         AudioMaxRadius = 35,
+        -- Enable experimental UI for supported devices.
         FancyUI = true,
+        -- Enables disassembly and scrap for New Music devices.
         Disassembly = true,
+        -- Allows the base mod Zomboid OST items to spawn. Uncheck to disable them.
         ZomboidOST = true,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls cassette media spawn intensity. 0.00 disables. Min: 0,00 Max: 4,00 Default: 0,60
         CassettesSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls vinyl media spawn intensity. 0.00 disables. Min: 0,00 Max: 4,00 Default: 0,60
         VinylRecordsSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls CD media spawn intensity. 0.00 disables. Min: 0,00 Max: 4,00 Default: 0,60
         CDsSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls walkman spawn intensity. Min: 0,00 Max: 4,00 Default: 0,60
         WalkmanSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls boombox spawn intensity. Min: 0,00 Max: 4,00 Default: 0,60
         BoomboxSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls CD player spawn intensity. Min: 0,00 Max: 4,00 Default: 0,60
         CDPlayerSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls record player spawn intensity. Min: 0,00 Max: 4,00 Default: 0,60
         RecordPlayerSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Controls zombie music-device spawn intensity. Min: 0,00 Max: 4,00 Default: 0,60
         MusicalZombiesSpawnRate = 0.3,
     },
     TacHold = {
-        -- Min: 0 Max: 10 Default: 0
+        -- Required aiming level before Long gun animations activate. Min: 0 Max: 10 Default: 0
         AimingRequirement = 6,
-        -- Min: 0 Max: 10 Default: 0
+        -- Required aiming level before pistol animations activate. Min: 0 Max: 10 Default: 0
         PistolAimingRequirement = 6,
     },
     JSling = {
+        -- Controls whether rifle slings can spawn naturally in world containers.
         EnableSlingLoot = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
+        -- Multiplies all rifle sling loot chances.
+        -- 0 = Disabled.
+        -- 1 = Default.
+        -- Higher values make slings more common. Min: 0,00 Max: 5,00 Default: 1,00
         SlingLootMultiplier = 0.3,
+        -- Controls whether JSling wearable gear can spawn naturally in world containers.
         EnableAccessoryLoot = true,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
+        -- Multiplies all JSling wearable gear loot chances.
+        -- 0 = Disabled.
+        -- 1 = Default.
+        -- Higher values make gear more common. Min: 0,00 Max: 5,00 Default: 1,00
         AccessoryLootMultiplier = 0.3,
         -- Min: 0,00 Max: 5,00 Default: 1,00
         LootSource_ArmyBunkerLockers = 1.0,
@@ -1231,39 +1431,25 @@ SandboxVars = {
         LootSource_Bag_WeaponBag = 1.0,
         -- Min: 0,00 Max: 5,00 Default: 1,00
         LootSource_Bag_SurvivorBag = 1.0,
+        -- Controls whether certain police and military zombies can naturally spawn wearing slings.
         EnableZombieSlings = true,
-        -- Min: 0 Max: 100 Default: 4
+        -- Chance that eligible police-themed zombies spawn wearing a sling. Min: 0 Max: 100 Default: 4
         PoliceZombieSlingChance = 0,
-        -- Min: 0 Max: 100 Default: 8
+        -- Chance that eligible military-themed zombies spawn wearing a sling. Min: 0 Max: 100 Default: 8
         MilitaryZombieSlingChance = 0,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance that an eligible military zombie with a sling also spawns with a firearm already slung. Min: 0 Max: 100 Default: 2
         MilitaryZombieFirearmChance = 1,
     },
     MilitaryTents = {
-        -- Min: 0,00 Max: 100,00 Default: 10,00
+        -- Per-container chance that a filled military tent pack appears in eligible military or ranger/camping containers. 0 disables loot spawns entirely. Default: 10. Min: 0,00 Max: 100,00 Default: 10,00
         LootSpawnPercent = 0.0,
     },
-    OfflineSurvivorV2 = {
-        EnableMod = true,
-        EnableLoot = false,
-        -- Min: 1 Max: 20 Default: 3
-        LootMaxItems = 3,
-        -- Min: 0 Max: 720 Default: 24
-        LootCooldownHours = 24,
-        -- Min: 1 Max: 10 Default: 2
-        LootDistance = 2,
-        -- Min: 0 Max: 5 Default: 1
-        BedRadius = 2,
-        -- Min: 0 Max: 5 Default: 1
-        SofaRadius = 2,
-        -- Min: 0 Max: 720 Default: 0
-        DespawnHours = 0,
-        AdminTestBodyWhenHidden = false,
-        BlockAdminOfflineBodies = false,
-    },
     ArmorMakesSense = {
+        -- When enabled, effective clothing insulation adds endurance burden during sustained body heat. Turn this off to remove AMS thermal burden.
         EnableThermalModel = true,
+        -- When enabled, heavier armor adds extra vanilla melee muscle strain during combat. Turn this off to remove the armor-based strain effect.
         EnableMuscleStrainModel = true,
+        -- When enabled, sleeping in restrictive armor slows fatigue recovery. Turn this off to remove the armor-based sleep penalty.
         EnableSleepPenaltyModel = true,
     },
     ComputerMod = {
@@ -1325,63 +1511,81 @@ SandboxVars = {
         knockdownDelayMS = 75,
     },
     EPR = {
-        -- Min: 0,25 Max: 4,00 Default: 1,00
+        -- Multiplies all repair times. Lower = faster repairs. Default: 1.0 Min: 0,25 Max: 4,00 Default: 1,00
         RepairSpeedMultiplier = 1.0,
-        -- Min: 5 Max: 120 Default: 30
+        -- Base time for the damage assessment stage. Default: 30 minutes Min: 5 Max: 120 Default: 30
         AssessmentTimeMinutes = 30,
-        -- Min: 60 Max: 960 Default: 360
+        -- Base time for the part replacement stage. Default: 360 minutes (6 hours) Min: 60 Max: 960 Default: 360
         PartReplacementTimeMinutes = 360,
-        -- Min: 15 Max: 240 Default: 90
+        -- Base time for the calibration stage. Default: 90 minutes Min: 15 Max: 240 Default: 90
         CalibrationTimeMinutes = 90,
-        -- Min: 1 Max: 30 Default: 5
+        -- Time you must defend the facility during startup. Default: 5 minutes Min: 1 Max: 30 Default: 5
         StartupDefenseTimeMinutes = 5,
-        -- Min: 0,50 Max: 2,00 Default: 1,00
+        -- Multiplies all skill requirements. Lower = easier. Default: 1.0 Min: 0,50 Max: 2,00 Default: 1,00
         SkillRequirementMultiplier = 1.0,
-        -- Min: 1 Max: 10 Default: 7
+        -- Minimum Electrical skill to repair power substations. Default: 7 Min: 1 Max: 10 Default: 7
         MinElectricalSkill = 7,
-        -- Min: 1 Max: 10 Default: 4
+        -- Minimum Welding skill to repair power substations. Default: 4 Min: 1 Max: 10 Default: 4
         MinMetalworkSkill = 4,
-        -- Min: 1 Max: 5 Default: 2
+        -- Number of additional repair points to fix after the main control panel. Default: 2 Min: 1 Max: 5 Default: 2
         FieldComponentCount = 2,
-        -- Min: 1 Max: 10 Default: 5
+        -- Minimum Electrical skill to repair water plants. Default: 5 Min: 1 Max: 10 Default: 5
         WaterPlantElectricalSkill = 5,
-        -- Min: 1 Max: 10 Default: 5
+        -- Minimum Welding skill to repair water plants. Default: 5 Min: 1 Max: 10 Default: 5
         WaterPlantMetalworkSkill = 5,
-        -- Min: 0,00 Max: 4,00 Default: 1,00
+        -- How fast facilities lose health over time. Higher = faster degradation. Default: 1.0 Min: 0,00 Max: 4,00 Default: 1,00
         DegradationRate = 1.0,
+        -- Enable random breakdowns for low-health facilities. Default: On
         RandomBreakdownEnabled = true,
+        -- Show warnings when facility health is critically low. Default: On
         BreakdownWarningEnabled = true,
+        -- Repairs and startup attract nearby zombies. Default: On
         ZombieAttractionEnabled = true,
-        -- Min: 0,00 Max: 3,00 Default: 1,00
+        -- How many zombies are attracted. Higher = more zombies. Default: 1.0 Min: 0,00 Max: 3,00 Default: 1,00
         ZombieAttractionMultiplier = 1.0,
-        -- Min: 25 Max: 200 Default: 100
+        -- How far repair sounds travel (in tiles). Default: 100 Min: 25 Max: 200 Default: 100
         RepairNoiseRadius = 100,
-        -- Min: 50 Max: 300 Default: 150
+        -- How far startup sounds travel (in tiles). Startup is LOUD! Default: 150 Min: 50 Max: 300 Default: 150
         StartupNoiseRadius = 150,
-        -- Min: 0,50 Max: 8,00 Default: 1,00
+        -- Multiplies the parts needed for facility repairs. Higher = more demanding (up to 8x). Default: 1.0 Min: 0,50 Max: 8,00 Default: 1,00
         PartRequirementMultiplier = 1.0,
-        -- Min: 0,50 Max: 8,00 Default: 1,00
+        -- Multiplies the items consumed to maintain a connected building's EPR link. Higher = more demanding upkeep. Default: 1.0 Min: 0,50 Max: 8,00 Default: 1,00
         MaintenancePartMultiplier = 1.0,
-        -- Min: 1 Max: 90 Default: 14
+        -- Days a connected building runs before its EPR connection needs maintenance. Lower = more demanding upkeep. Default: 14 Min: 1 Max: 90 Default: 14
         BuildingMaintenanceDays = 14,
+        -- Require specific tools to perform repairs. Default: On
         RequireTools = true,
+        -- Tools lose durability when used for repairs. Default: On
         ToolsConsumed = true,
-        -- Min: 0,25 Max: 4,00 Default: 1,00
+        -- Fuel consumption rate for portable generators. Default: 1.0 Min: 0,25 Max: 4,00 Default: 1,00
         GeneratorFuelConsumption = 1.0,
+        -- Generators automatically connect to nearby buildings. Default: On
         GeneratorAutoConnect = true,
+        -- Use virtual power only (no physical generator object). Turn off for legacy generator behavior. Default: On
         SpriteGeneratorVirtualOnly = true,
+        -- When ON, activating one of the four map-placed industrial generator sprites (industry_02_52, _53, _67, _71) is treated as an alternate EPR power source and will restore power to the entire KY grid (same behaviour as repairing Louisville Plant). When OFF (default), those sprites have no grid effect - only repairing Louisville Plant can restore the grid. This does NOT affect vanilla portable generators in any way; they continue to power buildings via wires exactly as PZ ships them. Default: Off (sprite generators do NOT power the grid).
         EnableSpriteGenerators = false,
+        -- Water tanks need power to function. Default: Off
         WaterTankRequiresPower = false,
+        -- Allow manual pumping from water tanks without power. Default: On
         ManualPumpEnabled = true,
+        -- Must repair Louisville Combined Plant before other facilities. Default: On
         RequirePrerequisite = true,
+        -- Enable the Louisville Combined Utility Plant. Default: On
         LouisvillePlantEnabled = true,
+        -- Show debug information in console. Default: Off
         DebugMode = false,
+        -- Draw EPR power/water zone coverage boxes and facility markers on the world map. Opt-in. Default: Off
         ShowMapOverlay = false,
+        -- Only allow repairs after vanilla power shuts off. Default: On
         RequirePowerOff = true,
+        -- When Immersive Blackouts is active, EPR yields global power control and uses per-building electricity only. Disable to force EPR to override IB's SandboxVars. Default: On
         IBCompatMode = true,
+        -- During thunderstorms, an online substation has a chance per 10-minute tick of being knocked offline (lightning strike). Player must repair it. Default: On
         StormBlackoutsEnabled = true,
-        -- Min: 0 Max: 100 Default: 25
+        -- Chance per 10-minute storm tick that a random online substation gets knocked offline. 0 disables. Default: 25 Min: 0 Max: 100 Default: 25
         StormBlackoutChancePerCheck = 15,
+        -- If on, blackouts only trigger during actual thunderstorms. If off, heavy rain also counts. Default: On
         StormBlackoutRequireThunder = true,
     },
     PZPW = {
@@ -1406,163 +1610,198 @@ SandboxVars = {
         X = true,
     },
     ISA = {
+        -- How often Battery Bank will charge Default = Every Ten Minutes
+        -- 1 = Every Ten Minutes
+        -- 2 = Every Hour
         ChargeFreq = 1,
+        -- Regular Generator calculation has less performance impact Default = Regular Generator
+        -- 1 = "ISA"
+        -- 2 = Regular Generator
         DrainCalc = 2,
-        -- Min: 1 Max: 100 Default: 25
+        -- Solar panel power efficiency
+        -- 12% is realistic for 1993
+        -- 25% is modern solar
+        -- default is unrealistic Min: 1 Max: 100 Default: 25
         solarPanelEfficiency = 25,
-        -- Min: 0 Max: 1000 Default: 100
+        -- Multiplier for the average degrade of batteries.
+        -- Decreasing this will dramatically increase battery life. Min: 0 Max: 1000 Default: 100
         batteryDegradeChance = 100,
-        -- Min: 1 Max: 10000 Default: 100
+        -- Crafted DIY battery capacity multiplier. Min: 1 Max: 10000 Default: 100
         DIYBatteryMultiplier = 100,
-        -- Min: 0 Max: 100 Default: 25
+        -- How likely pre-placed solar panels and crates are to spawn at a given spawn location.
+        -- Requires external API to work. Min: 0 Max: 100 Default: 25
         solarPanelWorldSpawns = 15,
+        -- Rarity of Battery Bank spawning on the map. Default = Rare
+        -- 1 = None
+        -- 2 = Very Rare
+        -- 3 = Rare
+        -- 4 = Uncommon
         BatteryBankSpawn = 3,
+        -- Choose mode for Stash Houses.
+        -- Change only on new game. Default = Don't add
+        -- 1 = Don't add
+        -- 2 = Add map items
+        -- 3 = Add map items and random initial
+        -- 4 = Add random initial
         StashMode = 1,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Solar panel spawns in random containers and pre-placed crates multiplier Min: 0,00 Max: 100,00 Default: 1,00
         LRMSolarPanels = 1.0,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Batteries spawns in random containers and pre-placed crates multiplier Min: 0,00 Max: 100,00 Default: 1,00
         LRMBatteries = 1.0,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Min: 0,00 Max: 100,00 Default: 1,00
         LRMMisc = 1.0,
-        -- Min: 1 Max: 1440 Default: 30
+        -- Base number of in-game minutes it takes to connect one panel. Min: 1 Max: 1440 Default: 30
         ConnectPanelMin = 30,
+        -- Allows to craft solar panels and inverters.
         enableExpandedRecipes = false,
     },
     AutoMechanics = {
-        -- Min: 0 Max: 100 Default: 100
+        -- Accepted risk percentage of losing part condition. <LINE> 0 (default - recommended for public servers) will protect your vehicles parts conditions. <LINE> 100 let players do whatever they want (recommended for private servers). <LINE> Only active on multiplayer clients or solo users with Verbose on. Min: 0 Max: 100 Default: 100
         ConditionLossPercentageThreshold = 0,
     },
     DecayVehicle = {
-        -- Min: 0,00 Max: 1000,00 Default: 435,00
+        -- Frequency (in hours) at which the system calculates vehicle degradation. (435 = Every ~18 days, calibrated for full decay over 10-30 years in average conditions depending on part) Min: 0,00 Max: 1000,00 Default: 435,00
         DecayIntervalHours = 435.0,
-        -- Min: 0,00 Max: 8760,00 Default: 168,00
+        -- Hours a vehicle remains exempt from decay after its last use. Set to 0 to disable protection. Min: 0,00 Max: 8760,00 Default: 168,00
         ProtectionHours = 168.0,
-        -- Min: 0,00 Max: 20,00 Default: 1,25
+        -- Adjusts decay speed during Spring (moisture and temperature swings). Min: 0,00 Max: 20,00 Default: 1,25
         DecaySpringMulti = 1.25,
-        -- Min: 0,00 Max: 20,00 Default: 1,40
+        -- Adjusts decay speed during Summer (UV exposure and heat cycles). Min: 0,00 Max: 20,00 Default: 1,40
         DecaySummerMulti = 1.4,
-        -- Min: 0,00 Max: 20,00 Default: 1,15
+        -- Adjusts decay speed during Autumn (baseline conditions). Min: 0,00 Max: 20,00 Default: 1,15
         DecayAutumnMulti = 1.15,
-        -- Min: 0,00 Max: 20,00 Default: 1,60
+        -- Adjusts decay speed during Winter (freeze-thaw and high humidity). Min: 0,00 Max: 20,00 Default: 1,60
         DecayWinterMulti = 1.6,
+        -- When enabled, interiors decay faster if windows/doors are missing or open.
         DecayExposedMulti = true,
-        -- Min: 0,00 Max: 50,00 Default: 3,00
+        -- Multiplier for interior decay when exposed to outdoor elements like rain and UV. Min: 0,00 Max: 50,00 Default: 3,00
         DecayInteriorExposedMulti = 3.0,
-        -- Min: 0,00 Max: 50,00 Default: 1,20
+        -- Minor decay penalty for open interiors even when sheltered (dust, humidity). Min: 0,00 Max: 50,00 Default: 1,20
         DecayInteriorExposedMultiIndoor = 1.2,
-        -- Min: 0,00 Max: 50,00 Default: 1,80
+        -- Multiplier for engine parts when the hood is open or missing outdoors. Min: 0,00 Max: 50,00 Default: 1,80
         DecayEngineExposedMulti = 1.8,
-        -- Min: 0,00 Max: 50,00 Default: 1,10
+        -- Minor penalty for engine bay when sheltered but the hood is open. Min: 0,00 Max: 50,00 Default: 1,10
         DecayEngineExposedMultiIndoor = 1.1,
-        -- Min: 0,00 Max: 1,00 Default: 0,75
+        -- Decay reduction for engine parts when the hood is properly closed. Min: 0,00 Max: 1,00 Default: 0,75
         DecayEngineProtectedMulti = 0.75,
+        -- If enabled, applies accumulated damage to vehicles based on the time elapsed since the apocalypse began.
         DecayRetroactive = true,
-        -- Min: 0,00 Max: 1,00 Default: 0,18
+        -- Determines decay speed when the vehicle is under a roof (protection from rain and UV). Min: 0,00 Max: 1,00 Default: 0,18
         CanopyDecayMulti = 0.18,
-        -- Min: 0,00 Max: 1,00 Default: 0,05
+        -- Determines decay speed when the vehicle is inside a room or garage. This should generally be lower than Shelter Effectiveness to reflect superior protection from humidity and temperature swings. Min: 0,00 Max: 1,00 Default: 0,05
         IndoorDecayMulti = 0.05,
-        -- Min: 0,00 Max: 10,00 Default: 0,75
+        -- Rate of natural air loss over time. Min: 0,00 Max: 10,00 Default: 0,75
         TirePressureDecay = 0.75,
-        -- Min: 0,00 Max: 100,00 Default: 10,00
+        -- Pressure level below which tires suffer structural damage from the vehicle's weight. Min: 0,00 Max: 100,00 Default: 10,00
         TirePressureDamageThreshold = 10.0,
-        -- Min: 0,00 Max: 100,00 Default: 3,00
+        -- Accelerated decay multiplier applied when tires are underinflated. Min: 0,00 Max: 100,00 Default: 3,00
         TireLowPressureDamageMulti = 3.0,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
+        -- Base rate at which rust builds up on exposed metal parts. Min: 0,00 Max: 10,00 Default: 1,00
         RustAccumulationRate = 1.0,
-        -- Min: 0,00 Max: 10,00 Default: 1,50
+        -- Scales how aggressively rust destroys parts after passing the threshold. Min: 0,00 Max: 10,00 Default: 1,50
         RustDamageMultiplier = 1.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,15
+        -- Base damage multiplier for metal parts when rust is in the cosmetic stage. Min: 0,00 Max: 1,00 Default: 0,15
         RustCosmeticDamage = 0.15,
-        -- Min: 0,00 Max: 0,90 Default: 0,70
+        -- Rust level (0-1) above which parts suffer accelerated structural damage. Min: 0,00 Max: 0,90 Default: 0,70
         RustDamageThreshold = 0.7,
-        -- Min: 0,00 Max: 1,00 Default: 0,10
+        -- How much slower rust forms when the vehicle is sheltered. Min: 0,00 Max: 1,00 Default: 0,10
         RustShelteredMultiplier = 0.1,
+        -- If enabled, vehicles parked on tall grass will accumulate rust faster due to trapped moisture.
         TallGrassRustEnabled = true,
-        -- Min: 1,00 Max: 10,00 Default: 2,00
+        -- Multiplier for rust accumulation when parked on tall grass. (Default: 2.0x faster). Min: 1,00 Max: 10,00 Default: 2,00
         TallGrassRustMulti = 2.0,
-        -- Min: 0,00 Max: 20,00 Default: 0,12
+        -- Decay rate for all doors and panels. Min: 0,00 Max: 20,00 Default: 0,12
         DecayMultiplierDoors = 0.12,
-        -- Min: 0,00 Max: 20,00 Default: 0,03
+        -- Decay rate for tempered side glass. Min: 0,00 Max: 20,00 Default: 0,03
         DecayMultiplierWindows = 0.03,
-        -- Min: 0,00 Max: 20,00 Default: 0,02
+        -- Decay rate for laminated windshield glass. Min: 0,00 Max: 20,00 Default: 0,02
         DecayMultiplierWindshields = 0.02,
-        -- Min: 0,00 Max: 20,00 Default: 0,45
+        -- Decay rate for rubber tires (dry rot and UV damage). Min: 0,00 Max: 20,00 Default: 0,45
         DecayMultiplierTires = 0.45,
-        -- Min: 0,00 Max: 20,00 Default: 0,15
+        -- Decay rate for wheel rims (oxidation and corrosion). Min: 0,00 Max: 20,00 Default: 0,15
         DecayMultiplierWheels = 0.15,
-        -- Min: 0,00 Max: 20,00 Default: 0,85
+        -- Decay rate for brake discs and components. Min: 0,00 Max: 20,00 Default: 0,85
         DecayMultiplierBrakes = 0.85,
-        -- Min: 0,00 Max: 20,00 Default: 0,25
+        -- Decay rate for suspension and bushings. Min: 0,00 Max: 20,00 Default: 0,25
         DecayMultiplierSuspension = 0.25,
-        -- Min: 0,00 Max: 20,00 Default: 1,10
+        -- Decay rate for batteries (sulfation and discharge). Min: 0,00 Max: 20,00 Default: 1,10
         DecayMultiplierBattery = 1.1,
-        -- Min: 0,00 Max: 20,00 Default: 0,15
+        -- Decay rate for internal engine components. Min: 0,00 Max: 20,00 Default: 0,15
         DecayMultiplierEngine = 0.15,
-        -- Min: 0,00 Max: 20,00 Default: 0,40
+        -- Decay rate for the exhaust system. Min: 0,00 Max: 20,00 Default: 0,40
         DecayMultiplierMuffler = 0.4,
-        -- Min: 0,00 Max: 20,00 Default: 0,18
+        -- Decay rate for the fuel tank. Min: 0,00 Max: 20,00 Default: 0,18
         DecayMultiplierGasTank = 0.18,
-        -- Min: 0,00 Max: 20,00 Default: 0,15
+        -- Decay rate for electronics and radio components. Min: 0,00 Max: 20,00 Default: 0,15
         DecayMultiplierRadio = 0.15,
-        -- Min: 0,00 Max: 20,00 Default: 0,35
+        -- Decay rate for interior seating. Min: 0,00 Max: 20,00 Default: 0,35
         DecayMultiplierSeats = 0.35,
-        -- Min: 0,00 Max: 20,00 Default: 0,10
+        -- Decay rate for light lenses and bulbs. Min: 0,00 Max: 20,00 Default: 0,10
         DecayMultiplierHeadlight = 0.1,
-        -- Min: 0,00 Max: 20,00 Default: 0,22
+        -- Decay rate for the heater core and cooling path. Min: 0,00 Max: 20,00 Default: 0,22
         DecayMultiplierHeater = 0.22,
-        -- Min: 0,00 Max: 20,00 Default: 0,05
+        -- Decay rate for the glove box compartment. Min: 0,00 Max: 20,00 Default: 0,05
         DecayMultiplierGloveBox = 0.05,
-        -- Min: 0,00 Max: 20,00 Default: 0,06
+        -- Decay rate for rear truck beds. Min: 0,00 Max: 20,00 Default: 0,06
         DecayMultiplierTruckBed = 0.06,
-        -- Min: 0,00 Max: 20,00 Default: 0,12
+        -- Decay rate for the vehicle hood. Min: 0,00 Max: 20,00 Default: 0,12
         DecayMultiplierEngineDoor = 0.12,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
+        -- Decay speed multiplier for standard quality parts. Min: 0,00 Max: 5,00 Default: 1,00
         DecayQualityMultiplierAverage = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 0,80
+        -- Decay speed multiplier for premium/performance parts. Min: 0,00 Max: 5,00 Default: 0,80
         DecayQualityMultiplierPerformance = 0.8,
-        -- Min: 0,00 Max: 5,00 Default: 1,40
+        -- Decay speed multiplier applied to aged or worn parts. Min: 0,00 Max: 5,00 Default: 1,40
         DecayQualityMultiplierOld = 1.4,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
+        -- Baseline decay speed for normal passenger cars. Min: 0,00 Max: 5,00 Default: 1,00
         DecayVehicleTypeStandard = 1.0,
-        -- Min: 0,00 Max: 5,00 Default: 0,90
+        -- Decay speed multiplier for trucks and heavy vehicles. Min: 0,00 Max: 5,00 Default: 0,90
         DecayVehicleTypeHeavyDuty = 0.9,
-        -- Min: 0,00 Max: 5,00 Default: 1,10
+        -- Decay speed multiplier for performance and sport vehicles. Min: 0,00 Max: 5,00 Default: 1,10
         DecayVehicleTypeSport = 1.1,
+        -- If enabled, vehicles left exposed to the sun will gradually lose paint saturation due to UV damage (simulating 80s/90s paint).
         SunFadeEnabled = true,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
+        -- Adjusts how quickly the vehicle paint fades over time. 1.0 simulates realistic fading over 10-15 years. Min: 0,00 Max: 10,00 Default: 1,00
         SunFadeRate = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
+        -- The lowest color saturation limit (0.0 to 1.0) the vehicle paint can reach from sun fading. (Default: 0.50 = 50% saturation). Min: 0,00 Max: 1,00 Default: 0,50
         SunFadeMinSaturation = 0.5,
     },
     B42Survival = {
+        -- Adds 'Carve Button' recipe to 'Magazine: Pioneering Carvers'.
         LearnedRecipe = true,
+        -- Allows smoking Cigarettes, Cigarillos, and Cigars with a lit Torch.
+        -- Compatible:
+        -- -[B42] Horticulture
         TorchSmoking = true,
     },
     RepairableWindows = {
+        -- Sets the formula used to determine the chance for a character to break a window when attempting to pick it up. Placing a window never breaks it. <LINE> Vanilla mimics the values used by vanilla moveable windows - level 2 has a 45% chance to break, level 10 has a 5% chance. <LINE> Generous further reduces the chance to break a window - level 2 has a 45% chance, level 7 has a 0% chance. Default = Vanilla
+        -- 1 = Vanilla
+        -- 2 = Generous
+        -- 3 = Windows never break
         BreakChance = 1,
     },
     BuildablePump = {
-        -- Min: 0 Max: 10 Default: 5
+        -- Required Metal Welding skill to build the water pump. Min: 0 Max: 10 Default: 5
         MetalWeldingSkillRequired = 10,
-        -- Min: 0 Max: 10 Default: 2
+        -- Required Farming skill to build the water pump. Min: 0 Max: 10 Default: 2
         FarmingSkillRequired = 2,
-        -- Min: 1 Max: 20 Default: 4
+        -- How many Blow Torch uses are consumed when building the water pump. Min: 1 Max: 20 Default: 4
         BlowTorchUseCost = 10,
-        -- Min: 1 Max: 20 Default: 4
+        -- How many Welding Rod uses are consumed when building the water pump. Min: 1 Max: 20 Default: 4
         WeldingRodsUseCost = 10,
-        -- Min: 0 Max: 10 Default: 2
+        -- How many Tire Pumps are required. Min: 0 Max: 10 Default: 2
         TirePumpAmount = 5,
-        -- Min: 0 Max: 40 Default: 8
+        -- How many Metal Pipes are required. Min: 0 Max: 40 Default: 8
         MetalPipeAmount = 20,
-        -- Min: 0 Max: 20 Default: 2
+        -- How many Sheet Metals are required. Min: 0 Max: 20 Default: 2
         SheetMetalAmount = 2,
-        -- Min: 0 Max: 80 Default: 16
+        -- How many Screws are required. Min: 0 Max: 80 Default: 16
         ScrewsAmount = 80,
-        -- Min: 0 Max: 50 Default: 0
+        -- How many Scrap Metals are required. Min: 0 Max: 50 Default: 0
         ScrapMetalAmount = 25,
-        -- Min: 0 Max: 20 Default: 0
+        -- How many Metal Bars are required. Min: 0 Max: 20 Default: 0
         MetalBarAmount = 20,
-        -- Min: 0 Max: 30 Default: 0
+        -- How many Small Sheet Metals are required. Min: 0 Max: 30 Default: 0
         SmallSheetMetalAmount = 30,
     },
     HorseMod = {
@@ -1581,371 +1820,330 @@ SandboxVars = {
         skateboardImmersive = true,
     },
     InteractiveTailoring = {
-        -- Min: 0 Max: 9999 Default: 12
+        -- Bonus XP rewarded for matches pieces.
+        -- Note: Mismatched earns 50%. Min: 0 Max: 9999 Default: 12
         BonusXP = 12,
     },
     ColdWinters = {
+        -- If enabled, winter blizzards will occur more often (approximately a few times per month).
         EnableBlizzards = true,
+        -- If enabled, generators may occasionally shut down due to low temperatures during winter.
         GeneratorFailures = false,
+        -- If enabled, different events may occur.
         EnableEaster = true,
     },
     DiagonalFloors = {
-        -- Min: 0,01 Max: 1,00 Default: 0,25
+        -- The amount of gravel used to build floors. Also affects the amount that is picked up when using the shovel. Min: 0,01 Max: 1,00 Default: 0,25
         GravelbagUseDelta = 0.25,
-        -- Min: 0,01 Max: 20,00 Default: 2,00
+        -- The weight of the gravel bag. Min: 0,01 Max: 20,00 Default: 2,00
         GravelbagWeight = 2.0,
-        -- Min: 0,01 Max: 1,00 Default: 0,25
+        -- The amount of Sand used to build floors. Also affects the amount that is picked up when using the shovel. Min: 0,01 Max: 1,00 Default: 0,25
         SandbagUseDelta = 0.25,
-        -- Min: 0,01 Max: 20,00 Default: 2,00
+        -- The weight of the Sand bag. Min: 0,01 Max: 20,00 Default: 2,00
         SandbagWeight = 2.0,
-    },
-    Text = {
-        DividerMusicNew = true,
-        DividerDancingNew = true,
-        DividerMeditationNew = true,
-        DividerHygiene = true,
-        DividerArt = true,
-        LSDividerOther = false,
-        DividerDebug = false,
-    },
-    LSAmbt = {
-        Toggle = true,
-        -- Min: 1 Max: 1000 Default: 36
-        Cooldown = 36,
-        -- Min: 1 Max: 100 Default: 1
-        MaxInProgress = 1,
-        -- Min: 1 Max: 100 Default: 3
-        MaxTotal = 3,
-        ResetException = false,
-        HideTips = false,
-    },
-    Music = {
-        StrengthMultiplier = 2,
-        ListeningStrengthMultiplier = 2,
-        LearningChance = 3,
-        Metabolics = 1,
-    },
-    Dancing = {
-        StrengthMultiplier = 2,
-    },
-    Meditation = {
-        StrengthMultiplier = 1,
-        MindfulnessDuration = 1,
-        -- Min: 0,00 Max: 10,00 Default: 2,00
-        HealFactor = 1.0,
-        EffectMultiplier = 1,
-        KeepBags = false,
-    },
-    LSMeditation = {
-        RemoveLevitation = true,
-    },
-    Yoga = {
-        StrengthMultiplier = 1,
-        Exhaustion = 3,
-        Embarrassment = 2,
-        AidObjects = true,
-        RequiresMat = false,
-        KeepBags = false,
-        FailChance = 4,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        YogaXPMultiplier = 1.0,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        FitnessXPMultiplier = 0.5,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        NimbleXPMultiplier = 0.25,
-    },
-    LSHygiene = {
-        -- Min: 0,00 Max: 3,00 Default: 1,00
-        HygieneNeedMultiplier = 1.0,
-        -- Min: 0,00 Max: 3,00 Default: 1,00
-        BladderNeedMultiplier = 1.0,
-        HygieneNeedExpectationTime = 2,
-        CleansMakeup = true,
-        NotEmbarrassed = false,
-        ColdSeverity = 2,
-        -- Min: 0,00 Max: 3,00 Default: 0,00
-        ColdChanceMultiplier = 0.0,
-        -- Min: 1 Max: 100 Default: 10
-        OuthouseRange = 10,
-        CleaningExpectationTime = 2,
-        CleaningLitterChance = 3,
-    },
-    LSArt = {
-        -- Min: 0,10 Max: 3,00 Default: 1,00
-        GeneralBeautyMultiplier = 0.1,
-        BeautyOutdoors = false,
-        BeautyShowNegative = false,
-        BeautyNeedDecayRate = 1,
-        BeautyNeedStrength = 1,
-        -- Min: 0,10 Max: 4,00 Default: 1,00
-        ArtworkBeautyMultiplier = 4.0,
-    },
-    LS = {
-        DynamicTraits = false,
-        DynamicTraitsReverse = 1,
-        DividerServer = false,
-        ModdataUpdate = 1,
-        MoodUpdate = 1,
-    },
-    LSComfort = {
-        -- Min: 0,00 Max: 3,00 Default: 1,00
-        ComfortNeedMultiplier = 1.0,
-        ComfortPositive = false,
-        ComfortNoImpact = false,
-    },
-    Debug = {
-        MoodlePriority = false,
-        Expressions = false,
-        DanceAnim = false,
-        LSVerbose = false,
     },
     HereGoesTheSun = {
         EnableGodRays = true,
         EnableStormMood = true,
+        -- Default = Recommended
+        -- 1 = Soft
+        -- 2 = Recommended
+        -- 3 = Night of the Living Dead
         StormMoodPreset = 2,
     },
     DestroyBoulder = {
-        -- Min: 0 Max: 50 Default: 5
+        -- Minimum number of rocks dropped per boulder. Min: 0 Max: 50 Default: 5
         RocksMin = 5,
-        -- Min: 0 Max: 50 Default: 5
+        -- Maximum number of rocks dropped per boulder. Min: 0 Max: 50 Default: 5
         RocksMax = 15,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop an iron ore chunk when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         IronOreChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum iron ore chunks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         IronOreMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum iron ore chunks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         IronOreMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop flint when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         FlintChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum flint nodules dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         FlintMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum flint nodules dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         FlintMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a large stone when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         LargeStoneChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum large stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         LargeStoneMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum large stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         LargeStoneMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop an iron bloom when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         IronBloomChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum iron blooms dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         IronBloomMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum iron blooms dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         IronBloomMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop aluminum fragments when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         AluminumFragmentsChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum aluminum fragments dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         AluminumFragmentsMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum aluminum fragments dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         AluminumFragmentsMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop copper ore when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         CopperOreChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum copper ore dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         CopperOreMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum copper ore dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         CopperOreMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a flat stone when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         FlatStoneChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum flat stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         FlatStoneMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum flat stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         FlatStoneMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a stone block when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         StoneBlockChance = 2,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum stone blocks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         StoneBlockMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum stone blocks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         StoneBlockMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a steel block when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         SteelBlockChance = 0,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum steel blocks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelBlockMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum steel blocks dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelBlockMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a steel piece when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         SteelPieceChance = 0,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum steel pieces dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelPieceMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum steel pieces dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelPieceMax = 1,
-        -- Min: 0 Max: 100 Default: 2
+        -- Chance to drop a steel slug when a boulder is destroyed. Min: 0 Max: 100 Default: 2
         SteelSlugChance = 0,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum steel slugs dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelSlugMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum steel slugs dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SteelSlugMax = 1,
-        -- Min: 0 Max: 100 Default: 10
+        -- Chance to drop a sharpening stone when a boulder is destroyed. Min: 0 Max: 100 Default: 10
         SharpenStoneChance = 10,
-        -- Min: 0 Max: 50 Default: 1
+        -- Minimum sharpening stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SharpenStoneMin = 1,
-        -- Min: 0 Max: 50 Default: 1
+        -- Maximum sharpening stones dropped when its chance succeeds. Min: 0 Max: 50 Default: 1
         SharpenStoneMax = 1,
-        -- Min: 1 Max: 10 Default: 2
+        -- Number of mining uses required before tools lose 1 condition. Min: 1 Max: 10 Default: 2
         ToolUsesPerConditionLoss = 2,
     },
     StreetlightGen = {
+        -- Master switch for this mod’s lighting. Disable to turn off generator powered streetlights without removing the mod; useful for testing and avoiding Lua reloading.
         Enabled = true,
-        -- Min: 10 Max: 180 Default: 20
+        -- The tile range of how far a generator powers world light sources. Larger ranges light up more of the map, but values past 40 can make lights take longer to appear. 20–35 is average and recommended for performance. Note: The vanilla Sandbox generator tile range does NOT affect this value. Min: 10 Max: 180 Default: 20
         StreetlightRadius = 40,
+        -- Lights sprites that define their own light (signs, shop fronts, billboards) within a powered area.
         IncludeDecorative = true,
+        -- Scales the radius of decorative/sign lights created by the mod (not brightness). Higher values make those lights reach farther, but can also cause performance penalties. Default = 3x
+        -- 1 = 1x
+        -- 2 = 2x
+        -- 3 = 3x
+        -- 4 = 4x
+        -- 5 = 5x
+        -- 6 = 6x
         DecorativeLightBoost = 3,
+        -- When enabled, forces streetlights to use the custom RGB color set below (or use the color order below). Decorative/sign lights keep their own colors.
         UseCustomStreetlightColor = false,
+        -- Choose a predefined color for streetlights. To use custom RGB, enable 'Override streetlight color' above and set the RGB sliders. Default = Amber (default)
+        -- 1 = Amber (default)
+        -- 2 = Warm Amber
+        -- 3 = Yellow
+        -- 4 = Cool White (bluish)
+        -- 5 = Sodium Vapor (deep amber)
+        -- 6 = Cyan
+        -- 7 = Defective LED (violet/blue)
+        -- 8 = Blue
+        -- 9 = Crimson Beacon (red)
+        -- 10 = Purple
+        -- 11 = Blush Pink (pink)
+        -- 12 = Neutral White
         StreetlightColorPreset = 1,
-        -- Min: 0 Max: 255 Default: 255
+        -- Red channel for custom streetlight color. Used when 'Override streetlight color' is enabled. Min: 0 Max: 255 Default: 255
         StreetlightColorR = 255,
-        -- Min: 0 Max: 255 Default: 140
+        -- Green channel for custom streetlight color. Used when 'Override streetlight color' is enabled. Min: 0 Max: 255 Default: 140
         StreetlightColorG = 140,
-        -- Min: 0 Max: 255 Default: 51
+        -- Blue channel for custom streetlight color. Used when 'Override streetlight color' is enabled. Min: 0 Max: 255 Default: 51
         StreetlightColorB = 51,
+        -- Advanced: for tilesets that store color in a non-RGB order. Keep at RGB unless you know what you're doing. Default = RGB
+        -- 1 = RGB
+        -- 2 = BGR
+        -- 3 = GRB
+        -- 4 = RBG
+        -- 5 = GBR
+        -- 6 = BRG
         StreetlightColorOrder = 1,
-        -- Min: 12 Max: 32 Default: 22
+        -- Radius of the glow for each streetlight lamp (not the generator radius). Higher values create more overlap and brightness at the cost of performance. Min: 12 Max: 32 Default: 22
         StreetlightLampRadius = 22,
-        -- Min: 50 Max: 200 Default: 120
+        -- Overall brightness multiplier for streetlight lights. 100% = default. 120% is slightly brighter; 50% is dimmer. Min: 50 Max: 200 Default: 120
         StreetlightIntensityPct = 120,
+        -- When enabled, disables lights far outside the player’s current view to reduce GPU/CPU usage in dense areas. Use if you’re running into performance problems.
         CullLightsToView = false,
-        -- Min: 20 Max: 90 Default: 60
+        -- How far from each player lights are kept when culling is enabled. Increase to keep distant lights visible; reduce for more performance. Min: 20 Max: 90 Default: 60
         ViewCullRadius = 60,
-        -- Min: 0 Max: 20 Default: 12
+        -- Advanced: extra margin beyond the cull radius to avoid pop-in while moving. A small buffer (8–16) is recommended. Min: 0 Max: 20 Default: 12
         ViewCullPadding = 12,
+        -- Advanced: briefly boosts the relight process when you enter a powered area so lights appear to turn on instantly. Recommended to leave on.
         InstantWarmup = true,
-        -- Min: 4 Max: 64 Default: 16
+        -- Advanced: distance around each player to scan for generators that power streetlights. Larger values pick up more gens sooner at a small overhead. Min: 4 Max: 64 Default: 16
         GenDiscoverRadius = 60,
-        -- Min: 30 Max: 360 Default: 180
+        -- Advanced: within this range of a player, generators are checked frequently for ON/OFF changes. Larger radius detects changes farther away with more polling. Min: 30 Max: 360 Default: 180
         TogglePollRadius = 180,
+        -- Advanced: Comma-separated list of sprite names or prefixes to exclude from lighting on (e.g., advertising_01_36, billboard_). Leave blank to include all supported sprites.
         ExcludeSprites = "\"\"",
     },
     Excavation = {
+        -- Allows digging stairs below -1. 
+        --  <RED> This can cause severe graphical glitches that may trigger eplilepsy.
         DisableDepthLimit = false,
     },
     SaucedCarts = {
+        -- Enable or disable the SaucedCarts mod.
         EnableMod = true,
+        -- EXPERIMENTAL — off by default. Allows loading and unloading corpses to/from carts via grapple + right-click 'Load into Cart'. Includes vanilla-faithful rot accounting (corpses age in the cart, despawn at the sandbox HoursForCorpseRemoval threshold). Still being tested in MP — opt in if you want to try it; expect rough edges.
         EnableCorpseStorage = true,
-        -- Min: 0 Max: 500 Default: 100
+        -- How often carts spawn in the world. 100 = default, 0 = no spawns, 200 = double spawns. Min: 0 Max: 500 Default: 100
         SpawnRate = 25,
-        -- Min: 25 Max: 400 Default: 100
+        -- Multiplier for cart capacity. 100 = default, 50 = half capacity, 200 = double capacity. Min: 25 Max: 400 Default: 100
         CapacityMultiplier = 150,
-        -- Min: 25 Max: 400 Default: 100
+        -- Multiplier for cart durability. 100 = default, 50 = breaks faster, 200 = lasts longer. Min: 25 Max: 400 Default: 100
         DurabilityMultiplier = 100,
-        -- Min: 1 Max: 5 Default: 1
+        -- Maximum number of carts that can spawn in a single building. 1 = default, 5 = max. Min: 1 Max: 5 Default: 1
         MaxCartsPerBuilding = 1,
-        -- Min: 0 Max: 99 Default: 95
+        -- Percentage of item weight reduced when stored in carts. 95 = items weigh 5% of normal (default), 100 = items weigh nothing, 0 = no reduction. Min: 0 Max: 99 Default: 95
         WeightReduction = 95,
-        -- Min: 0 Max: 200 Default: 100
+        -- Movement speed penalty when pushing carts. 100 = default, 0 = no penalty, 200 = double penalty. Min: 0 Max: 200 Default: 100
         SpeedPenaltyMultiplier = 100,
-        -- Min: 25 Max: 400 Default: 100
+        -- How much condition is restored per repair. 100 = default, 200 = double repair, 50 = half repair. Min: 25 Max: 400 Default: 100
         RepairAmountMultiplier = 100,
-        -- Min: 25 Max: 400 Default: 100
+        -- How long repairs take. 100 = default, 50 = faster repairs, 200 = slower repairs. Min: 25 Max: 400 Default: 100
         RepairTimeMultiplier = 100,
+        -- When enabled, Maintenance skill improves repair effectiveness and speed, and awards XP.
         MaintenanceSkillBonus = true,
+        -- Enable detailed debug logging. Disable for better performance when playing with PZ debug mode on.
         EnableDebugLogs = false,
+        -- When enabled, carts only spawn in buildings PZ flags as shops (BuildingDef.isShop). Reduces surprise spawns at the cost of some legitimate spawn locations. Combined with the always-on residential/outdoor filter.
         StrictShopOnly = true,
+        -- How often carts spawn outdoors in vehicle zones — store parking lots, residential driveways, and trailer-park parking (the same map zones that spawn cars), like an abandoned 'escaped cart'. Off = indoors only. Scales with Spawn Rate. Default = Medium
+        -- 1 = Off
+        -- 2 = Low
+        -- 3 = Medium
+        -- 4 = High
         OutdoorSpawnDensity = 3,
+        -- EXPERIMENTAL — off by default. How often a spawned cart comes pre-loaded with loot that fits where it spawned — groceries outside homes and lots, materials/tools in warehouses and stores, and (very rarely) a survivor's cache of weapons and ammo. Most carts stay empty, so a loaded one is a find. Still being tested — opt in if you want to try it; expect rough edges. Off = always empty (default). Default = Off
+        -- 1 = Off
+        -- 2 = Rare
+        -- 3 = Some
+        -- 4 = Common
         LoadedCartSpawns = 1,
     },
-    HB = {
-        PermanentCasings = true,
-        -- Min: 0 Max: 5 Default: 0
-        MultiplayerTick = 0,
-        CustomIcons = true,
-        CasingSounds = true,
-    },
     VMZ = {
+        -- Determines whether military road stories will spawn in the game.
         RoadStories = true,
-        -- Min: 0,00 Max: 2,00 Default: 1,00
+        -- Allows you to edit the chances of military road stories appearing. Min: 0,00 Max: 2,00 Default: 1,00
         RoadStoriesMultiplier = 0.01,
+        -- Determines whether a vehicle can spawn in a regular parking stall (near shops, houses) as police and fire department cars occasionally do.
         SpecCar = false,
-        -- Min: 0 Max: 100 Default: 16
+        -- Set spawn rate for vehicles in military zone. Min: 0 Max: 100 Default: 16
         SpawnRate = 16,
-        -- Min: 0 Max: 100 Default: 50
+        -- Set condition of vehicle parts (should be 'damaged') that spawn in military zone. Recommend use it in pair with 'Chance of having a damaged part'. So if you want ~100% vehicle set 'Vehicles condition' = 100 and 'Chance of having a damaged part' = 100. Min: 0 Max: 100 Default: 50
         VehiCond = 50,
-        -- Min: 0 Max: 100 Default: 0
+        -- Set chance of having a 'damaged' part for vehicles in military zone (the part's condition applies specifically to 'damaged' parts, so if the chance is 100 and the durability is 100, the overall condition indicator of the car will also be ~100%). Min: 0 Max: 100 Default: 0
         PartDamage = 0,
-        -- Min: 0 Max: 100 Default: 70
+        -- Set chance to spawn a key in vehicle and near it (zombies, floor, buildings). Min: 0 Max: 100 Default: 70
         KeySpawn = 70,
     },
     ProjectSummerCar = {
+        -- Enable this mod to take over vehicle spawning condition based on the next 8 settings. WARNING: Will alter every car you have not yet entered and parts may be removed depending on settings. Otherwise these settings only change engine part spawn chances.
         TakeOverSpawning = false,
+        -- Remove the wrecked cars you can't drive and replace them with normal cars
         RemoveWreckedCars = false,
-        -- Min: 0,00 Max: 1,00 Default: 0,10
+        -- Chance of cars in a traffic jam/junkyard being burnt cars Min: 0,00 Max: 1,00 Default: 0,10
         BurntCarChance = 0.1,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
+        -- Chance that medium to high condition will be picked over low to medium condition Min: 0,00 Max: 1,00 Default: 0,50
         LowOrHigh = 0.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,10
+        -- Lowest condition car that will spawn Min: 0,00 Max: 1,00 Default: 0,10
         LowCondition = 0.1,
-        -- Min: 0,10 Max: 10,00 Default: 1,50
+        -- Bias towards low or medium. Numbers below 1 bias it towards low, numbers above 1 bias it towards medium. Min: 0,10 Max: 10,00 Default: 1,50
         LowToMid = 1.5,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
+        -- Medium condition of cars. Vehicles can be biased towards or away from this value Min: 0,00 Max: 1,00 Default: 0,50
         MidCondition = 0.5,
-        -- Min: 0,10 Max: 10,00 Default: 0,70
+        -- Bias towards medium or high. Numbers below 1 bias it towards medium, numbers above 1 bias it towards high. Min: 0,10 Max: 10,00 Default: 0,70
         MidToHigh = 0.7,
-        -- Min: 0,00 Max: 1,00 Default: 0,90
+        -- Highest condition that cars will spawn Min: 0,00 Max: 1,00 Default: 0,90
         HighCondition = 0.9,
-        -- Min: 0,00 Max: 1,00 Default: 0,40
+        -- Lowest condition taking into consideration for part spawn chance. Cars with condition lower than this will have the same part spawn chance Min: 0,00 Max: 1,00 Default: 0,40
         PartChanceLowCond = 0.4,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Chance of parts spawning in low condition vehicles. Warning: Reducing this below 1 will mean very few drivable cars Min: 0,00 Max: 1,00 Default: 1,00
         PartChanceLowCondChance = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Highest condition taking into consideration for part spawn chance. Cars with condition higher than this will have the same part spawn chance Min: 0,00 Max: 1,00 Default: 1,00
         PartChanceHighCond = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Chance of parts spawning in high condition vehicles. Consider reducing for a 'everything good has been taken' feel for the ultimate mechanic experience Min: 0,00 Max: 1,00 Default: 1,00
         PartChanceHighCondChance = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Min chance of parts spawning in survivor cars Min: 0,00 Max: 1,00 Default: 1,00
         PartChanceSurvivorMin = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Max chance of parts spawning in survivor cars Min: 0,00 Max: 1,00 Default: 1,00
         PartChanceSurvivorMax = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,20
+        -- Min chance of parts spawning in traffic jam/junkyard cars Min: 0,00 Max: 1,00 Default: 0,20
         PartChanceTrafficMin = 0.2,
-        -- Min: 0,00 Max: 1,00 Default: 0,90
+        -- Max chance of parts spawning in traffic jam/junkyard cars Min: 0,00 Max: 1,00 Default: 0,90
         PartChanceTrafficMax = 0.9,
-        -- Min: 0,00 Max: 1,00 Default: 0,00
+        -- Chance of a part being at a completely random condition to simulate parts that have been replaced recently or are failing Min: 0,00 Max: 1,00 Default: 0,00
         RandomPartChance = 0.0,
-        -- Min: 0,00 Max: 2,00 Default: 0,30
+        -- How much newly spawned engine part condition can vary from average condition of car Min: 0,00 Max: 2,00 Default: 0,30
         ConditionRandom = 0.3,
+        -- Enable repair of engine parts. Disable if some other mod is providing engine part repair.
         RepairParts = true,
-        -- Min: 0,00 Max: 10,00 Default: 0,00
+        -- Horsepower at minimum engine condition as a multiplier of vanilla Min: 0,00 Max: 10,00 Default: 0,00
         MinHP = 0.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,00
+        -- Engine part average condition must be this low or lower to produce min horsepower Min: 0,00 Max: 1,00 Default: 0,00
         MinHPCondition = 0.0,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
+        -- Horsepower at maximum engine condition as a multiplier of vanilla Min: 0,00 Max: 10,00 Default: 1,00
         MaxHP = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 1,00
+        -- Engine part average condition must be this much or higher to produce max horsepower Min: 0,00 Max: 1,00 Default: 1,00
         MaxHPCondition = 1.0,
-        -- Min: 0,00 Max: 3,00 Default: 0,50
+        -- How much the top tier of performance parts upgrade car performance Min: 0,00 Max: 3,00 Default: 0,50
         PerformancePartBoost = 0.5,
-        -- Min: 0,00 Max: 10,00 Default: 1,00
+        -- How much to multiply impact damage when applying it to the engine Min: 0,00 Max: 10,00 Default: 1,00
         EngineImpactDamage = 1.0,
-        -- Min: 1 Max: 20 Default: 4
+        -- How many parts the damage is spread across in an impact. The engine has a lot of parts and hence more HP then a vanilla engine.  Min: 1 Max: 20 Default: 4
         EngineImpactDamageCount = 4,
+        -- Enables mouseover of oil indicator to get oil level and quality. Also makes oil light come on when oil quality is low instead of just when you run dangerously low on oil
         SmartOilIndicator = true,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Multiplies how fast your engine leaks oil. Engine part condition also factors heavily into this Min: 0,00 Max: 100,00 Default: 1,00
         OilLeakRate = 1.0,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Multiplies how fast your engine turns oil into used oil. Engine part condition also factors heavily into this Min: 0,00 Max: 100,00 Default: 1,00
         OilDecayRate = 1.0,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Multiplies how fast your oil filter degrades. Engine part condition also factors heavily into this Min: 0,00 Max: 100,00 Default: 1,00
         OilFilterDecayRate = 1.0,
-        -- Min: 0,10 Max: 10,00 Default: 2,00
+        -- How likely Car batteries are to spawn with a high or low charge. Numbers below 1 encourage a low charge, numbers above 1 encourage a high charge Min: 0,10 Max: 10,00 Default: 2,00
         BatteryChargedBias = 2.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,80
+        -- How likely a battery is to be charged at all Min: 0,00 Max: 1,00 Default: 0,80
         BatteryChargedChance = 0.8,
-        -- Min: 0,00 Max: 1,00 Default: 0,50
+        -- How likely a completely discharged battery is to be at 0 condition. Min: 0,00 Max: 1,00 Default: 0,50
         BatteryGoodChance = 0.5,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- How fast your alternator charges the battery. Alternator condition and fanbelt condition also factors into this. Min: 0,00 Max: 100,00 Default: 1,00
         ChargeRate = 1.0,
-        -- Min: 0,00 Max: 100,00 Default: 1,00
+        -- Battery capacity multiplier when the battery is at full condition Min: 0,00 Max: 100,00 Default: 1,00
         BatteryCapacity = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,20
+        -- The above Battery Capacity gets multipled by this value when the battery is at very low condition Min: 0,00 Max: 1,00 Default: 0,20
         BatteryCapacityLowConditionMultiplier = 0.2,
         AOSevereTraumas = true,
         AOIgnoreRunningEngine = false,
     },
     CF8KSweeper = {
         AllowTiles = true,
+        -- You can list exact sprite names or the start of tilepacks. Separate them with ;
         SpriteWhitelist = "brokenglass_1_;trash_01_;d_trash_;street_decoration_01_26;street_decoration_01_27;damaged_objects_01_26;damaged_objects_01_27;damaged_objects_01_18;damaged_objects_01_19;damaged_objects_01_20;damaged_objects_01_21",
         AllowBlood = true,
         AllowGrime = true,
         AllowAshes = true,
         AllowItems = true,
         AllowCorpses = true,
+        -- WARNING: items and corpses will be gone forever. This has enormous griefing potential so it is disabled by default.
         AllowUserAutoDelete = false,
     },
     DAMN = {
@@ -1960,102 +2158,97 @@ SandboxVars = {
         AllowWreckyMcChevySpawns = false,
     },
     BuildableGarageDoor = {
-        -- Min: 2 Max: 10 Default: 5
+        -- Set the maximum allowed size for garage doors
+        -- 
+        -- Example:
+        -- 3 mean only 3-tiles doors are allowed (left, middle, right)
+        -- 4 mean 3-tiles and 4-tiles are allowed (left, middle, right) and (left, middle, middle, right) Min: 2 Max: 10 Default: 5
         MaxSize = 5,
     },
     Plumbing = {
-        -- Min: 0,00 Max: 0,10 Default: 0,01
+        -- The percentage of the water pump filter that is consumed every 1 game minute. Min: 0,00 Max: 0,10 Default: 0,01
         PumpFilterUsage = 0.007,
-        -- Min: 0,00 Max: 0,01 Default: 0,00
+        -- The percentage of the efficiency that a water pump loses every 1 game minute. Min: 0,00 Max: 0,01 Default: 0,00
         PumpEfficiencyLoss = 0.0012,
-        -- Min: 6 Max: 96 Default: 12
+        -- The amount of units of water that a 100% efficient pump delivers every 1 game minute. Min: 6 Max: 96 Default: 12
         PumpMaxWater = 12,
     },
-    Bicycle = {
-        -- Min: 0 Max: 100 Default: 30
-        SpawnRate = 15,
-        -- Min: 0 Max: 100 Default: 30
-        SidecarSpawnRate = 15,
-        -- Min: 0,10 Max: 5,00 Default: 2,20
-        WalkSpeedMultiplier = 2.2,
-        -- Min: 0,10 Max: 5,00 Default: 3,10
-        RunSpeedMultiplier = 3.1,
-        ImmersiveMode = true,
-        LoadPenaltyEnabled = true,
-        -- Min: 0 Max: 75 Default: 50
-        MaxTurnPenalty = 50,
-        -- Min: 0 Max: 75 Default: 35
-        MaxSpeedPenalty = 35,
-        ZombieSlowdownEnabled = true,
-        -- Min: 0 Max: 150 Default: 100
-        ZombieSlowdownStrength = 100,
-        -- Min: 0 Max: 100 Default: 30
-        ZombieContactSensitivity = 30,
-    },
     ZombiesHearYourMicrophone = {
+        -- If this is toggled on, the mod will respect the settings of the user(s). If toggled off the game will pick up microphone activity no matter what, even if VOIP is turned off/not actively enabled. Note: Obvious exception is if no mic is present.
         respectEnableVOIP = true,
         -- Min: 1,50 Max: 100,00 Default: 1,50
         multiplier = 1.5,
         -- Min: 0,00 Max: 1,00 Default: 0,66
         sneakReduce = 0.66,
+        -- Default = No Influence
+        -- 1 = No Influence
+        -- 2 = Sneaking Only
+        -- 3 = Lightfooted Only
+        -- 4 = Both Sneaking and Lightfooted
         skillsInfluence = 1,
+        -- Negative traits: Conspicuous, and Clumsy. Positive Traits: Graceful, and Inconspicuous Default = No Influence
+        -- 1 = No Influence
+        -- 2 = Negative Traits Only
+        -- 3 = Positive Traits Only
+        -- 4 = Both Positive and Negative Traits
         traitsInfluence = 1,
     },
     RealisticCold = {
-        -- Min: 0,10 Max: 10,00 Default: 4,00
+        -- How much warmth your clothes provide. 4 is the mod's baseline; lower means clothing protects less, higher means more. Below 1, even heavy gear feels thin; above 6, light layers feel like a winter coat. Min: 0,10 Max: 10,00 Default: 4,00
         ClothingInsulationScale = 4.0,
+        -- Lets food freeze inside containers when the surrounding temperature drops below freezing. Experimental - may interact unpredictably with other food mods.
         EnableFoodFreezingExperimental = false,
-        -- Min: 0,10 Max: 3,00 Default: 1,00
+        -- Scales how fast you produce sweat when overheating. 1.0 is the mod's baseline. Lower numbers mean less wetness from heat stress (and clothing stays drier); higher numbers mean you drench yourself faster. Min: 0,10 Max: 3,00 Default: 1,00
         SweatRateMultiplier = 1.0,
-        -- Min: 0,00 Max: 3,00 Default: 1,00
+        -- How much sweat actually cools your body as it evaporates. 1.0 is baseline. 0 disables evaporative cooling entirely (sweat still soaks clothing but provides no cooling). Wind and dry air boost the effect; rain cancels most of it. Min: 0,00 Max: 3,00 Default: 1,00
         EvapCoolingStrength = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,30
+        -- Controls how strongly uneven loadouts (e.g. parka + bare legs) deviate from the simple body-wide average. 0.0 = pure average (all parts treated equally); 1.0 = always pulled toward the weakest part in cold and the most-trapping part in heat. 0.30 is the recommended middle ground. Min: 0,00 Max: 1,00 Default: 0,30
         InsulationSpreadBias = 0.3,
-        -- Min: 0,00 Max: 3,00 Default: 1,00
+        -- Smoothes the warming-rate cliff right at normal body temperature. 1.0 is baseline. 0 disables the bridge, warming up from cold to normal feels fast, but heating past normal in hot air feels much slower. Min: 0,00 Max: 3,00 Default: 1,00
         ConvectiveBridgeStrength = 1.0,
-        -- Min: 0,10 Max: 2,00 Default: 0,50
+        -- Hard ceiling on how fast body temperature can rise from environmental warming (warm air, heaters, hot drinks combined). 0.5 °C/min is the default. Lower for slower recovery from cold; raise for instant warm-up at fires. Min: 0,10 Max: 2,00 Default: 0,50
         WarmingRateCapCPM = 0.5,
-        -- Min: 0,10 Max: 5,00 Default: 1,00
+        -- Scales how badly a cold affects you (sickness moodle, infection rate). 1.0 is baseline. Higher = colds feel like the flu. Min: 0,10 Max: 5,00 Default: 1,00
         ColdSicknessMultiplier = 1.0,
-        -- Min: 1 Max: 4 Default: 2
+        -- Cold stage you need to reach before you can catch a cold. 1 = Chilly (easiest, most forgiving), 2 = Cold (default), 3 = Freezing, 4 = Hypothermia (only catch a cold if literally freezing to death). Min: 1 Max: 4 Default: 2
         CatchColdThreshold = 2,
-        -- Min: 0,10 Max: 5,00 Default: 1,75
+        -- How quickly the catch-a-cold meter fills once you're past the threshold. 1.75 is the default. Higher = colds catch faster. Min: 0,10 Max: 5,00 Default: 1,75
         CatchColdRateMultiplier = 1.75,
-        -- Min: 1 Max: 200 Default: 45
+        -- How quickly an untreated cold gets worse, in cold-strength points per game-hour. 45 is the default. Min: 1 Max: 200 Default: 45
         ColdWorsenPerHour = 45,
-        -- Min: 1 Max: 200 Default: 24
+        -- How quickly a cold improves while resting and warm. 24 is the default. Min: 1 Max: 200 Default: 24
         ColdRecoverPerHour = 24,
-        -- Min: 1 Max: 200 Default: 36
+        -- How quickly the effect of cold medicine fades. 36 is the default. Min: 1 Max: 200 Default: 36
         ColdMedicineDecayPerHour = 36,
-        -- Min: 0,10 Max: 10,00 Default: 0,20
+        -- Minimum game-hours between hypothermia damage ticks. Smaller = more frequent damage. 0.2 is the default (one tick every ~12 game-minutes). Min: 0,10 Max: 10,00 Default: 0,20
         HypothermiaDamageIntervalMin = 0.2,
-        -- Min: 0,10 Max: 5,00 Default: 0,20
+        -- Health lost per hypothermia damage tick. 0.2 is the default. Min: 0,10 Max: 5,00 Default: 0,20
         HypothermiaDamagePerTick = 0.2,
-        -- Min: -30,00 Max: 25,00 Default: 16,00
+        -- Air temperature at which the chilly warning can start firing. Below this, the moodle considers you exposed. Default 16°C. Min: -30,00 Max: 25,00 Default: 16,00
         ChillyAirThreshold = 16.0,
-        -- Min: 0,00 Max: 2,00 Default: 0,90
+        -- When clothing's cooling factor exceeds this fraction, you start to feel chilly. Lower = warning fires earlier (less protection feels colder sooner). 0.9 is the default. Min: 0,00 Max: 2,00 Default: 0,90
         ChillyCoolingMultiplierThreshold = 0.9,
-        -- Min: 0,00 Max: 2,00 Default: 1,50
+        -- Average clothing insulation below which the chilly warning is allowed to fire. 1.5 is the default. Set higher to make the warning fire even with moderate clothing. Min: 0,00 Max: 2,00 Default: 1,50
         ChillyInsulationThreshold = 1.5,
-        -- Min: 5,00 Max: 60,00 Default: 26,00
+        -- Warmest temperature any single heater will aim for in its room. 26°C is the default. Min: 5,00 Max: 60,00 Default: 26,00
         HeatTargetMaximum = 26.0,
-        -- Min: 0,10 Max: 3,00 Default: 1,00
+        -- How sharply heater warmth fades with distance. 1.0 is the default (linear). Higher = warmth stays close to the heater. Lower = heat reaches further. Min: 0,10 Max: 3,00 Default: 1,00
         HeatDistanceExponent = 1.0,
-        -- Min: 0,00 Max: 60,00 Default: 25,00
+        -- Maximum degrees above outdoor temperature that a running vehicle heater can produce. 25°C is the default. Min: 0,00 Max: 60,00 Default: 25,00
         VehicleHeaterMaxDelta = 25.0,
-        -- Min: 0 Max: 100 Default: 20
+        -- Percent chance an industrial heater appears in large industrial buildings. Set to 0 to disable industrial-heater spawns entirely. Min: 0 Max: 100 Default: 20
         IndustrialHeaterSpawnRate = 20,
-        -- Min: 1,00 Max: 10,00 Default: 6,00
+        -- Maximum combined cold leakage allowed across all openings (windows + doors + gaps + curtains) in one room. Higher = drafty rooms can equalize to outdoor faster. 6.0 is the default. Min: 1,00 Max: 10,00 Default: 6,00
         ExposureCap = 6.0,
-        -- Min: 0,10 Max: 5,00 Default: 0,80
+        -- How much cold leaks through a closed window. 0.8 is the default. Higher = windowed rooms get colder. Min: 0,10 Max: 5,00 Default: 0,80
         BreachWeightWindow = 0.8,
-        -- Min: 0,10 Max: 5,00 Default: 1,20
+        -- How much cold leaks through a closed door. 1.2 is the default. Higher = drafty doors. Min: 0,10 Max: 5,00 Default: 1,20
         BreachWeightDoor = 1.2,
-        -- Min: 0,10 Max: 5,00 Default: 1,40
+        -- How much cold pours through large structural gaps (broken walls, holes). 1.4 is the default. Min: 0,10 Max: 5,00 Default: 1,40
         BreachWeightGap = 1.4,
-        -- Min: 0,10 Max: 5,00 Default: 0,30
+        -- How much cold leaks through a curtained-but-otherwise-open opening. 0.3 is the default - curtains help but aren't perfect. Min: 0,10 Max: 5,00 Default: 0,30
         BreachWeightCurtain = 0.3,
-        -- Min: 0,00 Max: 5,00 Default: 1,00
+        -- How fast a fully sealed building (no broken windows, no open doors, no gaps) drifts toward the outside temperature through walls and ceiling. 1.0 is the mod's baseline. 0 = a sealed house holds its temperature forever; 2.0 = walls leak twice as fast even when sealed; 5.0 = even sealed homes equalize quickly. Has no effect on buildings with active leaks. Min: 0,00 Max: 5,00 Default: 1,00
         SealedPassiveTransferStrength = 1.0,
     },
     LanternFix = {
@@ -2098,6 +2291,7 @@ SandboxVars = {
         FlashlightRadius = 4,
     },
     ProximityInventory = {
+        -- Enable this if you want the Proximity Inventory to work only on zombies
         ZombieOnly = true,
     },
     ForcedSync = {
@@ -2106,32 +2300,51 @@ SandboxVars = {
         ForceSyncOnWeaponSwing = false,
     },
     Medicae = {
-        -- Min: 0,10 Max: 5,00 Default: 1,00
+        -- Blood percent lost every ten minutes per bleeding body part, before the wound severity multiplier. Min: 0,10 Max: 5,00 Default: 1,00
         BLEED_BASE = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,02
+        -- Blood percent recovered every ten minutes while nothing is bleeding. Requires not starving. Min: 0,00 Max: 1,00 Default: 0,02
         REGEN_PER_TICK = 0.0198,
-        -- Min: 5,00 Max: 100,00 Default: 25,00
+        -- Blood percent restored by one compatible unit. Min: 5,00 Max: 100,00 Default: 25,00
         TRANSFUSION_RESTORE = 25.0,
-        -- Min: 1,00 Max: 40,00 Default: 12,00
+        -- Blood percent lost when filling a bag from yourself. Min: 1,00 Max: 40,00 Default: 12,00
         DONATION_COST = 12.0,
-        -- Min: 1 Max: 500 Default: 40
+        -- One in this many chance of dying each tick below 20% blood. Higher is more forgiving. Min: 1 Max: 500 Default: 40
         DEATH_CHANCE_ONE_IN = 40,
-        -- Min: 1 Max: 100 Default: 6
+        -- One in this many chance of fainting each tick below 40% blood. Higher is more forgiving. Min: 1 Max: 100 Default: 6
         SYNCOPE_CHANCE_ONE_IN = 6,
-        -- Min: 0,00 Max: 0,50 Default: 0,00
+        -- Hematocrit points rebuilt every ten minutes while fed and watered. Default is 10 points a month. Min: 0,00 Max: 0,50 Default: 0,00
         HCT_REGEN_PER_TICK = 0.00231,
-        -- Min: 1,00 Max: 10,00 Default: 2,00
+        -- How much iron tablets multiply hematocrit recovery while dosed. Min: 1,00 Max: 10,00 Default: 2,00
         HCT_PILL_MULTIPLIER = 2.0,
-        -- Min: 5,00 Max: 60,00 Default: 25,00
+        -- Blood volume percent restored by one saline bag. It carries no red cells, so it dilutes hematocrit. Min: 5,00 Max: 60,00 Default: 25,00
         SALINE_VOLUME = 25.0,
+        -- Show exact blood volume and hematocrit percentages regardless of First Aid. Off by default: an untrained character sees only how the patient looks.
         ALWAYS_SHOW_NUMBERS = false,
-        -- Min: 0,00 Max: 2,00 Default: 0,00
+        -- How often the Knox vaccine turns up in loot, independent of every other Medicae item. Zero by default, meaning none are ever found and the mechanic is effectively off. 1.0 is the intended rate, 0.25 makes finding one a story, 2.0 is as common as it gets. One already in your hands always works. Only affects containers filled after the change. Min: 0,00 Max: 2,00 Default: 0,00
         VACCINE_RARITY = 0.0,
+        -- Whether zombies lose interest in a player who has collapsed from blood loss. Collapsing itself is always on in multiplayer: you drop where you stood and stay down until somebody has both stopped the bleeding and put enough blood back into you. This switch decides only whether the dead keep coming while you lie there. Death rolls are unchanged either way. Single player is unaffected by all of this, since there is nobody to rescue you. BETA: making zombies ignore you also disables your collision, so expect oddities on stairs and upper floors. Off by default.
+        DOWNED_GHOST = false,
     },
     SkillJournal = {
-        -- Min: 0 Max: 100 Default: 100
+        -- How much of the gap between your current XP and the XP written in the journal is recovered. 100 restores you fully to what was written. 0 disables skill recovery. Min: 0 Max: 100 Default: 100
         RecoveryPercentage = 100,
+        -- The journal restores the kill count it recorded. Never lowers your current count.
         RecoverKills = true,
+        -- The journal restores recipes you had learned when you wrote in it.
         RecoverRecipes = true,
+    },
+    HB = {
+        -- Casings will stay in the floor after landing. Turn this off to make casings only visible while active.
+        PermanentCasings = true,
+        -- Adjust the buffer for multiplayer tick updates. Higher values may improve performance but decreases bullet visual travel. Min: 0 Max: 5 Default: 0
+        MultiplayerTick = 0,
+        -- Enable custom icons for casings and bullets.
+        CustomIcons = true,
+        -- Enable sounds for casings hitting the floor.
+        CasingSounds = true,
+    },
+    GWG = {
+        -- Adjust the buffer for multiplayer tick updates. Higher values may improve performance but decreases bullet visual travel. Min: 0 Max: 5 Default: 0
+        MultiplayerTick = 0,
     },
 }
