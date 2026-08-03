@@ -2058,28 +2058,6 @@ SandboxVars = {
         -- Min: 0,00 Max: 5,00 Default: 1,00
         SealedPassiveTransferStrength = 1.0,
     },
-    Medicae = {
-        -- Min: 0,10 Max: 5,00 Default: 1,00
-        BLEED_BASE = 1.0,
-        -- Min: 0,00 Max: 1,00 Default: 0,02
-        REGEN_PER_TICK = 0.0198,
-        -- Min: 5,00 Max: 100,00 Default: 25,00
-        TRANSFUSION_RESTORE = 25.0,
-        -- Min: 1,00 Max: 40,00 Default: 12,00
-        DONATION_COST = 12.0,
-        -- Min: 1 Max: 500 Default: 40
-        DEATH_CHANCE_ONE_IN = 40,
-        -- Min: 1 Max: 100 Default: 6
-        SYNCOPE_CHANCE_ONE_IN = 6,
-        -- Min: 0,00 Max: 0,50 Default: 0,00
-        HCT_REGEN_PER_TICK = 0.00231,
-        -- Min: 1,00 Max: 10,00 Default: 2,00
-        HCT_PILL_MULTIPLIER = 2.0,
-        -- Min: 5,00 Max: 60,00 Default: 25,00
-        SALINE_VOLUME = 25.0,
-        ALWAYS_SHOW_NUMBERS = false,
-        ENABLE_VACCINE = false,
-    },
     LanternFix = {
         PropaneLanternHeader = false,
         -- Min: 0,00 Max: 1,00 Default: 0,50
@@ -2127,22 +2105,33 @@ SandboxVars = {
         ForceSyncOnWeaponHitCharacter = true,
         ForceSyncOnWeaponSwing = false,
     },
-    AdvFirstAid = {
-        EnableSelfRevive = false,
-        -- Min: 0 Max: 100 Default: 25
-        SelfReviveChance = 25,
-        -- Min: 0 Max: 100 Default: 10
-        EpiSelfReviveChance = 10,
-        -- Min: 5 Max: 100 Default: 20
-        ReviveHealthPercent = 20,
-        -- Min: 60 Max: 1200 Default: 300
-        ComaDurationSeconds = 1200,
-        -- Min: 5 Max: 30 Default: 12
-        ComaHealthThreshold = 12,
-        -- Min: 1 Max: 10 Default: 8
-        DoctorLevelRequiredForRevive = 6,
-        InstantNeckBleedArrest = true,
-        BacterialInfectionBlindness = true,
-        AllowComaOnBite = true,
+    Medicae = {
+        -- Min: 0,10 Max: 5,00 Default: 1,00
+        BLEED_BASE = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,02
+        REGEN_PER_TICK = 0.0198,
+        -- Min: 5,00 Max: 100,00 Default: 25,00
+        TRANSFUSION_RESTORE = 25.0,
+        -- Min: 1,00 Max: 40,00 Default: 12,00
+        DONATION_COST = 12.0,
+        -- Min: 1 Max: 500 Default: 40
+        DEATH_CHANCE_ONE_IN = 40,
+        -- Min: 1 Max: 100 Default: 6
+        SYNCOPE_CHANCE_ONE_IN = 6,
+        -- Min: 0,00 Max: 0,50 Default: 0,00
+        HCT_REGEN_PER_TICK = 0.00231,
+        -- Min: 1,00 Max: 10,00 Default: 2,00
+        HCT_PILL_MULTIPLIER = 2.0,
+        -- Min: 5,00 Max: 60,00 Default: 25,00
+        SALINE_VOLUME = 25.0,
+        ALWAYS_SHOW_NUMBERS = false,
+        -- Min: 0,00 Max: 2,00 Default: 0,00
+        VACCINE_RARITY = 0.0,
+    },
+    SkillJournal = {
+        -- Min: 0 Max: 100 Default: 100
+        RecoveryPercentage = 100,
+        RecoverKills = true,
+        RecoverRecipes = true,
     },
 }
