@@ -1949,15 +1949,15 @@ SandboxVars = {
         AllowUserAutoDelete = false,
     },
     DAMN = {
-        AllowSuckyMcSuckfaceSpawns = true,
-        AllowShitSpawns = true,
+        AllowSuckyMcSuckfaceSpawns = false,
+        AllowShitSpawns = false,
         AllowGreatScottSpawns = false,
-        AllowEV6spawns = true,
+        AllowEV6spawns = false,
         AllowTBCspawns = true,
-        AllowUBCspawns = true,
-        AllowPro440Spawns = true,
+        AllowUBCspawns = false,
+        AllowPro440Spawns = false,
         AllowDemonChildSpawns = false,
-        AllowWreckyMcChevySpawns = true,
+        AllowWreckyMcChevySpawns = false,
     },
     BuildableGarageDoor = {
         -- Min: 2 Max: 10 Default: 5
