@@ -2122,4 +2122,27 @@ SandboxVars = {
     ProximityInventory = {
         ZombieOnly = true,
     },
+    ForcedSync = {
+        ForceSyncOnKey = true,
+        ForceSyncOnWeaponHitCharacter = true,
+        ForceSyncOnWeaponSwing = false,
+    },
+    AdvFirstAid = {
+        EnableSelfRevive = false,
+        -- Min: 0 Max: 100 Default: 25
+        SelfReviveChance = 25,
+        -- Min: 0 Max: 100 Default: 10
+        EpiSelfReviveChance = 10,
+        -- Min: 5 Max: 100 Default: 20
+        ReviveHealthPercent = 20,
+        -- Min: 60 Max: 1200 Default: 300
+        ComaDurationSeconds = 1200,
+        -- Min: 5 Max: 30 Default: 12
+        ComaHealthThreshold = 12,
+        -- Min: 1 Max: 10 Default: 8
+        DoctorLevelRequiredForRevive = 6,
+        InstantNeckBleedArrest = true,
+        BacterialInfectionBlindness = true,
+        AllowComaOnBite = true,
+    },
 }
