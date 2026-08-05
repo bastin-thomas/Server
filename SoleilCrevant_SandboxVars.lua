@@ -890,6 +890,108 @@ SandboxVars = {
     -- 2 = Long
     -- 3 = Very long
     DrugTime89_HardActionDuration = 1,
+    -- Default = 1993
+    -- 1 = 1993
+    -- 2 = 1994
+    -- 3 = 1995
+    -- 4 = 1996
+    -- 5 = 1997
+    -- 6 = 1998
+    -- 7 = 1999
+    -- 8 = 2000
+    -- 9 = 2001
+    -- 10 = 2002
+    -- 11 = 2003
+    -- 12 = 2004
+    -- 13 = 2005
+    -- 14 = 2006
+    -- 15 = 2007
+    -- 16 = 2008
+    -- 17 = 2009
+    -- 18 = 2010
+    -- 19 = 2011
+    -- 20 = 2012
+    -- 21 = 2013
+    -- 22 = 2014
+    -- 23 = 2015
+    -- 24 = 2016
+    -- 25 = 2017
+    -- 26 = 2018
+    -- 27 = 2019
+    -- 28 = 2020
+    -- 29 = 2021
+    -- 30 = 2022
+    -- 31 = 2023
+    -- 32 = 2024
+    -- 33 = 2025
+    -- 34 = 2026
+    -- 35 = 2027
+    -- 36 = 2028
+    -- 37 = 2029
+    -- 38 = 2030
+    -- 39 = 2031
+    -- 40 = 2032
+    -- 41 = 2033
+    -- 42 = 2034
+    -- 43 = 2035
+    -- 44 = 2036
+    -- 45 = 2037
+    -- 46 = 2038
+    -- 47 = 2039
+    -- 48 = 2040
+    -- 49 = 2041
+    -- 50 = 2042
+    -- 51 = 2043
+    -- 52 = 2044
+    -- 53 = 2045
+    -- 54 = 2046
+    -- 55 = 2047
+    -- 56 = 2048
+    -- 57 = 2049
+    -- 58 = 2050
+    -- 59 = 2051
+    -- 60 = 2052
+    -- 61 = 2053
+    -- 62 = 2054
+    -- 63 = 2055
+    -- 64 = 2056
+    -- 65 = 2057
+    -- 66 = 2058
+    -- 67 = 2059
+    -- 68 = 2060
+    -- 69 = 2061
+    -- 70 = 2062
+    -- 71 = 2063
+    -- 72 = 2064
+    -- 73 = 2065
+    -- 74 = 2066
+    -- 75 = 2067
+    -- 76 = 2068
+    -- 77 = 2069
+    -- 78 = 2070
+    -- 79 = 2071
+    -- 80 = 2072
+    -- 81 = 2073
+    -- 82 = 2074
+    -- 83 = 2075
+    -- 84 = 2076
+    -- 85 = 2077
+    -- 86 = 2078
+    -- 87 = 2079
+    -- 88 = 2080
+    -- 89 = 2081
+    -- 90 = 2082
+    -- 91 = 2083
+    -- 92 = 2084
+    -- 93 = 2085
+    -- 94 = 2086
+    -- 95 = 2087
+    -- 96 = 2088
+    -- 97 = 2089
+    -- 98 = 2090
+    -- 99 = 2091
+    -- 100 = 2092
+    StartYear = 1,
     Basement = {
         -- How frequently basements spawn at random locations. Default = Sometimes
         -- 1 = Never
@@ -1193,6 +1295,10 @@ SandboxVars = {
         Disassembly = true,
         -- Allows the base mod Zomboid OST items to spawn. Uncheck to disable them.
         ZomboidOST = true,
+        -- If enabled, vanilla CDs and CD players are replaced by New Music versions.
+        ConvertVanillaCDsAndCDPlayers = true,
+        -- If enabled, cassettes, vinyl records, and CDs can spawn inside their case, cover, or jacket items (if one exists).
+        MediaSpawnsWithCases = true,
         -- Controls cassette media spawn intensity. 0.00 disables. Min: 0,00 Max: 4,00 Default: 0,60
         CassettesSpawnRate = 0.3,
         -- Controls vinyl media spawn intensity. 0.00 disables. Min: 0,00 Max: 4,00 Default: 0,60
@@ -2198,18 +2304,16 @@ SandboxVars = {
         ForceSyncOnWeaponSwing = false,
     },
     Medicae = {
-        -- Blood percent lost every ten minutes per bleeding body part, before the wound severity multiplier. Min: 0,10 Max: 5,00 Default: 1,00
+        -- Blood percent lost every ten minutes per bleeding body part, before the wound severity multiplier. Min: 0,10 Max: 60,00 Default: 10,00
         BLEED_BASE = 1.0,
+        -- Blood percent lost every ten minutes per burnt, undressed body part. Concentrates hematocrit rather than lowering it. Min: 0,00 Max: 5,00 Default: 0,35
+        BURN_PLASMA_BASE = 0.35,
         -- Blood percent recovered every ten minutes while nothing is bleeding. Requires not starving. Min: 0,00 Max: 1,00 Default: 0,02
         REGEN_PER_TICK = 0.0198,
         -- Blood percent restored by one compatible unit. Min: 5,00 Max: 100,00 Default: 25,00
         TRANSFUSION_RESTORE = 25.0,
         -- Blood percent lost when filling a bag from yourself. Min: 1,00 Max: 40,00 Default: 12,00
         DONATION_COST = 12.0,
-        -- One in this many chance of dying each tick below 20% blood. Higher is more forgiving. Min: 1 Max: 500 Default: 40
-        DEATH_CHANCE_ONE_IN = 40,
-        -- One in this many chance of fainting each tick below 40% blood. Higher is more forgiving. Min: 1 Max: 100 Default: 6
-        SYNCOPE_CHANCE_ONE_IN = 6,
         -- Hematocrit points rebuilt every ten minutes while fed and watered. Default is 10 points a month. Min: 0,00 Max: 0,50 Default: 0,00
         HCT_REGEN_PER_TICK = 0.00231,
         -- How much iron tablets multiply hematocrit recovery while dosed. Min: 1,00 Max: 10,00 Default: 2,00
@@ -2220,8 +2324,8 @@ SandboxVars = {
         ALWAYS_SHOW_NUMBERS = false,
         -- How often the Knox vaccine turns up in loot, independent of every other Medicae item. Zero by default, meaning none are ever found and the mechanic is effectively off. 1.0 is the intended rate, 0.25 makes finding one a story, 2.0 is as common as it gets. One already in your hands always works. Only affects containers filled after the change. Min: 0,00 Max: 2,00 Default: 0,00
         VACCINE_RARITY = 0.0,
-        -- Whether zombies lose interest in a player who has collapsed from blood loss. Collapsing itself is always on in multiplayer: you drop where you stood and stay down until somebody has both stopped the bleeding and put enough blood back into you. This switch decides only whether the dead keep coming while you lie there. Death rolls are unchanged either way. Single player is unaffected by all of this, since there is nobody to rescue you. BETA: making zombies ignore you also disables your collision, so expect oddities on stairs and upper floors. Off by default.
-        DOWNED_GHOST = false,
+        -- Whether zombies lose interest in a player who has collapsed from blood loss. Collapsing itself is always on in multiplayer: you drop where you stood and stay down until somebody has both stopped the bleeding and put enough blood back into you. This switch decides only whether the dead keep coming while you lie there. You keep bleeding while you are down either way. Single player is unaffected by all of this, since there is nobody to rescue you. BETA: making zombies ignore you also disables your collision, so expect oddities on stairs and upper floors. Off by default.
+        DOWNED_GHOST = true,
     },
     SkillJournal = {
         -- How much of the gap between your current XP and the XP written in the journal is recovered. 100 restores you fully to what was written. 0 disables skill recovery. Min: 0 Max: 100 Default: 100
