@@ -208,7 +208,7 @@ SandboxVars = {
     -- 7 = 2 - 6 Months
     -- 8 = 6 - 12 Months
     -- 9 = Disabled
-    WaterShut = 1,
+    WaterShut = 3,
     -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Default = 14 - 30 Days
     -- 1 = Instant
     -- 2 = 14 - 30 Days
@@ -219,7 +219,7 @@ SandboxVars = {
     -- 7 = 2 - 6 Months
     -- 8 = 6 - 12 Months
     -- 9 = Disabled
-    ElecShut = 1,
+    ElecShut = 3,
     -- How long alarm batteries can last for after the power shuts off. Default = 0 - 30 Days
     -- 1 = Instant
     -- 2 = 0 - 30 Days
@@ -1534,9 +1534,9 @@ SandboxVars = {
         -- Number of additional repair points to fix after the main control panel. Default: 2 Min: 1 Max: 5 Default: 2
         FieldComponentCount = 2,
         -- Minimum Electrical skill to repair water plants. Default: 5 Min: 1 Max: 10 Default: 5
-        WaterPlantElectricalSkill = 5,
+        WaterPlantElectricalSkill = 7,
         -- Minimum Welding skill to repair water plants. Default: 5 Min: 1 Max: 10 Default: 5
-        WaterPlantMetalworkSkill = 5,
+        WaterPlantMetalworkSkill = 4,
         -- How fast facilities lose health over time. Higher = faster degradation. Default: 1.0 Min: 0,00 Max: 4,00 Default: 1,00
         DegradationRate = 1.0,
         -- Enable random breakdowns for low-health facilities. Default: On
@@ -1556,13 +1556,13 @@ SandboxVars = {
         -- Multiplies the items consumed to maintain a connected building's EPR link. Higher = more demanding upkeep. Default: 1.0 Min: 0,50 Max: 8,00 Default: 1,00
         MaintenancePartMultiplier = 1.0,
         -- Days a connected building runs before its EPR connection needs maintenance. Lower = more demanding upkeep. Default: 14 Min: 1 Max: 90 Default: 14
-        BuildingMaintenanceDays = 14,
+        BuildingMaintenanceDays = 90,
         -- Require specific tools to perform repairs. Default: On
         RequireTools = true,
         -- Tools lose durability when used for repairs. Default: On
-        ToolsConsumed = true,
+        ToolsConsumed = false,
         -- Fuel consumption rate for portable generators. Default: 1.0 Min: 0,25 Max: 4,00 Default: 1,00
-        GeneratorFuelConsumption = 1.0,
+        GeneratorFuelConsumption = 0.25,
         -- Generators automatically connect to nearby buildings. Default: On
         GeneratorAutoConnect = true,
         -- Use virtual power only (no physical generator object). Turn off for legacy generator behavior. Default: On
@@ -1570,9 +1570,9 @@ SandboxVars = {
         -- When ON, activating one of the four map-placed industrial generator sprites (industry_02_52, _53, _67, _71) is treated as an alternate EPR power source and will restore power to the entire KY grid (same behaviour as repairing Louisville Plant). When OFF (default), those sprites have no grid effect - only repairing Louisville Plant can restore the grid. This does NOT affect vanilla portable generators in any way; they continue to power buildings via wires exactly as PZ ships them. Default: Off (sprite generators do NOT power the grid).
         EnableSpriteGenerators = false,
         -- Water tanks need power to function. Default: Off
-        WaterTankRequiresPower = false,
+        WaterTankRequiresPower = true,
         -- Allow manual pumping from water tanks without power. Default: On
-        ManualPumpEnabled = true,
+        ManualPumpEnabled = false,
         -- Must repair Louisville Combined Plant before other facilities. Default: On
         RequirePrerequisite = true,
         -- Enable the Louisville Combined Utility Plant. Default: On
@@ -1584,7 +1584,7 @@ SandboxVars = {
         -- Only allow repairs after vanilla power shuts off. Default: On
         RequirePowerOff = true,
         -- When Immersive Blackouts is active, EPR yields global power control and uses per-building electricity only. Disable to force EPR to override IB's SandboxVars. Default: On
-        IBCompatMode = true,
+        IBCompatMode = false,
         -- During thunderstorms, an online substation has a chance per 10-minute tick of being knocked offline (lightning strike). Player must repair it. Default: On
         StormBlackoutsEnabled = true,
         -- Chance per 10-minute storm tick that a random online substation gets knocked offline. 0 disables. Default: 25 Min: 0 Max: 100 Default: 25
