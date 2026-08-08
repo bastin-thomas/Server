@@ -208,7 +208,7 @@ SandboxVars = {
     -- 7 = 2 - 6 Months
     -- 8 = 6 - 12 Months
     -- 9 = Disabled
-    WaterShut = 3,
+    WaterShut = 1,
     -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Default = 14 - 30 Days
     -- 1 = Instant
     -- 2 = 14 - 30 Days
@@ -219,7 +219,7 @@ SandboxVars = {
     -- 7 = 2 - 6 Months
     -- 8 = 6 - 12 Months
     -- 9 = Disabled
-    ElecShut = 3,
+    ElecShut = 1,
     -- How long alarm batteries can last for after the power shuts off. Default = 0 - 30 Days
     -- 1 = Instant
     -- 2 = 0 - 30 Days
@@ -229,9 +229,9 @@ SandboxVars = {
     -- 6 = 0 - 5 Years
     AlarmDecay = 2,
     -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Min: -1 Max: 2147483647 Default: 14
-    WaterShutModifier = 30,
+    WaterShutModifier = -1,
     -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Min: -1 Max: 2147483647 Default: 14
-    ElecShutModifier = 30,
+    ElecShutModifier = -1,
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
     AlarmDecayModifier = 14,
     -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,80
@@ -2339,7 +2339,7 @@ SandboxVars = {
         -- Casings will stay in the floor after landing. Turn this off to make casings only visible while active.
         PermanentCasings = true,
         -- Adjust the buffer for multiplayer tick updates. Higher values may improve performance but decreases bullet visual travel. Min: 0 Max: 5 Default: 0
-        MultiplayerTick = 3,
+        MultiplayerTick = 0,
         -- Enable custom icons for casings and bullets.
         CustomIcons = false,
         -- Enable sounds for casings hitting the floor.
@@ -2347,6 +2347,6 @@ SandboxVars = {
     },
     GWG = {
         -- Adjust the buffer for multiplayer tick updates. Higher values may improve performance but decreases bullet visual travel. Min: 0 Max: 5 Default: 0
-        MultiplayerTick = 3,
+        MultiplayerTick = 0,
     },
 }
