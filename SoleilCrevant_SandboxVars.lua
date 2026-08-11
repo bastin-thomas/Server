@@ -1554,6 +1554,7 @@ SandboxVars = {
         SharpenStoneMax = 1,
         -- Min: 1 Max: 10 Default: 2
         ToolUsesPerConditionLoss = 2,
+        MiningSoundsAttractZombies = true,
     },
     StreetlightGen = {
         Enabled = true,
@@ -2001,5 +2002,15 @@ SandboxVars = {
         RequirePower = true,
         ConvertVanilla = false,
         RevertVanilla = false,
+    },
+    KnoxAcoustics = {
+        ZombieHearing = false,
+        StationAdminOnly = false,
+        -- Min: 0 Max: 30 Default: 2
+        RangeWhisper = 2,
+        -- Min: 0 Max: 60 Default: 10
+        RangeNormal = 10,
+        -- Min: 0 Max: 120 Default: 30
+        RangeShout = 30,
     },
 }
