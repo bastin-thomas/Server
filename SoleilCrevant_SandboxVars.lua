@@ -128,9 +128,9 @@ SandboxVars = {
     -- 6 = 0 - 5 Years
     AlarmDecay = 2,
     -- How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Min: -1 Max: 2147483647 Default: 14
-    WaterShutModifier = -1,
+    WaterShutModifier = 23,
     -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Min: -1 Max: 2147483647 Default: 14
-    ElecShutModifier = -1,
+    ElecShutModifier = 18,
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
     AlarmDecayModifier = 14,
     -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,80
