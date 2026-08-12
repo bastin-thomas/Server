@@ -1045,10 +1045,10 @@ SandboxVars = {
     },
     MinidoracatSafeSpawn = {
         EnableGhostOnSpawn = true,
-        -- Min: 1 Max: 500 Default: 3
-        NormalGhostTime = 10,
-        -- Min: 1 Max: 500 Default: 10
-        NewStartTime = 10,
+        -- Min: 1 Max: 600 Default: 30
+        NormalGhostSeconds = 15,
+        -- Min: 1 Max: 600 Default: 60
+        NewStartSeconds = 15,
     },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
@@ -1436,6 +1436,9 @@ SandboxVars = {
         -- Min: 0 Max: 30 Default: 0
         SmallSheetMetalAmount = 30,
     },
+    IDBFS = {
+        WorldDispenserBiofuel = 5,
+    },
     HorseMod = {
         -- Min: 0,10 Max: 10,00 Default: 1,00
         WalkSpeed = 1.0,
@@ -1703,16 +1706,6 @@ SandboxVars = {
         -- Min: 2 Max: 10 Default: 5
         MaxSize = 5,
     },
-    KnoxAcoustics = {
-        ZombieHearing = false,
-        StationAdminOnly = false,
-        -- Min: 0 Max: 30 Default: 2
-        RangeWhisper = 2,
-        -- Min: 0 Max: 60 Default: 10
-        RangeNormal = 10,
-        -- Min: 0 Max: 120 Default: 30
-        RangeShout = 30,
-    },
     Plumbing = {
         -- Min: 0,00 Max: 0,10 Default: 0,01
         PumpFilterUsage = 0.007,
@@ -1870,6 +1863,9 @@ SandboxVars = {
         RecoveryPercentage = 100,
         RecoverKills = true,
         RecoverRecipes = true,
+        OneReadPerEntry = true,
+        RecoverExerciseRegularity = true,
+        MatchReaderLearningRate = true,
         SkipPhysical = false,
         FullXpMultipliers = true,
     },
@@ -1942,7 +1938,7 @@ SandboxVars = {
         -- Min: 0,10 Max: 5,00 Default: 1,00
         FitnessXPMultiplier = 0.5,
         -- Min: 0,10 Max: 5,00 Default: 1,00
-        NimbleXPMultiplier = 0.10,
+        NimbleXPMultiplier = 0.1,
     },
     LSHygiene = {
         -- Min: 0,00 Max: 3,00 Default: 1,00
@@ -2012,5 +2008,26 @@ SandboxVars = {
         RangeNormal = 10,
         -- Min: 0 Max: 120 Default: 30
         RangeShout = 30,
+    },
+    PZCrossbows = {
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        LootSpawnMult = 0.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        CrudeCrossbowSpawnMult = 0.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        ImprovedCrossbowSpawnMult = 0.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        CompoundCrossbowSpawnMult = 0.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        HandCrossbowSpawnMult = 0.0,
+        -- Min: 0 Max: 100 Default: 40
+        BoltWBaseBreakChance = 40,
+        -- Min: 0 Max: 100 Default: 3
+        BoltWBreakChanceScaling = 3,
+        -- Min: 0 Max: 100 Default: 50
+        BoltSWBaseBreakChance = 50,
+        -- Min: 0 Max: 100 Default: 3
+        BoltSWBreakChanceScaling = 3,
+        DebugLogging = false,
     },
 }
