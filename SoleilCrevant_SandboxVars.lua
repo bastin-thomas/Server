@@ -134,9 +134,9 @@ SandboxVars = {
     -- How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14
     AlarmDecayModifier = 14,
     -- Any food that can rot or spoil. Min: 0,00 Max: 4,00 Default: 0,80
-    FoodLootNew = 0.5,
+    FoodLootNew = 0.3,
     -- All other items that can be read, including books, fliers, and newspapers. Min: 0,00 Max: 4,00 Default: 0,60
-    LiteratureLootNew = 0.5,
+    LiteratureLootNew = 0.3,
     -- Books that provide skill XP multipliers. Min: 0,00 Max: 4,00 Default: 0,60
     SkillBookLoot = 0.3,
     -- Items that teach recipes. Min: 0,00 Max: 4,00 Default: 0,60
@@ -144,23 +144,23 @@ SandboxVars = {
     -- Medicine, bandages and first aid tools. Min: 0,00 Max: 4,00 Default: 0,60
     MedicalLootNew = 0.3,
     -- Fishing Rods, Tents, camping gear etc. Min: 0,00 Max: 4,00 Default: 0,60
-    SurvivalGearsLootNew = 0.5,
+    SurvivalGearsLootNew = 0.3,
     -- Canned and dried food, beverages. Min: 0,00 Max: 4,00 Default: 0,60
     CannedFoodLootNew = 0.3,
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
     WeaponLootNew = 0.3,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 1,20
-    RangedWeaponLootNew = 1.2,
+    RangedWeaponLootNew = 1.0,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
-    MechanicsLootNew = 0.5,
+    MechanicsLootNew = 0.3,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,80
-    OtherLootNew = 0.5,
+    OtherLootNew = 0.3,
     -- All wearable items that are not containers. Min: 0,00 Max: 4,00 Default: 0,60
-    ClothingLootNew = 0.5,
+    ClothingLootNew = 0.3,
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0,00 Max: 4,00 Default: 0,60
-    ContainerLootNew = 0.5,
+    ContainerLootNew = 0.3,
     -- Keys for buildings/cars, key rings, and locks. Min: 0,00 Max: 4,00 Default: 0,40
     KeyLootNew = 0.4,
     -- VHS tapes and CDs. Min: 0,00 Max: 4,00 Default: 0,60
@@ -168,13 +168,13 @@ SandboxVars = {
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0,00 Max: 4,00 Default: 0,60
     MementoLootNew = 0.3,
     -- Items that are used in cooking, including those (eg. knives) which can be weapons. Does not include food. Includes both usable and unusable items. Min: 0,00 Max: 4,00 Default: 0,60
-    CookwareLootNew = 0.5,
+    CookwareLootNew = 0.3,
     -- Items and weapons that are used as ingredients for crafting or building. This is a general category that does not include items belonging to other categories such as Cookware or Medical. Does not include Tools. Min: 0,00 Max: 4,00 Default: 0,60
-    MaterialLootNew = 0.5,
+    MaterialLootNew = 0.3,
     -- Items and weapons which are used in both animal and plant agriculture, such as Seeds, Trowels, or Shovels. Min: 0,00 Max: 4,00 Default: 0,60
-    FarmingLootNew = 0.5,
+    FarmingLootNew = 0.3,
     -- Items and weapons which are Tools but don't fit in other categories such as Mechanics or Farming. Min: 0,00 Max: 4,00 Default: 0,60
-    ToolLootNew = 0.5,
+    ToolLootNew = 0.3,
     -- <BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0,10 Max: 100,00 Default: 1,00
     RollsMultiplier = 1.0,
     -- A comma-separated list of item types that won't spawn as ordinary loot.
