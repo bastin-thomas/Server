@@ -138,25 +138,25 @@ SandboxVars = {
     -- All other items that can be read, including books, fliers, and newspapers. Min: 0,00 Max: 4,00 Default: 0,60
     LiteratureLootNew = 0.3,
     -- Books that provide skill XP multipliers. Min: 0,00 Max: 4,00 Default: 0,60
-    SkillBookLoot = 0.3,
+    SkillBookLoot = 0.2,
     -- Items that teach recipes. Min: 0,00 Max: 4,00 Default: 0,60
-    RecipeResourceLoot = 0.3,
+    RecipeResourceLoot = 0.2,
     -- Medicine, bandages and first aid tools. Min: 0,00 Max: 4,00 Default: 0,60
-    MedicalLootNew = 0.3,
+    MedicalLootNew = 0.2,
     -- Fishing Rods, Tents, camping gear etc. Min: 0,00 Max: 4,00 Default: 0,60
     SurvivalGearsLootNew = 0.3,
     -- Canned and dried food, beverages. Min: 0,00 Max: 4,00 Default: 0,60
-    CannedFoodLootNew = 0.3,
+    CannedFoodLootNew = 0.2,
     -- Weapons that are not tools in other categories. Min: 0,00 Max: 4,00 Default: 0,60
-    WeaponLootNew = 0.3,
+    WeaponLootNew = 0.2,
     -- Also includes weapon attachments. Min: 0,00 Max: 4,00 Default: 1,20
     RangedWeaponLootNew = 1.0,
     -- Loose ammo, boxes and magazines. Min: 0,00 Max: 4,00 Default: 0,60
     AmmoLootNew = 0.4,
     -- Vehicle parts and the tools needed to install them. Min: 0,00 Max: 4,00 Default: 0,60
-    MechanicsLootNew = 0.3,
+    MechanicsLootNew = 0.2,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Min: 0,00 Max: 4,00 Default: 0,80
-    OtherLootNew = 0.3,
+    OtherLootNew = 0.2,
     -- All wearable items that are not containers. Min: 0,00 Max: 4,00 Default: 0,60
     ClothingLootNew = 0.3,
     -- Backpacks and other wearable/equippable containers, eg. cases. Min: 0,00 Max: 4,00 Default: 0,60
