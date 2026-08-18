@@ -762,7 +762,7 @@ SandboxVars = {
     GeneratorTileRange = 20,
     -- How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3
     GeneratorVerticalPowerRange = 3,
-    DrugTime89_LootRarity = 2,
+    DrugTime89_LootRarity = 1,
     DrugTime89_ZombieLootRarity = 1,
     DrugTime89_DebugLogs = false,
     DrugTime89_EffectDuration = 2,
@@ -1989,8 +1989,8 @@ SandboxVars = {
         RequireElectricity = true,
     },
     FoodDrying = {
-        SaltHarvestingEnabled = true,
-        OvenDryingEnabled = true,
+        SaltHarvestingEnabled = false,
+        OvenDryingEnabled = false,
     },
     FunctionalCarLift = {
         -- Min: 0 Max: 5 Default: 1
