@@ -184,7 +184,7 @@ SandboxVars = {
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies.
     RemoveZombieLoot = false,
     -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 0
-    ZombiePopLootEffect = 20,
+    ZombiePopLootEffect = 0,
     -- Min: 0,00 Max: 0,20 Default: 0,05
     InsaneLootFactor = 0.05,
     -- Min: 0,05 Max: 0,60 Default: 0,20
