@@ -7,7 +7,7 @@ SandboxVars = {
     -- 4 = Normal
     -- 5 = Low
     -- 6 = None
-    Zombies = 2,
+    Zombies = 5,
     -- How zombies are distributed across the map. Default = Urban Focused
     -- 1 = Urban Focused
     -- 2 = Uniform
@@ -521,7 +521,7 @@ SandboxVars = {
     -- 3 = Normal
     -- 4 = High
     -- 5 = Very High
-    CarGeneralCondition = 3,
+    CarGeneralCondition = 4,
     -- The amount of damage dealt to vehicles that crash. Default = Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -738,7 +738,7 @@ SandboxVars = {
     -- Disables the failure chances when climbing sheet ropes or over walls.
     EasyClimbing = false,
     -- The maximum hours of fuel that can be placed in a campfire, wood stove etc. Min: 1 Max: 168 Default: 8
-    MaximumFireFuelHours = 24,
+    MaximumFireFuelHours = 168,
     -- Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming. Default = Zombies only
     -- 1 = Disabled
     -- 2 = Zombies only
