@@ -1862,17 +1862,6 @@ SandboxVars = {
         BASAL_METABOLIC_SAVING = 0.5,
         SYNCOPE_ENABLED = true,
     },
-    SkillJournal = {
-        -- Min: 0 Max: 100 Default: 100
-        RecoveryPercentage = 100,
-        RecoverKills = true,
-        RecoverRecipes = true,
-        OneReadPerEntry = true,
-        RecoverExerciseRegularity = true,
-        MatchReaderLearningRate = true,
-        SkipPhysical = false,
-        RecoverSkillBookProgress = false,
-    },
     HB = {
         PermanentCasings = true,
         -- Min: 0 Max: 5 Default: 0
@@ -2093,5 +2082,39 @@ SandboxVars = {
         PlayerHealthInfection = true,
         PlayerStatsForAdmins = true,
         PlayerAutoAdminPowers = true,
+    },
+    SkillRecoveryJournal = {
+        -- Min: 1 Max: 100 Default: 100
+        RecoveryPercentage = 100,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        TranscribeSpeed = 1.0,
+        -- Min: 0,00 Max: 1000,00 Default: 1,00
+        ReadTimeSpeed = 1.0,
+        -- Min: 0,00 Max: 1,00 Default: 0,00
+        IlliterateSpeedMultiplier = 1.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        -- Min: -1 Max: 100 Default: 0
+        RecoverPassiveSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverPhysicalCategorySkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverCombatSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverFirearmSkills = 75,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverCraftingSkills = 100,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverSurvivalistSkills = 100,
+        -- Min: -1 Max: 100 Default: -1
+        RecoverFarmingCategorySkills = 100,
+        -- Min: -1 Max: 100 Default: 0
+        KillsTrack = 100,
+        RecoverRecipes = true,
+        RecoveryJournalUsed = false,
+        SecurityFeatures = 1,
+        CraftRecipeNeedLearn = false,
+        CraftRecipe = "",
+        ModDataTrack = "",
     },
 }
