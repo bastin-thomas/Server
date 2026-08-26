@@ -1050,6 +1050,11 @@ SandboxVars = {
         -- Min: 1 Max: 600 Default: 60
         NewStartSeconds = 15,
     },
+    FoodDrying = {
+        SaltHarvestingEnabled = false,
+        OvenDryingEnabled = false,
+        InfiniteShelfLife = false,
+    },
     LuaDigitalWatchUI = {
         MinuteResolution = 1,
     },
@@ -1068,16 +1073,17 @@ SandboxVars = {
         ActiveDeviceLimit = 10,
         -- Min: 0,02 Max: 1000,00 Default: 24,00
         BatteryDrainRate = 12.0,
-        -- Min: 9 Max: 100 Default: 35
+        -- Min: 9 Max: 500 Default: 35
         AudioMaxRadius = 35,
-        FancyUI = true,
+        -- Min: 9 Max: 200 Default: 105
+        ZombieAttractionRadius = 105,
         Disassembly = true,
         ZomboidOST = true,
         ConvertVanillaCDsAndCDPlayers = true,
         MediaSpawnsWithCases = true,
         -- Min: 0,00 Max: 4,00 Default: 0,60
         CassettesSpawnRate = 0.3,
-        -- Min: 0,00 Max: 4,00 Default: 0,60
+        -- Min: 0,00 Max: 4,00 Default: 0,30
         VinylRecordsSpawnRate = 0.3,
         -- Min: 0,00 Max: 4,00 Default: 0,60
         CDsSpawnRate = 0.3,
@@ -1446,6 +1452,7 @@ SandboxVars = {
         GallopSpeed = 1.0,
         -- Min: 0,10 Max: 2,00 Default: 1,00
         StaminaMultiplier = 1.0,
+        RidingPainGrunt = true,
     },
     Skateboard = {
         -- Min: 0,10 Max: 5,00 Default: 1,70
@@ -1461,7 +1468,6 @@ SandboxVars = {
     ColdWinters = {
         EnableBlizzards = true,
         GeneratorFailures = false,
-        EnableEaster = true,
     },
     DiagonalFloors = {
         -- Min: 0,01 Max: 1,00 Default: 0,25
@@ -1479,6 +1485,7 @@ SandboxVars = {
         StormMoodPreset = 2,
     },
     DestroyBoulder = {
+        EnableCraftingAdditions = true,
         -- Min: 0 Max: 50 Default: 5
         RocksMin = 5,
         -- Min: 0 Max: 50 Default: 5
@@ -1819,9 +1826,6 @@ SandboxVars = {
         -- Min: 2 Max: 7 Default: 4
         FlashlightRadius = 4,
     },
-    ProximityInventory = {
-        ZombieOnly = true,
-    },
     ForcedSync = {
         ForceSyncOnKey = true,
         ForceSyncOnWeaponHitCharacter = true,
@@ -1867,7 +1871,7 @@ SandboxVars = {
         RecoverExerciseRegularity = true,
         MatchReaderLearningRate = true,
         SkipPhysical = false,
-        FullXpMultipliers = true,
+        RecoverSkillBookProgress = false,
     },
     HB = {
         PermanentCasings = true,
@@ -1988,10 +1992,6 @@ SandboxVars = {
     FCW = {
         RequireElectricity = true,
     },
-    FoodDrying = {
-        SaltHarvestingEnabled = false,
-        OvenDryingEnabled = false,
-    },
     FunctionalCarLift = {
         -- Min: 0 Max: 5 Default: 1
         Range = 2,
@@ -2000,6 +2000,9 @@ SandboxVars = {
         RevertVanilla = false,
     },
     KnoxAcoustics = {
+        VoiceLinkBeta = false,
+        -- Min: 1024 Max: 65535 Default: 24680
+        VoiceLinkPort = 24680,
         ZombieHearing = false,
         StationAdminOnly = false,
         -- Min: 0 Max: 30 Default: 2
@@ -2008,6 +2011,8 @@ SandboxVars = {
         RangeNormal = 10,
         -- Min: 0 Max: 120 Default: 30
         RangeShout = 30,
+        RadioSim = 3,
+        KnoxVoip = 3,
     },
     PZCrossbows = {
         -- Min: 0,00 Max: 1000,00 Default: 1,00
@@ -2029,5 +2034,64 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 3
         BoltSWBreakChanceScaling = 3,
         DebugLogging = false,
+    },
+    AegisEvents = {
+        -- Min: 1 Max: 10 Default: 3
+        SiegeWaves = 3,
+        -- Min: 5 Max: 200 Default: 40
+        SiegeCount = 40,
+        -- Min: 20 Max: 150 Default: 60
+        SiegeDistance = 60,
+        -- Min: 0 Max: 50 Default: 12
+        SiegeGap = 12,
+        -- Min: 4 Max: 30 Default: 10
+        SiegeRadius = 10,
+        -- Min: 1 Max: 30 Default: 5
+        SiegeLureMinutes = 5,
+        SiegeSprinters = false,
+        SiegeCrawlers = false,
+        SiegeGunshot = true,
+        -- Min: 1 Max: 96 Default: 8
+        StormHours = 8,
+        -- Min: 0 Max: 20 Default: 6
+        StormThunder = 6,
+        -- Min: 0,50 Max: 10,00 Default: 1,20
+        StormThunderGap = 1.2,
+        -- Min: 0 Max: 200 Default: 15
+        HeliCount = 15,
+        -- Min: 20 Max: 150 Default: 80
+        HeliDistance = 80,
+        -- Min: 4 Max: 30 Default: 8
+        HeliRadius = 8,
+        -- Min: 1 Max: 100 Default: 20
+        AirdropCount = 20,
+        -- Min: 2 Max: 30 Default: 10
+        AirdropRadius = 10,
+        -- Min: 1 Max: 8 Default: 5
+        AirdropHeight = 5,
+        -- Min: 1 Max: 48 Default: 6
+        FirestormHours = 6,
+        -- Min: 0 Max: 20 Default: 4
+        FirestormThunder = 4,
+        -- Min: 1 Max: 6 Default: 3
+        FirestormWaves = 3,
+        -- Min: 1 Max: 100 Default: 15
+        FirestormCount = 15,
+        -- Min: 20 Max: 150 Default: 50
+        FirestormDistance = 50,
+        AmbushRain = true,
+        -- Min: 1 Max: 100 Default: 25
+        AmbushCount = 25,
+        -- Min: 2 Max: 20 Default: 6
+        AmbushRadius = 6,
+        PlayerPanel = false,
+        PlayerClaims = false,
+        PlayerKits = false,
+        KitCodeGates = false,
+        -- Min: 0 Max: 20 Default: 5
+        PlayerVehicles = 5,
+        PlayerHealthInfection = true,
+        PlayerStatsForAdmins = true,
+        PlayerAutoAdminPowers = true,
     },
 }
