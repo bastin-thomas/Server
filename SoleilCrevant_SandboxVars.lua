@@ -2005,15 +2005,15 @@ SandboxVars = {
     },
     PZCrossbows = {
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        LootSpawnMult = 0.0,
+        LootSpawnMult = 0.0000000000001,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        CrudeCrossbowSpawnMult = 0.0,
+        CrudeCrossbowSpawnMult = 0.0000000000001,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        ImprovedCrossbowSpawnMult = 0.0,
+        ImprovedCrossbowSpawnMult = 0.0000000000001,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        CompoundCrossbowSpawnMult = 0.0,
+        CompoundCrossbowSpawnMult = 0.0000000000001,
         -- Min: 0,00 Max: 1000,00 Default: 1,00
-        HandCrossbowSpawnMult = 0.0,
+        HandCrossbowSpawnMult = 0.0000000000001,
         -- Min: 0 Max: 100 Default: 40
         BoltWBaseBreakChance = 40,
         -- Min: 0 Max: 100 Default: 3
