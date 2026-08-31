@@ -1076,7 +1076,7 @@ SandboxVars = {
         -- Min: 9 Max: 500 Default: 35
         AudioMaxRadius = 35,
         -- Min: 9 Max: 200 Default: 105
-        ZombieAttractionRadius = 105,
+        ZombieAttractionRadius = 35,
         Disassembly = true,
         ZomboidOST = true,
         ConvertVanillaCDsAndCDPlayers = true,
