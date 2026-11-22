@@ -1061,9 +1061,6 @@ SandboxVars = {
         -- Min: 1 Max: 600 Default: 60
         NewStartSeconds = 15,
     },
-    LuaDigitalWatchUI = {
-        MinuteResolution = 1,
-    },
     TOC = {
         -- Min: 1 Max: 10 Default: 1
         CicatrizationSpeed = 1,
@@ -1463,7 +1460,7 @@ SandboxVars = {
         -- Min: 0 Max: 100 Default: 45
         WorldWoodenBarrelLiquidChance = 45,
         -- Min: 0 Max: 100 Default: 45
-        WorldDoubleBarrleLiquidChance = 45,
+        WorldDoubleBarrelLiquidChance = 45,
         -- Min: 0 Max: 100 Default: 50
         WorldMetalDrumLiquidChance = 50,
         -- Min: 0 Max: 100 Default: 30
@@ -1616,10 +1613,6 @@ SandboxVars = {
         -- Min: 0 Max: 20 Default: 12
         ViewCullPadding = 12,
         InstantWarmup = true,
-        -- Min: 4 Max: 64 Default: 16
-        GenDiscoverRadius = 60,
-        -- Min: 30 Max: 360 Default: 180
-        TogglePollRadius = 180,
         ExcludeSprites = "\"\"",
     },
     Excavation = {
@@ -1677,64 +1670,6 @@ SandboxVars = {
         sneakReduce = 0.66,
         skillsInfluence = 1,
         traitsInfluence = 1,
-    },
-    RealisticCold = {
-        -- Min: 0.10 Max: 10.00 Default: 4.00
-        ClothingInsulationScale = 4.0,
-        EnableFoodFreezingExperimental = false,
-        DryingRackHeatBridge = true,
-        -- Min: 0 Max: 30 Default: 15
-        DryingRackMinRoomTemp = 15,
-        -- Min: 0.10 Max: 3.00 Default: 1.00
-        SweatRateMultiplier = 1.0,
-        -- Min: 0.00 Max: 3.00 Default: 1.00
-        EvapCoolingStrength = 1.0,
-        -- Min: 0.00 Max: 1.00 Default: 0.30
-        InsulationSpreadBias = 0.3,
-        -- Min: 0.10 Max: 2.00 Default: 0.50
-        WarmingRateCapCPM = 0.5,
-        -- Min: 0.10 Max: 5.00 Default: 1.00
-        ColdSicknessMultiplier = 1.0,
-        -- Min: 1 Max: 4 Default: 2
-        CatchColdThreshold = 2,
-        -- Min: 0.10 Max: 5.00 Default: 1.75
-        CatchColdRateMultiplier = 1.75,
-        -- Min: 1 Max: 200 Default: 45
-        ColdWorsenPerHour = 45,
-        -- Min: 1 Max: 200 Default: 24
-        ColdRecoverPerHour = 24,
-        -- Min: 1 Max: 200 Default: 36
-        ColdMedicineDecayPerHour = 36,
-        -- Min: 0.10 Max: 10.00 Default: 0.20
-        HypothermiaDamageIntervalMin = 0.2,
-        -- Min: 0.10 Max: 5.00 Default: 0.20
-        HypothermiaDamagePerTick = 0.2,
-        -- Min: -30.00 Max: 25.00 Default: 16.00
-        ChillyAirThreshold = 16.0,
-        -- Min: 0.00 Max: 2.00 Default: 0.90
-        ChillyCoolingMultiplierThreshold = 0.9,
-        -- Min: 0.00 Max: 2.00 Default: 1.50
-        ChillyInsulationThreshold = 1.5,
-        -- Min: 5.00 Max: 60.00 Default: 26.00
-        HeatTargetMaximum = 26.0,
-        -- Min: 0.10 Max: 3.00 Default: 1.00
-        HeatDistanceExponent = 1.0,
-        -- Min: 0.00 Max: 60.00 Default: 25.00
-        VehicleHeaterMaxDelta = 25.0,
-        -- Min: 0 Max: 100 Default: 20
-        IndustrialHeaterSpawnRate = 20,
-        -- Min: 1.00 Max: 10.00 Default: 6.00
-        ExposureCap = 6.0,
-        -- Min: 0.10 Max: 5.00 Default: 0.80
-        BreachWeightWindow = 0.8,
-        -- Min: 0.10 Max: 5.00 Default: 1.20
-        BreachWeightDoor = 1.2,
-        -- Min: 0.10 Max: 5.00 Default: 1.40
-        BreachWeightGap = 1.4,
-        -- Min: 0.10 Max: 5.00 Default: 0.30
-        BreachWeightCurtain = 0.3,
-        -- Min: 0.00 Max: 5.00 Default: 1.00
-        SealedPassiveTransferStrength = 1.0,
     },
     LanternFix = {
         PropaneLanternHeader = true,
@@ -2138,6 +2073,7 @@ SandboxVars = {
         ErosionRate = 1.0,
         -- Min: 0.00 Max: 20.00 Default: 2.00
         MinimumVehicleSpeed = 2.0,
+        MonorailsSupport = false,
         ClearBushesWithVehicles = true,
         ClearGrassWithVehicles = false,
         EnableFootTraffic = true,
@@ -2265,5 +2201,9 @@ SandboxVars = {
         ZombieFootprints = true,
         RevealOnLook = true,
         WeatherErosion = true,
+    },
+    ZomVisFix = {
+        AffectZombieVision = true,
+        HardMode = false,
     },
 }
